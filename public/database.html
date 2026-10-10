@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillPlay - MongoDB Database & Login Activity Viewer</title>
+  <link rel="icon" type="image/png" href="/assets/puzzle_0.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #582cd1;
+      --primary-light: #7c4dff;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --bg-dark: #0f0c20;
+      --bg-card: #181433;
+      --border: rgba(255, 255, 255, 0.12);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 32px 20px;
+    }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #10b981, #059669);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    }
+    .header-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--border);
+      color: #fff;
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+    }
+    .info-card .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .info-card .value {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .info-card .value.green {
+      color: #34d399;
+    }
+    .view-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    .tab-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary-light);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(124, 77, 255, 0.35);
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: left;
+    }
+    th {
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .user-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+    }
+    .points-tag {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .success-badge {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .admin-badge {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 6px;
+    }
+    .date-tag {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .compass-guide {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(6, 78, 59, 0.12));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-top: 24px;
+    }
+    .compass-guide h3 {
+      color: #34d399;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .compass-steps {
+      list-style: none;
+      counter-reset: steps;
+      margin-top: 12px;
+    }
+    .compass-steps li {
+      counter-increment: steps;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .compass-steps li::before {
+      content: counter(steps);
+      background: #10b981;
+      color: #000;
+      font-weight: 800;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    code {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #c4b5fd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div>
+          <h2>SkillPlay MongoDB Database Viewer</h2>
+          <p style="color: var(--text-muted); font-size: 13px;">Developed by <strong>Raghu Veer</strong> &bull; <a href="mailto:raghuveer081014@gmail.com" style="color: #c4b5fd; text-decoration: none;"><i class="fa-solid fa-envelope"></i> raghuveer081014@gmail.com</a> &bull; <a href="tel:8639118335" style="color: #c4b5fd; text-decoration: none;"><i class="fa-solid fa-phone"></i> 8639118335</a></p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="/" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Open SkillPlay Website</a>
+        <button class="btn btn-primary" onclick="loadAll()"><i class="fa-solid fa-rotate-right"></i> Refresh Live Data</button>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="label">Database Connection</div>
+        <div class="value green">mongodb://localhost:27017</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Database Name</div>
+        <div class="value">skillplay_db</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Registered Accounts</div>
+        <div class="value green" id="totalUsers">Loading...</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Login Events Recorded</div>
+        <div class="value green" id="totalLogins">Loading...</div>
+      </div>
+    </div>
+
+    <div class="view-tabs">
+      <button class="tab-btn active" id="tabUsersBtn" onclick="switchView('users')">
+        <i class="fa-solid fa-address-book"></i> Registered Accounts (<code>users</code>)
+      </button>
+      <button class="tab-btn" id="tabLoginsBtn" onclick="switchView('logins')">
+        <i class="fa-solid fa-right-to-bracket"></i> Login Activity Log (<code>loginhistories</code>)
+      </button>
+    </div>
+
+    <!-- USERS TABLE -->
+    <div class="card" id="cardUsers">
+      <div class="card-title">
+        <div><i class="fa-solid fa-users"></i> Registered Student Accounts</div>
+        <span style="font-size: 12px; color: var(--text-muted);">Collection: <code>skillplay_db.users</code></span>
+      </div>
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Full Name</th>
+              <th>Email Address</th>
+              <th>Mobile Number</th>
+              <th>Learning Points</th>
+              <th>Registered On</th>
+              <th>Last Login</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody">
+            <tr><td colspan="7" style="text-align:center; padding:30px;"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LOGINS TABLE -->
+    <div class="card" id="cardLogins" style="display: none;">
+      <div class="card-title">
+        <div><i class="fa-solid fa-clock-rotate-left"></i> Live Login Events History</div>
+        <span style="font-size: 12px; color: var(--text-muted);">Collection: <code>skillplay_db.loginhistories</code></span>
+      </div>
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>User Name</th>
+              <th>Login Email</th>
+              <th>Mobile Number</th>
+              <th>Login Timestamp</th>
+              <th>Status</th>
+              <th>Device / Browser</th>
+            </tr>
+          </thead>
+          <tbody id="loginTableBody">
+            <tr><td colspan="6" style="text-align:center; padding:30px;"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="compass-guide">
+      <h3><i class="fa-solid fa-desktop"></i> Where to See Both Collections in MongoDB Compass</h3>
+      <ol class="compass-steps">
+        <li>Open the <strong>MongoDB Compass</strong> window on your computer.</li>
+        <li>Connect using: <code>mongodb://localhost:27017</code></li>
+        <li>In the left sidebar, click the database named <strong><code>skillplay_db</code></strong>.</li>
+        <li>You will see two collections:
+          <ul style="margin: 6px 0 6px 20px;">
+            <li><strong><code>users</code></strong>: Stores all registered users (Name, Email, Mobile No, Password hash, Points).</li>
+            <li><strong><code>loginhistories</code></strong>: Stores every login event each time someone signs in!</li>
+          </ul>
+        </li>
+        <li>Click either collection and hit the <strong>Refresh (⟳)</strong> button to see your live data!</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    function switchView(view) {
+      const uBtn = document.getElementById('tabUsersBtn');
+      const lBtn = document.getElementById('tabLoginsBtn');
+      const uCard = document.getElementById('cardUsers');
+      const lCard = document.getElementById('cardLogins');
+
+      if (view === 'users') {
+        uBtn.classList.add('active');
+        lBtn.classList.remove('active');
+        uCard.style.display = 'block';
+        lCard.style.display = 'none';
+      } else {
+        lBtn.classList.add('active');
+        uBtn.classList.remove('active');
+        lCard.style.display = 'block';
+        uCard.style.display = 'none';
+      }
+    }
+
+    async function loadUsers() {
+      const tbody = document.getElementById('userTableBody');
+      const totalEl = document.getElementById('totalUsers');
+      try {
+        const res = await fetch('/api/users');
+        const data = await res.json();
+        const users = data.users || [];
+        totalEl.textContent = users.length;
+
+        if (users.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; color:var(--text-muted);">No registered users yet.</td></tr>';
+          return;
+        }
+
+        tbody.innerHTML = users.map(u => `
+          <tr>
+            <td><code>${u.id || 'N/A'}</code></td>
+            <td>
+              <div class="user-pill">
+                <i class="fa-solid fa-circle-user" style="color: #7c4dff;"></i>
+                <strong>${u.name}</strong>
+                ${(u.role === 'admin' || u.isAdmin || u.email === 'raghuveer081014@gmail.com') ? '<span class="admin-badge"><i class="fa-solid fa-shield-halved"></i> Admin</span>' : ''}
+              </div>
+            </td>
+            <td><strong style="color: #34d399;">${u.email}</strong></td>
+            <td><strong>${u.phone || 'N/A'}</strong></td>
+            <td><span class="points-tag">⭐ ${u.count || 0} pts</span></td>
+            <td class="date-tag">${u.createdAt ? new Date(u.createdAt).toLocaleString() : 'N/A'}</td>
+            <td class="date-tag">${u.lastLogin ? new Date(u.lastLogin).toLocaleString() : '<span style="color:#64748b;">Not logged in yet</span>'}</td>
+          </tr>
+        `).join('');
+      } catch (err) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:#ef4444;">Error: ${err.message}</td></tr>`;
+      }
+    }
+
+    async function loadLogins() {
+      const tbody = document.getElementById('loginTableBody');
+      const totalEl = document.getElementById('totalLogins');
+      try {
+        const res = await fetch('/api/logins');
+        const data = await res.json();
+        const logins = data.logins || [];
+        totalEl.textContent = logins.length;
+
+        if (logins.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:20px;">No login events recorded yet. Try logging in on the website!</td></tr>';
+          return;
+        }
+
+        tbody.innerHTML = logins.map(l => `
+          <tr>
+            <td><strong>${l.name}</strong></td>
+            <td><strong style="color: #34d399;">${l.email}</strong></td>
+            <td>${l.phone || 'N/A'}</td>
+            <td class="date-tag">${new Date(l.loginTime).toLocaleString()}</td>
+            <td><span class="success-badge"><i class="fa-solid fa-check"></i> ${l.status || 'SUCCESS'}</span></td>
+            <td style="font-size:12px; color:var(--text-muted); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${l.userAgent || 'Web Browser'}</td>
+          </tr>
+        `).join('');
+      } catch (err) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:#ef4444;">Error: ${err.message}</td></tr>`;
+      }
+    }
+
+    function loadAll() {
+      loadUsers();
+      loadLogins();
+      if (window.location.hash === '#logins') {
+        switchView('logins');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadAll);
+  </script>
+</body>
+</html>

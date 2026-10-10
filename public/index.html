@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillPlay - Interactive Educational Platform</title>
+  <link rel="icon" type="image/png" href="/assets/puzzle_0.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-gate-active">
+  <!-- INITIAL AUTH GATE / PORTAL (First view upon opening website) -->
+  <div id="authPortal" class="auth-portal-overlay">
+    <div class="auth-portal-container">
+      <div class="auth-portal-brand">
+        <div class="brand-icon auth-portal-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h1 class="auth-portal-title">SkillPlay</h1>
+        <p class="auth-portal-subtitle">Interactive Educational Platform &amp; Brain Games</p>
+      </div>
+
+      <div class="auth-card-wrapper">
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab active" id="portalTabLogin" onclick="switchPortalTab('login')">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In
+          </button>
+          <button type="button" class="auth-tab" id="portalTabRegister" onclick="switchPortalTab('register')">
+            <i class="fa-solid fa-user-plus"></i> Register
+          </button>
+          <button type="button" class="auth-tab" id="portalTabForgot" onclick="switchPortalTab('forgot')">
+            <i class="fa-solid fa-key"></i> Forgot
+          </button>
+        </div>
+
+        <div id="portalAuthAlert" class="auth-alert" style="display: none;"></div>
+
+        <!-- Login Form -->
+        <form id="portalFormLogin" class="auth-form" onsubmit="handlePortalLogin(event)">
+          <div class="form-group">
+            <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="portalLoginEmail" required placeholder="raghuveer081014@gmail.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-lock"></i> Password</label>
+            <div class="password-input-group">
+              <input type="password" id="portalLoginPassword" required placeholder="Enter your password" autocomplete="current-password" />
+              <button type="button" class="pwd-toggle-btn" onclick="togglePasswordVisibility('portalLoginPassword', this)">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="portalLoginSubmit">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In to SkillPlay
+          </button>
+          <div class="auth-aux-links">
+            <a href="javascript:void(0)" onclick="switchPortalTab('forgot')">Forgot Password?</a>
+            <a href="javascript:void(0)" onclick="switchPortalTab('register')">Don't have an account? Register</a>
+          </div>
+          <div class="auth-divider"><span>OR</span></div>
+          <button type="button" class="btn btn-outline btn-block" onclick="continueAsGuestPortal()">
+            <i class="fa-regular fa-compass"></i> Explore as Guest Demo
+          </button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="portalFormRegister" class="auth-form" style="display: none;" onsubmit="handlePortalRegister(event)">
+          <div class="form-group">
+            <label><i class="fa-solid fa-user"></i> Full Name</label>
+            <input type="text" id="portalRegName" required placeholder="Student Name (e.g. Raghu Veer)" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="portalRegEmail" required placeholder="you@example.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-phone"></i> Mobile Number</label>
+            <input type="tel" id="portalRegPhone" placeholder="Mobile number" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-lock"></i> Password</label>
+            <div class="password-input-group">
+              <input type="password" id="portalRegPassword" required placeholder="Create a password" autocomplete="new-password" />
+              <button type="button" class="pwd-toggle-btn" onclick="togglePasswordVisibility('portalRegPassword', this)">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="portalRegSubmit">
+            <i class="fa-solid fa-user-plus"></i> Create Account &amp; Start Learning
+          </button>
+          <div class="auth-aux-links text-center">
+            <a href="javascript:void(0)" onclick="switchPortalTab('login')">Already have an account? Sign In</a>
+          </div>
+        </form>
+
+        <!-- Forgot Password Form -->
+        <form id="portalFormForgot" class="auth-form" style="display: none;" onsubmit="handlePortalForgot(event)">
+          <div id="portalForgotStep1">
+            <div class="form-group">
+              <label><i class="fa-solid fa-envelope"></i> Registered Email Address</label>
+              <input type="email" id="portalForgotEmail" required placeholder="Enter registered email" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Send Reset OTP
+            </button>
+          </div>
+          <div id="portalForgotStep2" style="display: none;">
+            <div class="form-group">
+              <label><i class="fa-solid fa-key"></i> Enter 6-Digit OTP</label>
+              <input type="text" id="portalForgotOtp" placeholder="6-digit verification code" />
+            </div>
+            <div class="form-group">
+              <label><i class="fa-solid fa-lock"></i> New Password</label>
+              <input type="password" id="portalForgotNewPass" placeholder="Enter new password" />
+            </div>
+            <div class="form-group">
+              <label><i class="fa-solid fa-lock"></i> Confirm New Password</label>
+              <input type="password" id="portalForgotConfirmPass" placeholder="Confirm new password" />
+            </div>
+            <button type="button" class="btn btn-primary btn-block btn-lg" onclick="handlePortalResetPassword()">
+              <i class="fa-solid fa-check"></i> Reset Password
+            </button>
+          </div>
+          <div class="auth-aux-links text-center">
+            <a href="javascript:void(0)" onclick="switchPortalTab('login')">Back to Sign In</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="auth-portal-footer">
+        <p><i class="fa-solid fa-code"></i> Developer: <strong>Raghu Veer</strong> &bull; <a href="mailto:raghuveer081014@gmail.com"><i class="fa-solid fa-envelope"></i> raghuveer081014@gmail.com</a> &bull; <a href="tel:8639118335"><i class="fa-solid fa-phone"></i> 8639118335</a></p>
+        <p style="margin-top: 6px;"><i class="fa-solid fa-database"></i> Connected to MongoDB Compass &bull; <a href="/database.html" target="_blank" style="color: #34d399; font-weight: 600; text-decoration: underline;">View Live Database</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand" onclick="navigateTo('home')">
+        <div class="brand-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SkillPlay</span>
+          <span class="brand-tag">Education & Games</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <button class="nav-btn active" data-target="home" onclick="navigateTo('home')">
+          <i class="fa-solid fa-house"></i> <span>Home</span>
+        </button>
+        <button class="nav-btn" data-target="learn" onclick="navigateTo('learn')">
+          <i class="fa-solid fa-book-open-reader"></i> <span>Learn</span>
+        </button>
+        <button class="nav-btn" data-target="textbooks" onclick="navigateTo('textbooks')">
+          <i class="fa-solid fa-book"></i> <span>Textbooks</span>
+        </button>
+        <button class="nav-btn" data-target="questions" onclick="navigateTo('questions')">
+          <i class="fa-solid fa-circle-question"></i> <span>Questions</span>
+        </button>
+        <button class="nav-btn" data-target="games" onclick="navigateTo('games')">
+          <i class="fa-solid fa-puzzle-piece"></i> <span>Games</span>
+        </button>
+      </nav>
+
+      <div class="user-controls">
+        <div class="points-badge" id="pointsBadge" title="Your Learning Points">
+          <i class="fa-solid fa-star"></i>
+          <span id="userPoints">0</span> pts
+        </div>
+        <div id="authButtonContainer">
+          <button class="btn btn-primary" onclick="openAuthModal('login')">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+
+    <!-- HOME / WELCOME SECTION -->
+    <section id="section-home" class="page-section active">
+      <div class="hero-card" style="background-image: linear-gradient(rgba(17, 12, 46, 0.78), rgba(26, 16, 60, 0.85)), url('/assets/first_bg.jpg');">
+        <div class="hero-content">
+          <div class="hero-badge"><i class="fa-solid fa-sparkles"></i> Welcome to the New Learning Era</div>
+          <h1 class="hero-title">Interactive Learning, Quizzes & Brain Games</h1>
+          <p class="hero-subtitle">
+            Explore syllabus lessons with video lectures, test your skills with topic quizzes, read school textbooks, and master image puzzle games.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-hero-primary" onclick="navigateTo('learn')">
+              <i class="fa-solid fa-play"></i> Start Learning Now
+            </button>
+            <button class="btn btn-hero-secondary" onclick="navigateTo('games')">
+              <i class="fa-solid fa-gamepad"></i> Play Puzzle Challenge
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Resume Card -->
+      <div class="resume-banner" id="resumeBanner" style="display: none;">
+        <div class="resume-info">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <div>
+            <strong>Continue where you left off</strong>
+            <p id="resumeDetails">Class 1 &bull; Maths &bull; Numbers</p>
+          </div>
+        </div>
+        <button class="btn btn-sm btn-outline" id="resumeBtn">Resume</button>
+      </div>
+
+      <!-- Feature Grid Cards -->
+      <div class="features-grid">
+        <div class="feature-card" onclick="navigateTo('learn')">
+          <div class="card-icon card-icon-learn">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h3>Classroom Video Lessons</h3>
+          <p>Structured curriculum from Class 1 to Class 6 across Maths, English, Telugu, EVS, Science & Social.</p>
+          <span class="card-link">Explore Lessons <i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+
+        <div class="feature-card" onclick="navigateTo('games')">
+          <div class="card-icon card-icon-game">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+          <h3>Educational Puzzle Games</h3>
+          <p>10 levels of visual sliding picture puzzles designed to train spatial memory, logic, and concentration.</p>
+          <span class="card-link">Play Game <i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+
+        <div class="feature-card" onclick="navigateTo('textbooks')">
+          <div class="card-icon card-icon-book">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <h3>School Textbooks</h3>
+          <p>Instant digital access to full school textbooks and syllabus materials directly in your browser.</p>
+          <span class="card-link">Read Books <i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+
+        <div class="feature-card" onclick="navigateTo('questions')">
+          <div class="card-icon card-icon-question">
+            <i class="fa-solid fa-file-circle-question"></i>
+          </div>
+          <h3>Question Papers & Answers</h3>
+          <p>Practice past exam papers, solutions, and comprehensive question banks for all grades.</p>
+          <span class="card-link">View Papers <i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARN / CURRICULUM SECTION -->
+    <section id="section-learn" class="page-section">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-graduation-cap"></i> Curriculum & Lessons</h2>
+          <p>Select your class, choose a subject, and start learning with video lectures and quizzes.</p>
+        </div>
+      </div>
+
+      <!-- Class Selector Pills -->
+      <div class="selector-group">
+        <span class="selector-label">Class:</span>
+        <div class="pill-group" id="classSelector">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Subject Selector Pills -->
+      <div class="selector-group">
+        <span class="selector-label">Subject:</span>
+        <div class="pill-group" id="subjectSelector">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Lesson View or Selection List -->
+      <div id="lessonsContainer" class="lessons-container">
+        <!-- Lessons list populated here -->
+      </div>
+
+      <!-- Active Lesson Player & Quiz Modal/View -->
+      <div id="activeLessonView" class="active-lesson-card" style="display: none;">
+        <div class="lesson-view-header">
+          <div>
+            <span class="badge" id="activeLessonBadge">CLASS 1 &bull; MATHS</span>
+            <h3 id="activeLessonTitle">Lesson Title</h3>
+          </div>
+          <button class="btn btn-icon" onclick="closeActiveLesson()" title="Back to lessons">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Video Player -->
+        <div class="video-container">
+          <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <!-- Action Bar: Quiz trigger -->
+        <div class="lesson-actions">
+          <div class="lesson-actions-left">
+            <button class="btn btn-primary" id="takeQuizBtn" onclick="openQuiz()">
+              <i class="fa-solid fa-list-check"></i> Take Practice Quiz
+            </button>
+          </div>
+          <div class="lesson-actions-right">
+            <button class="btn btn-outline" onclick="prevLesson()"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+            <button class="btn btn-outline" onclick="nextLesson()">Next <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Quiz Container inside lesson -->
+        <div id="quizContainer" class="quiz-container" style="display: none;">
+          <div class="quiz-header">
+            <h4><i class="fa-solid fa-circle-question"></i> Lesson Quiz</h4>
+            <div class="quiz-progress-text" id="quizProgressText">Question 1 of 5</div>
+          </div>
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quizProgressFill" style="width: 20%;"></div>
+          </div>
+          <div class="quiz-body" id="quizBody">
+            <!-- Dynamic quiz question -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXTBOOKS SECTION -->
+    <section id="section-textbooks" class="page-section">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-book-bookmark"></i> School Textbooks</h2>
+          <p>Read course textbooks online or download them for offline reference.</p>
+        </div>
+        <div class="header-actions">
+          <a id="tbDownloadBtn" href="/assets/text/class1/english.pdf" target="_blank" class="btn btn-outline" download="CLASS_1_ENGLISH_Textbook.pdf">
+            <i class="fa-solid fa-download"></i> Download Textbook
+          </a>
+        </div>
+      </div>
+
+      <div class="selector-group">
+        <span class="selector-label">Class:</span>
+        <div class="pill-group" id="tbClassSelector"></div>
+      </div>
+      <div class="selector-group">
+        <span class="selector-label">Subject:</span>
+        <div class="pill-group" id="tbSubjectSelector"></div>
+      </div>
+
+      <div class="pdf-viewer-card">
+        <div class="pdf-toolbar">
+          <div class="pdf-info">
+            <span id="tbCurrentTitle"><i class="fa-solid fa-file-pdf"></i> CLASS 1 &bull; ENGLISH</span>
+            <span class="pdf-status-tag" id="tbStatusTag"><i class="fa-solid fa-check"></i> Complete Textbook</span>
+          </div>
+          <div class="pdf-toolbar-actions">
+            <a id="tbFullscreenBtn" href="/assets/text/class1/english.pdf" target="_blank" class="btn btn-sm btn-outline">
+              <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
+            </a>
+          </div>
+        </div>
+        <div class="pdf-frame-wrapper">
+          <div id="tbLoadingSpinner" class="pdf-loading-overlay" style="display: none;">
+            <i class="fa-solid fa-spinner fa-spin"></i> Loading Textbook PDF...
+          </div>
+          <iframe id="tbPdfIframe" src="/assets/text/class1/english.pdf#toolbar=1" class="pdf-iframe" title="Textbook PDF Viewer"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS & ANSWERS SECTION -->
+    <section id="section-questions" class="page-section">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-file-circle-question"></i> Questions & Solutions</h2>
+          <p>Comprehensive question banks, solved lesson papers, and past model papers.</p>
+        </div>
+        <div class="header-actions">
+          <a id="qDownloadBtn" href="/assets/answers/class_1/maths/1.pdf" target="_blank" class="btn btn-outline" download="CLASS_1_MATHS_QuestionPaper.pdf">
+            <i class="fa-solid fa-download"></i> Download Paper
+          </a>
+        </div>
+      </div>
+
+      <div class="selector-group">
+        <span class="selector-label">Class:</span>
+        <div class="pill-group" id="qClassSelector"></div>
+      </div>
+      <div class="selector-group">
+        <span class="selector-label">Subject:</span>
+        <div class="pill-group" id="qSubjectSelector"></div>
+      </div>
+      <div class="selector-group" id="qLessonGroup">
+        <span class="selector-label">Lesson:</span>
+        <div class="pill-group" id="qLessonSelector"></div>
+      </div>
+
+      <div class="pdf-viewer-card">
+        <div class="pdf-toolbar">
+          <div class="pdf-info">
+            <span id="qCurrentTitle"><i class="fa-solid fa-file-pdf"></i> CLASS 1 &bull; MATHS &bull; Lesson 1</span>
+            <span class="pdf-status-tag" id="qStatusTag"><i class="fa-solid fa-check"></i> Solved Question Paper</span>
+          </div>
+          <div class="pdf-toolbar-actions">
+            <a id="qFullscreenBtn" href="/assets/answers/class_1/maths/1.pdf" target="_blank" class="btn btn-sm btn-outline">
+              <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
+            </a>
+          </div>
+        </div>
+        <div class="pdf-frame-wrapper">
+          <div id="qLoadingSpinner" class="pdf-loading-overlay" style="display: none;">
+            <i class="fa-solid fa-spinner fa-spin"></i> Loading Question Paper PDF...
+          </div>
+          <iframe id="qPdfIframe" src="/assets/answers/class_1/maths/1.pdf#toolbar=1" class="pdf-iframe" title="Question Papers PDF Viewer"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES SECTION (SLIDING PICTURE PUZZLE) -->
+    <section id="section-games" class="page-section">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-puzzle-piece"></i> SkillPlay Brain Puzzle Challenge</h2>
+          <p>Slide the scrambled tiles to reconstruct the complete image. Select from 10 exciting levels!</p>
+        </div>
+        <div class="game-stats">
+          <div class="stat-pill"><i class="fa-solid fa-shoe-prints"></i> Moves: <strong id="gameMoves">0</strong></div>
+          <div class="stat-pill"><i class="fa-solid fa-stopwatch"></i> Time: <strong id="gameTimer">00:00</strong></div>
+        </div>
+      </div>
+
+      <div class="game-controls-bar">
+        <div class="game-level-select">
+          <label>Level:</label>
+          <div class="level-pills" id="gameLevelPills">
+            <!-- 10 levels populated -->
+          </div>
+        </div>
+
+        <div class="game-actions">
+          <button class="btn btn-outline" onclick="togglePreview()">
+            <i class="fa-solid fa-eye"></i> <span id="previewBtnText">Show Preview</span>
+          </button>
+          <button class="btn btn-primary" onclick="initGame()">
+            <i class="fa-solid fa-shuffle"></i> Shuffle & Play
+          </button>
+        </div>
+      </div>
+
+      <div class="game-play-area">
+        <div class="puzzle-board-container">
+          <div id="puzzleBoard" class="puzzle-board">
+            <!-- Sliced puzzle tiles injected here -->
+          </div>
+        </div>
+
+        <div class="puzzle-preview-card" id="previewCard" style="display: none;">
+          <h4>Target Image:</h4>
+          <img id="previewImage" src="/assets/puzzle_0.jpg" alt="Puzzle Target" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE SECTION -->
+    <section id="section-profile" class="page-section">
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <div>
+            <h2 id="profileName">Guest Learner</h2>
+            <p id="profileEmail">guest@skillplay.local</p>
+          </div>
+        </div>
+
+        <div class="profile-stats-grid">
+          <div class="profile-stat-box">
+            <i class="fa-solid fa-star"></i>
+            <span class="stat-value" id="profilePoints">0</span>
+            <span class="stat-label">Learning Points</span>
+          </div>
+          <div class="profile-stat-box">
+            <i class="fa-solid fa-check-double"></i>
+            <span class="stat-value" id="profileQuizzes">0</span>
+            <span class="stat-label">Quizzes Solved</span>
+          </div>
+          <div class="profile-stat-box">
+            <i class="fa-solid fa-trophy"></i>
+            <span class="stat-value" id="profilePuzzles">0</span>
+            <span class="stat-label">Puzzles Won</span>
+          </div>
+        </div>
+
+        <!-- App Developer & Support Card -->
+        <div class="developer-card">
+          <div class="dev-header">
+            <div class="dev-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h3>App Developer Details</h3>
+              <p>Official Developer &amp; Technical Support Contact</p>
+            </div>
+          </div>
+          <div class="dev-details-grid">
+            <div class="dev-item">
+              <span class="dev-item-label"><i class="fa-solid fa-user-tie"></i> Developer</span>
+              <span class="dev-item-val">Raghu Veer</span>
+            </div>
+            <div class="dev-item">
+              <span class="dev-item-label"><i class="fa-solid fa-envelope"></i> Email</span>
+              <span class="dev-item-val"><a href="mailto:raghuveer081014@gmail.com">raghuveer081014@gmail.com</a></span>
+            </div>
+            <div class="dev-item">
+              <span class="dev-item-label"><i class="fa-solid fa-phone"></i> Mobile No</span>
+              <span class="dev-item-val"><a href="tel:8639118335">+91 8639118335</a></span>
+            </div>
+            <div class="dev-item">
+              <span class="dev-item-label"><i class="fa-solid fa-graduation-cap"></i> Application</span>
+              <span class="dev-item-val">SkillPlay Edu Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn btn-primary" onclick="navigateTo('learn')">Continue Learning</button>
+          <button class="btn btn-outline btn-danger" onclick="logoutUser()">Log Out</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- AUTH MODAL -->
+  <div class="modal-overlay" id="authModal" style="display: none;">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeAuthModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLogin" onclick="switchAuthTab('login')">Sign In</button>
+        <button class="auth-tab" id="tabRegister" onclick="switchAuthTab('register')">Register</button>
+        <button class="auth-tab" id="tabForgot" onclick="switchAuthTab('forgot')">Forgot Password</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="formLogin" class="auth-form" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="loginEmail" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="loginPassword" required placeholder="Enter your password" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+        <div class="auth-divider"><span>OR</span></div>
+        <button type="button" class="btn btn-outline btn-block" onclick="continueAsGuest()">
+          Continue as Guest Demo
+        </button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="formRegister" class="auth-form" style="display: none;" onsubmit="handleRegister(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="regName" required placeholder="Student Name" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="regEmail" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="regPhone" placeholder="Mobile number" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="regPassword" required placeholder="Create a password" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+
+      <!-- Forgot Password Form -->
+      <form id="formForgot" class="auth-form" style="display: none;" onsubmit="handleForgot(event)">
+        <div id="forgotStep1">
+          <div class="form-group">
+            <label>Registered Email Address</label>
+            <input type="email" id="forgotEmail" required placeholder="Enter registered email" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Reset OTP</button>
+        </div>
+        <div id="forgotStep2" style="display: none;">
+          <div class="form-group">
+            <label>Enter 6-Digit OTP</label>
+            <input type="text" id="forgotOtp" placeholder="6-digit code" />
+          </div>
+          <div class="form-group">
+            <label>New Password</label>
+            <input type="password" id="forgotNewPass" placeholder="New password" />
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" id="forgotConfirmPass" placeholder="Confirm new password" />
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="handleResetPassword()">
+            Reset Password
+          </button>
+        </div>
+      </form>
+
+      <div id="authAlert" class="auth-alert" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Win Celebration Modal -->
+  <div class="modal-overlay" id="winModal" style="display: none;">
+    <div class="modal-card text-center">
+      <div class="win-trophy"><i class="fa-solid fa-trophy"></i></div>
+      <h2>Outstanding Job!</h2>
+      <p id="winMessage">You completed the puzzle in 24 moves and 45 seconds!</p>
+      <div class="win-points">+20 Learning Points Awarded!</div>
+      <div class="win-actions">
+        <button class="btn btn-primary" onclick="nextLevelGame()">Play Next Level</button>
+        <button class="btn btn-outline" onclick="closeWinModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="developer-info-block">
+        <p class="dev-tagline"><strong>SkillPlay Educational Platform</strong> &bull; Developed by <strong>Raghu Veer</strong></p>
+        <p class="dev-contacts">
+          <a href="mailto:raghuveer081014@gmail.com"><i class="fa-solid fa-envelope"></i> raghuveer081014@gmail.com</a>
+          <span class="sep">&bull;</span>
+          <a href="tel:8639118335"><i class="fa-solid fa-phone"></i> +91 8639118335</a>
+        </p>
+      </div>
+      <p class="footer-meta">&copy; 2026 SkillPlay &bull; MongoDB Compass Backend &bull; <a href="/database.html" target="_blank" style="color: #34d399; text-decoration: underline;">Database Viewer</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

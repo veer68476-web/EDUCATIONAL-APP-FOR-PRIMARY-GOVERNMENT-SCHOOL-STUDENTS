@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(login|register|send-otp|verify-otp|reset-password|update-score|api/.*)",
+      "destination": "/api/index.js"
+    }
+  ]
+}

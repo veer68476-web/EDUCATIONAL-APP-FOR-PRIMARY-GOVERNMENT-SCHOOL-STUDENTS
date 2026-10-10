@@ -36,12 +36,27 @@ const loginHistorySchema = new mongoose.Schema({
 const LoginHistory = mongoose.model('LoginHistory', loginHistorySchema);
 
 async function connectDB() {
+  if (mongoose.connection.readyState >= 1) {
+    return;
+  }
+
   const customUri = process.env.MONGODB_URI;
 
   if (customUri) {
-    console.log('Connecting to custom MongoDB URI...');
-    await mongoose.connect(customUri);
-    console.log('Connected to custom MongoDB successfully!');
+    try {
+      console.log('Connecting to custom MongoDB URI...');
+      await mongoose.connect(customUri, { serverSelectionTimeoutMS: 5000 });
+      console.log('Connected to custom MongoDB successfully!');
+      return;
+    } catch (err) {
+      console.error('Failed to connect to custom MongoDB:', err.message);
+      return;
+    }
+  }
+
+  // If running in Vercel serverless environment and MONGODB_URI is not set
+  if (process.env.VERCEL) {
+    console.warn('Running on Vercel without MONGODB_URI. Add MONGODB_URI in Vercel environment variables for Atlas connection.');
     return;
   }
 
@@ -56,29 +71,33 @@ async function connectDB() {
   }
 
   // Start embedded persistent MongoDB on port 27017
-  const { MongoMemoryServer } = require('mongodb-memory-server');
-  const dbPath = path.resolve(__dirname, '../mongodb_data');
-  if (!fs.existsSync(dbPath)) fs.mkdirSync(dbPath, { recursive: true });
+  try {
+    const { MongoMemoryServer } = require('mongodb-memory-server');
+    const dbPath = path.resolve(__dirname, '../mongodb_data');
+    if (!fs.existsSync(dbPath)) fs.mkdirSync(dbPath, { recursive: true });
 
-  mongodInstance = await MongoMemoryServer.create({
-    instance: {
-      port: 27017,
-      dbPath: dbPath,
-      storageEngine: 'wiredTiger',
-      dbName: 'skillplay_db'
-    }
-  });
+    mongodInstance = await MongoMemoryServer.create({
+      instance: {
+        port: 27017,
+        dbPath: dbPath,
+        storageEngine: 'wiredTiger',
+        dbName: 'skillplay_db'
+      }
+    });
 
-  const uri = 'mongodb://127.0.0.1:27017/skillplay_db';
-  await mongoose.connect(uri);
+    const uri = 'mongodb://127.0.0.1:27017/skillplay_db';
+    await mongoose.connect(uri);
 
-  console.log('========================================================');
-  console.log('🎉 MongoDB Server is running on port 27017!');
-  console.log('👉 Open MongoDB Compass and connect to:');
-  console.log('   mongodb://localhost:27017');
-  console.log('   Database: skillplay_db');
-  console.log('   Collection: users');
-  console.log('========================================================');
+    console.log('========================================================');
+    console.log('🎉 MongoDB Server is running on port 27017!');
+    console.log('👉 Open MongoDB Compass and connect to:');
+    console.log('   mongodb://localhost:27017');
+    console.log('   Database: skillplay_db');
+    console.log('   Collection: users');
+    console.log('========================================================');
+  } catch (err) {
+    console.warn('MongoMemoryServer fallback notice:', err.message);
+  }
 }
 
 module.exports = { connectDB, User, LoginHistory };
