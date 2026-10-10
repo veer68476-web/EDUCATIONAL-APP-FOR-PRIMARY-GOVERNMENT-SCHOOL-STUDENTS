@@ -65,3 +65,4 @@ mongod.lock
 web_build/
 assets/text/
 
+.vercel
