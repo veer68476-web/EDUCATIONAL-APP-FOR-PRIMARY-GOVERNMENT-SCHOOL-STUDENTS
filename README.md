@@ -1,11 +1,22 @@
 # SkillPlay - Educational App for Primary Government School Students
 
+[![Live Production](https://img.shields.io/badge/Live%20Deployment-Vercel-black?logo=vercel)](https://skillplay-ten.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/veer68476-web/EDUCATIONAL-APP-FOR-PRIMARY-GOVERNMENT-SCHOOL-STUDENTS)
-[![Node.js Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-green?logo=node.js)](http://localhost:3001)
-[![Database](https://img.shields.io/badge/Database-MongoDB%2024%2F7-brightgreen?logo=mongodb)](http://localhost:3001/database.html)
-[![Flutter](https://img.shields.io/badge/Frontend-Flutter%20%7C%20Web-02569B?logo=flutter)](https://flutter.dev)
+[![Node.js Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-green?logo=node.js)](https://skillplay-ten.vercel.app/api/developer)
+[![Database](https://img.shields.io/badge/Database-MongoDB%20Cloud-brightgreen?logo=mongodb)](https://skillplay-ten.vercel.app/database.html)
 
 **SkillPlay** is a gamified, interactive educational platform designed for primary school students. It provides digital curriculum access, interactive puzzles, video lessons, textbook solutions, and automated user management with administrative controls and login tracking.
+
+---
+
+## 🌐 Live Production URL (Worldwide Access)
+
+- **Production App**: 👉 [https://skillplay-ten.vercel.app](https://skillplay-ten.vercel.app)
+- **Live Database Viewer**: 👉 [https://skillplay-ten.vercel.app/database.html](https://skillplay-ten.vercel.app/database.html)
+- **Developer API**: 👉 [https://skillplay-ten.vercel.app/api/developer](https://skillplay-ten.vercel.app/api/developer)
+- **Admin Login Credentials**:
+  - **Email**: `raghuveer081014@gmail.com`
+  - **Password**: `password123`
 
 ---
 
@@ -17,14 +28,15 @@
 | **Official Email** | [`raghuveer*****@gmail.com`](mailto:raghuveer081014@gmail.com) |
 | **Contact Number** | `+91 *******335` |
 | **System Role** | **Administrator** (`role: 'admin'`, `isAdmin: true`) |
-| **Developer API** | [`http://localhost:3001/api/developer`](http://localhost:3001/api/developer) |
+| **Developer API** | [`https://skillplay-ten.vercel.app/api/developer`](https://skillplay-ten.vercel.app/api/developer) |
 
 ---
 
 ## 🚀 Quick Verification & Direct Links
 
 ### 1. 🌐 Website & Login Portal
-- **URL**: [http://localhost:3001](http://localhost:3001)
+- **Live URL**: [https://skillplay-ten.vercel.app](https://skillplay-ten.vercel.app)
+- **Local URL**: [http://localhost:3001](http://localhost:3001)
 - **Admin Credentials**:
   - **Email**: `raghuveer081014@gmail.com`
   - **Password**: `password123`

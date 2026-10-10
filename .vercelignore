@@ -1,0 +1,22 @@
+# Flutter & mobile app directories (not needed for web deployment)
+build/
+web_build/
+.dart_tool/
+android/
+ios/
+windows/
+macos/
+linux/
+lib/
+test/
+
+# Local databases, binaries, & node_modules
+mongodb_data/
+node_modules/
+backend/node_modules/
+.git/
+*.wt
+mongod.lock
+
+# Heavy PDFs (kept in local app)
+assets/text/
