@@ -15,7 +15,7 @@
 | :--- | :--- |
 | **Lead Developer** | **Raghu Veer** |
 | **Official Email** | [`raghuveer081014@gmail.com`](mailto:raghuveer081014@gmail.com) |
-| **Contact Number** | `+91 8639118335` |
+| **Contact Number** | `+91 *******335` |
 | **System Role** | **Administrator** (`role: 'admin'`, `isAdmin: true`) |
 | **Developer API** | [`http://localhost:3001/api/developer`](http://localhost:3001/api/developer) |
 
