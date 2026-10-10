@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "_id": "6ac9fff77843180faf7d3d5b",
+      "id": 100001,
+      "name": "Raghu Veer",
+      "email": "raghuveer081014@gmail.com",
+      "phone": "8639118335",
+      "password": "$2b$10$ORSM0H0VZlDLxbFiAbXreeEPr9JLklV2uDXqZe1dlk2F7VjUe7diK",
+      "count": 50,
+      "createdAt": "2026-10-10T09:05:59.436Z",
+      "updatedAt": "2026-10-10T15:35:53.510Z",
+      "__v": 0,
+      "lastLogin": "2026-10-10T15:35:53.510Z",
+      "loginCount": 2,
+      "isAdmin": true,
+      "role": "admin"
+    },
+    {
+      "_id": "6aca0107447bbbbabb0aaebe",
+      "email": "veer68476@gmail.com",
+      "count": 0,
+      "createdAt": "2026-10-10T09:10:31.119Z",
+      "id": 321802,
+      "name": "Raghu Veer",
+      "password": "$2b$10$ORSM0H0VZlDLxbFiAbXreeEPr9JLklV2uDXqZe1dlk2F7VjUe7diK",
+      "phone": "+919494724642",
+      "updatedAt": "2026-10-10T09:10:31.119Z"
+    },
+    {
+      "_id": "6aca0107447bbbbabb0aaebf",
+      "email": "raghuveer@skillplay.com",
+      "count": 40,
+      "createdAt": "2026-10-10T09:10:31.130Z",
+      "id": 375045,
+      "name": "Raghu Veer",
+      "password": "$2b$10$ORSM0H0VZlDLxbFiAbXreeEPr9JLklV2uDXqZe1dlk2F7VjUe7diK",
+      "phone": "9876543210",
+      "updatedAt": "2026-10-10T09:10:31.130Z"
+    },
+    {
+      "_id": "6aca0107447bbbbabb0aaec0",
+      "email": "ananya@skillplay.com",
+      "count": 0,
+      "createdAt": "2026-10-10T09:10:31.132Z",
+      "id": 639269,
+      "name": "Ananya Sharma",
+      "password": "$2b$10$ORSM0H0VZlDLxbFiAbXreeEPr9JLklV2uDXqZe1dlk2F7VjUe7diK",
+      "phone": "9123456780",
+      "updatedAt": "2026-10-10T09:10:31.132Z"
+    },
+    {
+      "_id": "6aca04137843180faf7d3d5c",
+      "id": 379372,
+      "name": "raji",
+      "email": "babu143@gmail.com",
+      "phone": "+919494724565",
+      "password": "$2b$10$YkewQtCHRq/u1fuV8X2z.eJ6ZzU5ZjvxwpGmmK58vNLd7VSyJHhiy",
+      "count": 0,
+      "createdAt": "2026-10-10T09:23:31.185Z",
+      "updatedAt": "2026-10-10T10:07:34.270Z",
+      "__v": 0,
+      "lastLogin": "2026-10-10T10:07:34.270Z",
+      "loginCount": 1
+    },
+    {
+      "_id": "6aca0e9e762ed5b6548090d8",
+      "id": 782017,
+      "name": "Raghu",
+      "email": "raji@gmail.com",
+      "phone": "8996574678",
+      "password": "$2b$10$rziRNsmXUhXL2n3oFzPeOuyHbOEFgotqkiOuDIrPrUQLnRqt35/by",
+      "count": 0,
+      "lastLogin": "2026-10-10T10:08:35.150Z",
+      "loginCount": 1,
+      "createdAt": "2026-10-10T10:08:30.578Z",
+      "updatedAt": "2026-10-10T10:08:35.150Z",
+      "__v": 0
+    },
+    {
+      "_id": "6aca5f54619cc5e407bac366",
+      "id": 775728,
+      "name": "raju",
+      "email": "raju@gmail.com",
+      "phone": "1234567898",
+      "password": "$2b$10$YjjLC4NWFVye1gIFh0DTzeP2dPEEmsGjuk2FxIUyAbBSpfskyFn0m",
+      "count": 0,
+      "role": "student",
+      "isAdmin": false,
+      "lastLogin": "2026-10-10T15:53:11.085Z",
+      "loginCount": 1,
+      "createdAt": "2026-10-10T15:52:52.991Z",
+      "updatedAt": "2026-10-10T15:53:11.085Z",
+      "__v": 0
+    }
+  ],
+  "logins": [
+    {
+      "_id": "6aca5f67619cc5e407bac367",
+      "userId": 775728,
+      "name": "raju",
+      "email": "raju@gmail.com",
+      "phone": "1234567898",
+      "loginTime": "2026-10-10T15:53:11.088Z",
+      "status": "SUCCESS",
+      "ip": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "__v": 0
+    },
+    {
+      "_id": "6aca5b59619cc5e407bac365",
+      "userId": 100001,
+      "name": "Raghu Veer",
+      "email": "raghuveer081014@gmail.com",
+      "phone": "8639118335",
+      "loginTime": "2026-10-10T15:35:53.515Z",
+      "status": "SUCCESS",
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "__v": 0
+    },
+    {
+      "_id": "6aca0ea3762ed5b6548090d9",
+      "userId": 782017,
+      "name": "Raghu",
+      "email": "raji@gmail.com",
+      "phone": "8996574678",
+      "loginTime": "2026-10-10T10:08:35.153Z",
+      "status": "SUCCESS",
+      "ip": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "__v": 0
+    },
+    {
+      "_id": "6aca0e66762ed5b6548090d7",
+      "userId": 379372,
+      "name": "raji",
+      "email": "babu143@gmail.com",
+      "phone": "+919494724565",
+      "loginTime": "2026-10-10T10:07:34.271Z",
+      "status": "SUCCESS",
+      "ip": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "__v": 0
+    },
+    {
+      "_id": "6aca0abf762ed5b6548090d6",
+      "userId": 100001,
+      "name": "Raghu Veer",
+      "email": "raghuveer081014@gmail.com",
+      "phone": "8639118335",
+      "loginTime": "2026-10-10T09:51:59.839Z",
+      "status": "SUCCESS",
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "__v": 0
+    }
+  ],
+  "exportedAt": "2026-10-10T16:00:48.555Z"
+}

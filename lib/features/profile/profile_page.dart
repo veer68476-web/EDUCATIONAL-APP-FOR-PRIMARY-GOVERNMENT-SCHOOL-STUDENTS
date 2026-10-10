@@ -85,6 +85,15 @@ class _ProfilePageState extends State<ProfilePage> {
                       _buildInfoRow('Email', widget.email),
                       _buildInfoRow('Phone', phone),
                       _buildBadgeSection(),
+                      const Divider(height: 28),
+                      const Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text('App Developer Details', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black87)),
+                      ),
+                      const SizedBox(height: 6),
+                      _buildInfoRow('Developer', 'Raghu Veer'),
+                      _buildInfoRow('Dev Email', 'raghuveer081014@gmail.com'),
+                      _buildInfoRow('Dev Phone', '8639118335'),
                       const Spacer(),
                       TextButton(
                         onPressed: () {

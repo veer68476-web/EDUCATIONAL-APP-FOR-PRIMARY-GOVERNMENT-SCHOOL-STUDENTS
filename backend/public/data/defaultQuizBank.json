@@ -1,0 +1,401 @@
+{
+  "MATHS": [
+    {
+      "id": 1,
+      "question": "What is 5 + 3?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "Which shape has 3 sides?",
+      "options": [
+        "Square",
+        "Circle",
+        "Triangle",
+        "Rectangle"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 3,
+      "question": "How many legs does a spider have?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "4"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "What comes just before 20?",
+      "options": [
+        "18",
+        "19",
+        "21",
+        "17"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Which is heavier?",
+      "options": [
+        "Feather",
+        "Ball",
+        "Paper",
+        "Leaf"
+      ],
+      "answer": 1
+    }
+  ],
+  "ENGLISH": [
+    {
+      "id": 1,
+      "question": "Which word means “happy”?",
+      "options": [
+        "sad",
+        "angry",
+        "joyful",
+        "tired"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "What do we use to write?",
+      "options": [
+        "Spoon",
+        "Pencil",
+        "Ball",
+        "Eraser"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "Which one is a color?",
+      "options": [
+        "Apple",
+        "Red",
+        "Chair",
+        "Book"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Which word rhymes with “cat”?",
+      "options": [
+        "dog",
+        "bat",
+        "cup",
+        "pen"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "What do we say when we meet someone?",
+      "options": [
+        "Goodbye",
+        "Sorry",
+        "Hello",
+        "Thanks"
+      ],
+      "answer": 2
+    }
+  ],
+  "TELUGU": [
+    {
+      "id": 1,
+      "question": "తెలుగు లో “ఆకుపచ్చ” అంటే ఏమిటి?",
+      "options": [
+        "నీలం",
+        "పసుపు",
+        "ఆకుల రంగు",
+        "ఎరుపు"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "“పిల్లి” అనే పదం ఏ జంతువును సూచిస్తుంది?",
+      "options": [
+        "కుక్క",
+        "పిల్లి",
+        "పక్షి",
+        "గేదె"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "“అమ్మ” అనే పదం లో ఎన్ని అక్షరాలు ఉన్నాయి?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "“పుస్తకం” ను మనం ఏమి చేయగలము?",
+      "options": [
+        "తినగలము",
+        "ఆడగలము",
+        "చదవగలము",
+        "వేయగలము"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "“నమస్తే” అనే పదం ఎప్పుడు ఉపయోగిస్తారు?",
+      "options": [
+        "వీడ్కోలు సమయంలో",
+        "స్వాగతం చెప్పే సమయంలో",
+        "ఆహారం తినే సమయంలో",
+        "నిద్రపోయే సమయంలో"
+      ],
+      "answer": 1
+    }
+  ],
+  "HINDI": [
+    {
+      "id": 1,
+      "question": "“सूरज” कहाँ उगता है?",
+      "options": [
+        "उत्तर",
+        "दक्षिण",
+        "पूर्व",
+        "पश्चिम"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "“पानी” हमें क्या देता है?",
+      "options": [
+        "ऊर्जा",
+        "भोजन",
+        "प्यास बुझाता है",
+        "नींद"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 3,
+      "question": "“सेब” किस रंग का होता है?",
+      "options": [
+        "नीला",
+        "लाल",
+        "काला",
+        "सफेद"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "“नमस्ते” शब्द का प्रयोग कब करते हैं?",
+      "options": [
+        "सोते समय",
+        "मिलते समय",
+        "खेलते समय",
+        "खाते समय"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "“किताब” का उपयोग किसलिए होता है?",
+      "options": [
+        "खेलने के लिए",
+        "चबाने के लिए",
+        "चोरी करने के लिए",
+        "पढ़ने के लिए"
+      ],
+      "answer": 3
+    }
+  ],
+  "SCIENCE": [
+    {
+      "id": 1,
+      "question": "Which part of the plant makes food?",
+      "options": [
+        "Root",
+        "Stem",
+        "Leaf",
+        "Flower"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "Which of these is a source of light?",
+      "options": [
+        "Moon",
+        "Sun",
+        "Mirror",
+        "Fan"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "What do we breathe in to stay alive?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Smoke",
+        "Dust"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Which sense organ helps us to smell?",
+      "options": [
+        "Eyes",
+        "Ears",
+        "Nose",
+        "Tongue"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "Which of these is a living thing?",
+      "options": [
+        "Rock",
+        "Car",
+        "Tree",
+        "Chair"
+      ],
+      "answer": 2
+    }
+  ],
+  "SOCIAL": [
+    {
+      "id": 1,
+      "question": "Who helps us when we are sick?",
+      "options": [
+        "Teacher",
+        "Doctor",
+        "Farmer",
+        "Driver"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question": "Which festival is known as the festival of lights?",
+      "options": [
+        "Holi",
+        "Diwali",
+        "Eid",
+        "Christmas"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "What do we call the place where we live?",
+      "options": [
+        "School",
+        "Park",
+        "Home",
+        "Shop"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 4,
+      "question": "Who teaches us in school?",
+      "options": [
+        "Doctor",
+        "Teacher",
+        "Police",
+        "Farmer"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Which of these is a good habit?",
+      "options": [
+        "Littering",
+        "Helping others",
+        "Shouting",
+        "Fighting"
+      ],
+      "answer": 1
+    }
+  ],
+  "EVS": [
+    {
+      "id": 1,
+      "question": "Which of these is a natural source of water?",
+      "options": [
+        "Tap",
+        "River",
+        "Tank",
+        "Bucket"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 2,
+      "question": "What do plants need to grow?",
+      "options": [
+        "Milk, Sugar, Salt",
+        "Water, Sunlight, Air",
+        "Juice, Oil, Butter",
+        "Soap, Ink, Paint"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 3,
+      "question": "Which of these is good for health?",
+      "options": [
+        "Junk food",
+        "Fruits and vegetables",
+        "Chips and candy",
+        "Soda"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "We should throw garbage in the —",
+      "options": [
+        "Road",
+        "Garden",
+        "Dustbin",
+        "River"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "Which of these animals lives on a farm?",
+      "options": [
+        "Lion",
+        "Tiger",
+        "Cow",
+        "Elephant"
+      ],
+      "answer": 2
+    }
+  ]
+}

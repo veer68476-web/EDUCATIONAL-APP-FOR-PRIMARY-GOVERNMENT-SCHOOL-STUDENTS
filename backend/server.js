@@ -1,16 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const oracledb = require('oracledb');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
-const dbConfig = require('./dbConfig');
-
-process.env.NLS_LANG = 'AMERICAN_AMERICA.AL32UTF8';
+const path = require('path');
+const { connectDB, User, LoginHistory } = require('./db');
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/assets', express.static(path.join(__dirname, '../assets')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 function generateUniqueId() {
   return Math.floor(100000 + Math.random() * 900000);
@@ -35,20 +36,14 @@ app.post('/send-otp', async (req, res) => {
     return res.status(400).json({ error: 'Invalid email format' });
   }
 
-  let connection;
   try {
-    connection = await oracledb.getConnection(dbConfig);
-    const result = await connection.execute(
-      `SELECT id FROM users WHERE email = :email`,
-      { email }
-    );
-
-    if (result.rows.length === 0) {
-      return res.status(404).json({ error: 'Email not found' });
+    const user = await User.findOne({ email: email.toLowerCase() });
+    if (!user) {
+      return res.status(404).json({ error: 'Email not found in database' });
     }
 
     const otp = generateOtp();
-    otpStore.set(email, otp);
+    otpStore.set(email.toLowerCase(), otp);
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -68,8 +63,6 @@ app.post('/send-otp', async (req, res) => {
     res.status(200).json({ message: 'OTP sent to email' });
   } catch (err) {
     res.status(500).json({ error: 'Server error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
 });
 
@@ -81,7 +74,7 @@ app.post('/verify-otp', (req, res) => {
     return res.status(400).json({ error: 'Email and OTP required' });
   }
 
-  const storedOtp = otpStore.get(email);
+  const storedOtp = otpStore.get(email.toLowerCase());
   if (storedOtp !== otp) {
     return res.status(401).json({ error: 'Invalid OTP' });
   }
@@ -101,27 +94,25 @@ app.post('/reset-password', async (req, res) => {
     return res.status(400).json({ error: 'Passwords do not match' });
   }
 
-  let connection;
   try {
     const hashedPassword = await bcrypt.hash(newPassword, 10);
-    connection = await oracledb.getConnection(dbConfig);
-
-    await connection.execute(
-      `UPDATE users SET password = :password WHERE email = :email`,
-      { password: hashedPassword, email },
-      { autoCommit: true }
+    const updated = await User.findOneAndUpdate(
+      { email: email.toLowerCase() },
+      { password: hashedPassword, updatedAt: new Date() }
     );
 
-    otpStore.delete(email);
+    if (!updated) {
+      return res.status(404).json({ error: 'Email not found' });
+    }
+
+    otpStore.delete(email.toLowerCase());
     res.status(200).json({ message: 'Password reset successful' });
   } catch (err) {
     res.status(500).json({ error: 'Server error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
 });
 
-// ✅ Register
+// ✅ Register (Saves to MongoDB)
 app.post('/register', async (req, res) => {
   const { name, email, phone, password } = req.body;
   const userId = generateUniqueId();
@@ -130,66 +121,101 @@ app.post('/register', async (req, res) => {
     return res.status(400).json({ error: 'All fields are required' });
   }
 
-  let connection;
   try {
+    const cleanEmail = email.toLowerCase().trim();
+    const existing = await User.findOne({ email: cleanEmail });
+    if (existing) {
+      return res.status(400).json({ error: 'User already registered with this email' });
+    }
+
     const hashedPassword = await bcrypt.hash(password, 10);
-    connection = await oracledb.getConnection(dbConfig);
 
-    await connection.execute(
-      `INSERT INTO users (id, name, email, phone, password, count) 
-       VALUES (:id, :name, :email, :phone, :password, :count)`,
-      {
-        id: userId,
-        name,
-        email,
-        phone,
-        password: hashedPassword,
-        count: 0
-      },
-      { autoCommit: true }
-    );
+    const newUser = new User({
+      id: userId,
+      name: name.trim(),
+      email: cleanEmail,
+      phone: phone.trim(),
+      password: hashedPassword,
+      count: 0
+    });
 
+    await newUser.save();
+    console.log(`✅ [MongoDB Compass] New user registered: ${name} (${cleanEmail})`);
     res.status(200).json({ message: 'User registered', userId });
   } catch (err) {
+    console.error('❌ MongoDB Register error:', err);
     res.status(500).json({ error: 'Database error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
 });
 
-// ✅ Login
+// ✅ Login (Validates against MongoDB)
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
-  let connection;
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email and password required' });
+  }
+
   try {
-    connection = await oracledb.getConnection(dbConfig);
+    const cleanEmail = email.toLowerCase().trim();
+    const user = await User.findOne({ email: cleanEmail });
 
-    const result = await connection.execute(
-      `SELECT password FROM users WHERE email = :email`,
-      { email }
-    );
-
-    if (result.rows.length === 0) {
+    if (!user) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
-    const hashedPassword = result.rows[0][0];
-    const isMatch = await bcrypt.compare(password, hashedPassword);
+    const isMatch = await bcrypt.compare(password, user.password);
 
     if (!isMatch) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
-    res.status(200).json({ message: 'Login successful' });
+    // ✅ Update user login stats in MongoDB
+    await User.updateOne(
+      { email: cleanEmail },
+      {
+        $set: { lastLogin: new Date(), updatedAt: new Date() },
+        $inc: { loginCount: 1 }
+      }
+    );
+
+    // ✅ Save login event to login_histories collection
+    try {
+      const loginLog = new LoginHistory({
+        userId: user.id,
+        name: user.name,
+        email: cleanEmail,
+        phone: user.phone || '',
+        loginTime: new Date(),
+        status: 'SUCCESS',
+        ip: req.ip || req.headers['x-forwarded-for'] || '127.0.0.1',
+        userAgent: req.headers['user-agent'] || 'Browser'
+      });
+      await loginLog.save();
+      console.log(`📝 [MongoDB Compass] Login recorded: ${user.name} (${cleanEmail})`);
+    } catch (logErr) {
+      console.warn('Login history record warning:', logErr);
+    }
+
+    console.log(`✅ [MongoDB Compass] User logged in: ${user.name} (${cleanEmail})`);
+    res.status(200).json({
+      message: 'Login successful',
+      user: {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+        count: user.count,
+        role: user.role || (cleanEmail === 'raghuveer081014@gmail.com' ? 'admin' : 'student'),
+        isAdmin: user.isAdmin || (cleanEmail === 'raghuveer081014@gmail.com')
+      }
+    });
   } catch (err) {
+    console.error('❌ MongoDB Login error:', err);
     res.status(500).json({ error: 'Server error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
 });
 
-// ✅ Profile
+// ✅ Profile (Fetches from MongoDB)
 app.get('/profile', async (req, res) => {
   const { email } = req.query;
 
@@ -197,76 +223,132 @@ app.get('/profile', async (req, res) => {
     return res.status(400).json({ error: 'Email is required' });
   }
 
-  let connection;
   try {
-    connection = await oracledb.getConnection(dbConfig);
+    const cleanEmail = email.toLowerCase().trim();
+    const user = await User.findOne({ email: cleanEmail });
 
-    const result = await connection.execute(
-      `SELECT name, email, phone, count FROM users WHERE email = :email`,
-      { email }
-    );
-
-    if (result.rows.length === 0) {
+    if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
 
-    const [name, emailOut, phone, count] = result.rows[0];
-
     res.status(200).json({
-      name,
-      email: emailOut,
-      phone,
-      count
+      name: user.name,
+      email: user.email,
+      phone: user.phone,
+      count: user.count,
+      role: user.role || (cleanEmail === 'raghuveer081014@gmail.com' ? 'admin' : 'student'),
+      isAdmin: user.isAdmin || (cleanEmail === 'raghuveer081014@gmail.com')
     });
   } catch (err) {
     res.status(500).json({ error: 'Database error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
 });
 
+// ✅ Update Count / Points (Updates in MongoDB)
 app.post('/update-count', async (req, res) => {
   const { email, increment } = req.body;
-  console.log('📥 Received update-count request:', req.body);
 
   if (!email || increment === undefined) {
     return res.status(400).json({ error: 'Email and increment are required' });
   }
 
-  let connection;
   try {
-    connection = await oracledb.getConnection(dbConfig);
-
-    const binds = {
-      inc: Number(increment),
-      em: email
-    };
-
-    await connection.execute(
-      `UPDATE users SET count = count + :inc WHERE email = :em`,
-      binds,
-      { autoCommit: true }
+    const cleanEmail = email.toLowerCase().trim();
+    const updated = await User.findOneAndUpdate(
+      { email: cleanEmail },
+      { $inc: { count: Number(increment) }, updatedAt: new Date() },
+      { new: true }
     );
 
-    res.status(200).json({ message: 'Count updated successfully' });
+    if (!updated) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    console.log(`⭐ [MongoDB Compass] Points updated for ${cleanEmail}: +${increment} (Total: ${updated.count})`);
+    res.status(200).json({ message: 'Count updated successfully', count: updated.count });
   } catch (err) {
-    console.error('❌ OracleDB error:', err);
+    console.error('❌ MongoDB Update Count error:', err);
     res.status(500).json({ error: 'Database error', details: err.message });
-  } finally {
-    if (connection) await connection.close();
   }
+});
+
+// ✅ View all registered users (for database inspection)
+app.get('/api/users', async (req, res) => {
+  try {
+    const users = await User.find({}, { password: 0 }).sort({ createdAt: -1 });
+    res.status(200).json({
+      database: 'skillplay_db',
+      collection: 'users',
+      total: users.length,
+      users
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Database error', details: err.message });
+  }
+});
+
+// ✅ View all login events (for database inspection)
+app.get('/api/logins', async (req, res) => {
+  try {
+    const logs = await LoginHistory.find({}).sort({ loginTime: -1 }).limit(100);
+    res.status(200).json({
+      database: 'skillplay_db',
+      collection: 'loginhistories',
+      total: logs.length,
+      logins: logs
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Database error', details: err.message });
+  }
+});
+
+// ✅ Developer Information
+app.get('/api/developer', (req, res) => {
+  res.status(200).json({
+    developer: 'Raghu Veer',
+    email: 'raghuveer081014@gmail.com',
+    phone: '8639118335',
+    role: 'admin',
+    isAdmin: true,
+    application: 'SkillPlay Educational Platform',
+    version: '2.0.0'
+  });
 });
 
 const PORT = process.env.PORT || 3001;
-const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${PORT}`);
-});
 
-server.on('error', (err) => {
-  if (err.code === 'EADDRINUSE') {
-    console.error(`Port ${PORT} is already in use. Set PORT to a different port or free the current one.`);
-  } else {
-    console.error('Server error:', err);
+async function startServer() {
+  await connectDB();
+
+  // Create sample/demo student user if collection is empty
+  const count = await User.countDocuments();
+  if (count === 0) {
+    const samplePassword = await bcrypt.hash('password123', 10);
+    await User.create({
+      id: 100001,
+      name: 'Raghu Veer',
+      email: 'raghuveer081014@gmail.com',
+      phone: '8639118335',
+      password: samplePassword,
+      count: 50,
+      role: 'admin',
+      isAdmin: true
+    });
+    console.log('✅ Created default user in MongoDB: raghuveer081014@gmail.com (admin) (password: password123)');
   }
-  process.exit(1);
-});
+
+  const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${PORT}`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.error(`Port ${PORT} is already in use.`);
+    } else {
+      console.error('Server error:', err);
+    }
+    process.exit(1);
+  });
+}
+
+startServer();
