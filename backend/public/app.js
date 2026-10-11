@@ -565,13 +565,21 @@ function updateTbTextbook() {
     fullscreenBtn.target = '_blank';
   }
 
+  const cloudOfficialBtn = document.getElementById('tbCloudOfficialBtn');
+  if (cloudOfficialBtn) {
+    cloudOfficialBtn.href = officialSubjectSearch;
+  }
+
   if (cloudTitle) {
     cloudTitle.textContent = `${tbCurrentClass} • ${tbCurrentSubject} Textbook`;
   }
 
   // Handle cloud vs local: never show 404 iframe on Vercel
   if (!isLocal) {
-    if (iframe) iframe.style.display = 'none';
+    if (iframe) {
+      iframe.style.display = 'none';
+      iframe.removeAttribute('src');
+    }
     if (cloudCard) cloudCard.style.display = 'flex';
     if (spinner) spinner.style.display = 'none';
   } else {
