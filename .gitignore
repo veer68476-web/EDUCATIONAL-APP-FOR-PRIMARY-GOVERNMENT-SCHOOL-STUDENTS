@@ -66,3 +66,5 @@ web_build/
 assets/text/
 
 .vercel
+.env*
+backend/public/assets/

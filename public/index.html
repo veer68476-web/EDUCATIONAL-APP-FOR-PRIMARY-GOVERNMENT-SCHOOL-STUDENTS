@@ -378,6 +378,19 @@
             <i class="fa-solid fa-spinner fa-spin"></i> Loading Textbook PDF...
           </div>
           <iframe id="tbPdfIframe" src="/assets/text/class1/english.pdf#toolbar=1" class="pdf-iframe" title="Textbook PDF Viewer"></iframe>
+          <div id="tbCloudNoticeCard" class="cloud-textbook-card" style="display: none;">
+            <div class="cloud-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+            <h3 id="tbCloudCardTitle">Andhra Pradesh State Board Textbook</h3>
+            <p>The full-resolution 1.6 GB offline textbook archive is bundled directly inside the local application. On the cloud web platform, explore the interactive syllabus & chapter notes below or open the official AP Board DIKSHA portal textbook.</p>
+            <div class="cloud-actions">
+              <a id="tbCloudOfficialBtn" href="https://diksha.gov.in/" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Official AP SCERT Digital Book
+              </a>
+              <button class="btn btn-outline" onclick="switchTbMode('guide')">
+                <i class="fa-solid fa-list-ul"></i> Explore Chapter Notes & Summaries
+              </button>
+            </div>
+          </div>
         </div>
         <div class="interactive-guide-wrapper" id="tbGuideWrapper" style="display: none;"></div>
       </div>

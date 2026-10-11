@@ -896,6 +896,49 @@ body {
   color: #cbd5e1;
 }
 
+.cloud-textbook-card {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  background: radial-gradient(circle at center, rgba(124, 77, 255, 0.12) 0%, rgba(20, 16, 41, 0.95) 70%);
+  min-height: 480px;
+}
+.cloud-textbook-card .cloud-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: rgba(124, 77, 255, 0.2);
+  color: #c4b5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 0 25px rgba(124, 77, 255, 0.3);
+}
+.cloud-textbook-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.cloud-textbook-card p {
+  max-width: 580px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.cloud-textbook-card .cloud-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 /* Games Section */
 .game-stats {
   display: flex;
