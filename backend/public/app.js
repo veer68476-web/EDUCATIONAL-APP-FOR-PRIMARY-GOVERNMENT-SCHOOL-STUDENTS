@@ -531,7 +531,6 @@ function goToLearnQuiz(cls, subj, lessonName) {
 }
 
 function updateTbTextbook() {
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const pdfUrl = (textbookMap[tbCurrentClass] && textbookMap[tbCurrentClass][tbCurrentSubject]) || '/assets/one.pdf';
   const iframe = document.getElementById('tbPdfIframe');
   const titleEl = document.getElementById('tbCurrentTitle');
@@ -539,59 +538,32 @@ function updateTbTextbook() {
   const fullscreenBtn = document.getElementById('tbFullscreenBtn');
   const spinner = document.getElementById('tbLoadingSpinner');
   const cloudCard = document.getElementById('tbCloudNoticeCard');
-  const cloudTitle = document.getElementById('tbCloudCardTitle');
 
   if (titleEl) {
     titleEl.innerHTML = `<i class="fa-solid fa-file-pdf"></i> ${tbCurrentClass} &bull; ${tbCurrentSubject} Textbook`;
   }
 
-  const officialSubjectSearch = `https://diksha.gov.in/explore?channel=01246736412128870417&subject=${encodeURIComponent(tbCurrentSubject)}`;
-
   if (downloadBtn) {
-    if (isLocal) {
-      downloadBtn.href = pdfUrl;
-      downloadBtn.setAttribute('download', `${tbCurrentClass.replace(' ', '_')}_${tbCurrentSubject}_Textbook.pdf`);
-      downloadBtn.innerHTML = `<i class="fa-solid fa-download"></i> Download Textbook`;
-    } else {
-      downloadBtn.href = officialSubjectSearch;
-      downloadBtn.target = '_blank';
-      downloadBtn.removeAttribute('download');
-      downloadBtn.innerHTML = `<i class="fa-solid fa-book-open-reader"></i> AP Board Digital Book`;
-    }
+    downloadBtn.href = pdfUrl;
+    downloadBtn.setAttribute('download', `${tbCurrentClass.replace(' ', '_')}_${tbCurrentSubject}_Textbook.pdf`);
+    downloadBtn.innerHTML = `<i class="fa-solid fa-download"></i> Download Textbook`;
   }
 
   if (fullscreenBtn) {
-    fullscreenBtn.href = isLocal ? pdfUrl : officialSubjectSearch;
+    fullscreenBtn.href = pdfUrl;
     fullscreenBtn.target = '_blank';
   }
 
-  const cloudOfficialBtn = document.getElementById('tbCloudOfficialBtn');
-  if (cloudOfficialBtn) {
-    cloudOfficialBtn.href = officialSubjectSearch;
-  }
+  if (cloudCard) cloudCard.style.display = 'none';
 
-  if (cloudTitle) {
-    cloudTitle.textContent = `${tbCurrentClass} • ${tbCurrentSubject} Textbook`;
-  }
+  if (spinner) spinner.style.display = 'flex';
 
-  // Handle cloud vs local: never show 404 iframe on Vercel
-  if (!isLocal) {
-    if (iframe) {
-      iframe.style.display = 'none';
-      iframe.removeAttribute('src');
-    }
-    if (cloudCard) cloudCard.style.display = 'flex';
-    if (spinner) spinner.style.display = 'none';
-  } else {
-    if (cloudCard) cloudCard.style.display = 'none';
-    if (iframe) {
-      iframe.style.display = 'block';
-      if (spinner) spinner.style.display = 'flex';
-      iframe.onload = () => {
-        if (spinner) spinner.style.display = 'none';
-      };
-      iframe.src = `${pdfUrl}#toolbar=1`;
-    }
+  if (iframe) {
+    iframe.style.display = 'block';
+    iframe.onload = () => {
+      if (spinner) spinner.style.display = 'none';
+    };
+    iframe.src = `${pdfUrl}#toolbar=1`;
   }
 
   renderTbGuide();
