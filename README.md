@@ -125,18 +125,39 @@ skillplay/
 │       ├── style.css          # Glassmorphic dark UI styling
 │       └── data/              # Curriculum & quiz question banks
 ├── assets/
-│   ├── answers/               # Textbook solution PDFs (Class 1-5)
-│   ├── puzzle_0.jpg to 9.jpg  # Interactive puzzle tiles
-│   └── first_bg.jpg           # Background visuals
+│   ├── text/                  # All 24 official textbook PDFs (Class 1 to 6, all subjects)
+│   ├── answers/               # Complete solved question papers and model answer guides
+│   ├── puzzle_0.jpg to 9.jpg  # Interactive brain puzzle tiles
+│   └── first_bg.jpg           # Background visual assets
 ├── lib/
 │   ├── main.dart              # Flutter application entrypoint
 │   └── features/
+│       ├── class/             # Quiz bank (Classes 1 to 6, over 1,320+ curriculum questions)
+│       ├── testbook/          # Dynamic textbook loader for all classes
+│       ├── questions/         # Subject-matched solved question paper viewer
 │       ├── profile/           # User profile & developer admin views
 │       └── home_page.dart     # Main learning navigation
 ├── offline_database.html      # Standalone offline database viewer
 ├── database_export.json       # Exported database snapshot
 └── README.md                  # Project documentation & verification guide
 ```
+
+---
+
+## 📚 Curriculum, Textbooks & Question Bank (Classes 1 – 6)
+
+| Class | Available Subjects | Textbooks | Question Papers & Solutions | Interactive Quizzes |
+| :--- | :--- | :--- | :--- | :--- |
+| **Class 1** | Maths, English, Telugu | Complete PDFs | Lesson-specific solved PDFs (1.pdf–9.pdf, 1-1.pdf–8-2.pdf) | 33 lessons, 210 questions |
+| **Class 2** | Maths, English, Telugu | Complete PDFs | Subject-matched solved papers & study guides | 33 lessons, 165 questions |
+| **Class 3** | Maths, English, Telugu, EVS | Complete PDFs | Subject-matched solved papers & study guides | 38 lessons, 190 questions |
+| **Class 4** | Maths, English, Telugu, EVS | Complete PDFs | Subject-matched solved papers & study guides | 38 lessons, 190 questions |
+| **Class 5** | Maths, English, Telugu, EVS | Complete PDFs | Subject-matched solved papers & study guides | 39 lessons, 195 questions |
+| **Class 6** | Maths, English, Telugu, Hindi, Science, Social | Complete PDFs | Subject-matched solved papers & study guides | 74 lessons, 370 questions |
+
+- **Total Learning Coverage**: **1,320+ curriculum-aligned questions** covering every lesson in the AP State Board curriculum.
+- **Dual Viewer Mode**: Students can toggle between **📄 PDF View** (for full documents & downloads) and **📖 Chapter / Solved Q&A Guide** (for quick mobile-friendly study with key formulas, summaries, and model answers).
+
 
 ---
 
