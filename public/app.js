@@ -509,8 +509,12 @@ function renderTbGuide() {
   guideWrapper.innerHTML = html;
 }
 
+function switchTab(tab) {
+  navigateTo(tab);
+}
+
 function goToQuestionLesson(cls, subj, lessonIdx) {
-  switchTab('questions');
+  navigateTo('questions');
   selectQClass(cls);
   selectQSubject(subj);
   setTimeout(() => {
@@ -522,12 +526,13 @@ function goToQuestionLesson(cls, subj, lessonIdx) {
 }
 
 function goToLearnQuiz(cls, subj, lessonName) {
-  switchTab('learn');
+  navigateTo('learn');
   selectClass(cls);
   selectSubject(subj);
   setTimeout(() => {
     selectLesson(lessonName);
-  }, 100);
+    openQuiz();
+  }, 150);
 }
 
 function updateTbTextbook() {
@@ -538,6 +543,10 @@ function updateTbTextbook() {
   const fullscreenBtn = document.getElementById('tbFullscreenBtn');
   const spinner = document.getElementById('tbLoadingSpinner');
   const cloudCard = document.getElementById('tbCloudNoticeCard');
+  const pdfWrapper = document.getElementById('tbPdfWrapper');
+  const guideWrapper = document.getElementById('tbGuideWrapper');
+  const btnPdf = document.getElementById('tbBtnPdf');
+  const btnGuide = document.getElementById('tbBtnGuide');
 
   if (titleEl) {
     titleEl.innerHTML = `<i class="fa-solid fa-file-pdf"></i> ${tbCurrentClass} &bull; ${tbCurrentSubject} Textbook`;
@@ -555,6 +564,18 @@ function updateTbTextbook() {
   }
 
   if (cloudCard) cloudCard.style.display = 'none';
+
+  if (tbViewMode === 'pdf') {
+    if (pdfWrapper) pdfWrapper.style.display = 'block';
+    if (guideWrapper) guideWrapper.style.display = 'none';
+    if (btnPdf) btnPdf.classList.add('active');
+    if (btnGuide) btnGuide.classList.remove('active');
+  } else {
+    if (pdfWrapper) pdfWrapper.style.display = 'none';
+    if (guideWrapper) guideWrapper.style.display = 'block';
+    if (btnPdf) btnPdf.classList.remove('active');
+    if (btnGuide) btnGuide.classList.add('active');
+  }
 
   if (spinner) spinner.style.display = 'flex';
 
