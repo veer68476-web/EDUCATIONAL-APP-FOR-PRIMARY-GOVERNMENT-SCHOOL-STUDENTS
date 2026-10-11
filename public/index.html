@@ -364,17 +364,22 @@
             <span class="pdf-status-tag" id="tbStatusTag"><i class="fa-solid fa-check"></i> Complete Textbook</span>
           </div>
           <div class="pdf-toolbar-actions">
+            <div class="view-switch-pills">
+              <button id="tbBtnPdf" class="btn btn-sm btn-primary active" onclick="switchTbMode('pdf')"><i class="fa-solid fa-file-pdf"></i> PDF View</button>
+              <button id="tbBtnGuide" class="btn btn-sm btn-outline" onclick="switchTbMode('guide')"><i class="fa-solid fa-book-open"></i> Chapter Guide</button>
+            </div>
             <a id="tbFullscreenBtn" href="/assets/text/class1/english.pdf" target="_blank" class="btn btn-sm btn-outline">
               <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
             </a>
           </div>
         </div>
-        <div class="pdf-frame-wrapper">
+        <div class="pdf-frame-wrapper" id="tbPdfWrapper">
           <div id="tbLoadingSpinner" class="pdf-loading-overlay" style="display: none;">
             <i class="fa-solid fa-spinner fa-spin"></i> Loading Textbook PDF...
           </div>
           <iframe id="tbPdfIframe" src="/assets/text/class1/english.pdf#toolbar=1" class="pdf-iframe" title="Textbook PDF Viewer"></iframe>
         </div>
+        <div class="interactive-guide-wrapper" id="tbGuideWrapper" style="display: none;"></div>
       </div>
     </section>
 
@@ -412,17 +417,22 @@
             <span class="pdf-status-tag" id="qStatusTag"><i class="fa-solid fa-check"></i> Solved Question Paper</span>
           </div>
           <div class="pdf-toolbar-actions">
+            <div class="view-switch-pills">
+              <button id="qBtnPdf" class="btn btn-sm btn-primary active" onclick="switchQMode('pdf')"><i class="fa-solid fa-file-pdf"></i> PDF View</button>
+              <button id="qBtnGuide" class="btn btn-sm btn-outline" onclick="switchQMode('guide')"><i class="fa-solid fa-list-check"></i> Solved Q&A Guide</button>
+            </div>
             <a id="qFullscreenBtn" href="/assets/answers/class_1/maths/1.pdf" target="_blank" class="btn btn-sm btn-outline">
               <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
             </a>
           </div>
         </div>
-        <div class="pdf-frame-wrapper">
+        <div class="pdf-frame-wrapper" id="qPdfWrapper">
           <div id="qLoadingSpinner" class="pdf-loading-overlay" style="display: none;">
             <i class="fa-solid fa-spinner fa-spin"></i> Loading Question Paper PDF...
           </div>
           <iframe id="qPdfIframe" src="/assets/answers/class_1/maths/1.pdf#toolbar=1" class="pdf-iframe" title="Question Papers PDF Viewer"></iframe>
         </div>
+        <div class="interactive-guide-wrapper" id="qGuideWrapper" style="display: none;"></div>
       </div>
     </section>
 

@@ -1,5 +1,5 @@
 final Map<String, Map<String, Map<String, List<Map<String, dynamic>>>>>
-nestedQuizBank = {
+ nestedQuizBank = {
   'CLASS 1': {
     'MATHS': {
       'Numbers (0 – 9)': [
@@ -91,8 +91,7 @@ nestedQuizBank = {
         },
         {
           'id': 5,
-          'question':
-              'Ravi has 3 apples and gets 2 more. How many apples does he have?',
+          'question': 'Ravi has 3 apples and gets 2 more. How many apples does he have?',
           'options': ['4', '6', '5', '7'],
           'answer': 2,
         },
@@ -122,8 +121,7 @@ nestedQuizBank = {
         },
         {
           'id': 10,
-          'question':
-              'A basket has 2 mangoes and 3 oranges. How many fruits in all?',
+          'question': 'A basket has 2 mangoes and 3 oranges. How many fruits in all?',
           'options': ['4', '5', '6', '3'],
           'answer': 1,
         },
@@ -167,8 +165,7 @@ nestedQuizBank = {
         },
         {
           'id': 7,
-          'question':
-              'Ravi had 4 pencils and gave 2 to his friend. How many are left?',
+          'question': 'Ravi had 4 pencils and gave 2 to his friend. How many are left?',
           'options': ['1', '3', '2', '4'],
           'answer': 2,
         },
@@ -186,8 +183,7 @@ nestedQuizBank = {
         },
         {
           'id': 10,
-          'question':
-              'If 5 birds are sitting and 2 fly away, how many are left?',
+          'question': 'If 5 birds are sitting and 2 fly away, how many are left?',
           'options': ['4', '5', '3', '2'],
           'answer': 2,
         },
@@ -207,8 +203,7 @@ nestedQuizBank = {
         },
         {
           'id': 3,
-          'question':
-              'If you have ₹2 and your friend gives you ₹3, how much money do you have now?',
+          'question': 'If you have ₹2 and your friend gives you ₹3, how much money do you have now?',
           'options': ['₹4', '₹6', '₹5', '₹3'],
           'answer': 2,
         },
@@ -226,8 +221,7 @@ nestedQuizBank = {
         },
         {
           'id': 6,
-          'question':
-              'If you buy a toy for ₹8 and give ₹10, how much change should you get?',
+          'question': 'If you buy a toy for ₹8 and give ₹10, how much change should you get?',
           'options': ['₹1', '₹2', '₹3', '₹4'],
           'answer': 1,
         },
@@ -245,8 +239,7 @@ nestedQuizBank = {
         },
         {
           'id': 9,
-          'question':
-              'If you have one ₹5 coin and one ₹2 coin, how much money do you have in total?',
+          'question': 'If you have one ₹5 coin and one ₹2 coin, how much money do you have in total?',
           'options': ['₹6', '₹7', '₹8', '₹10'],
           'answer': 1,
         },
@@ -358,8 +351,7 @@ nestedQuizBank = {
         },
         {
           'id': 7,
-          'question':
-              'A cup can hold more water than a spoon. What does this show?',
+          'question': 'A cup can hold more water than a spoon. What does this show?',
           'options': ['Length', 'Weight', 'Capacity', 'Time'],
           'answer': 2,
         },
@@ -377,8 +369,7 @@ nestedQuizBank = {
         },
         {
           'id': 10,
-          'question':
-              'If one stick is 10 cm long and another is 20 cm long, which is longer?',
+          'question': 'If one stick is 10 cm long and another is 20 cm long, which is longer?',
           'options': ['10 cm stick', '20 cm stick', 'Both same', 'Cannot tell'],
           'answer': 1,
         },
@@ -416,8 +407,7 @@ nestedQuizBank = {
         },
         {
           'id': 6,
-          'question':
-              'If the short hand of the clock is at 3 and the long hand is at 12, what time is it?',
+          'question': 'If the short hand of the clock is at 3 and the long hand is at 12, what time is it?',
           'options': ['3 o’clock', '12 o’clock', '6 o’clock', '9 o’clock'],
           'answer': 0,
         },
@@ -441,14 +431,8 @@ nestedQuizBank = {
         },
         {
           'id': 10,
-          'question':
-              'If the clock shows 12 o’clock, what part of the day could it be?',
-          'options': [
-            'Morning or Noon',
-            'Evening only',
-            'Night only',
-            'Midnight only',
-          ],
+          'question': 'If the clock shows 12 o’clock, what part of the day could it be?',
+          'options': ['Morning or Noon', 'Evening only', 'Night only', 'Midnight only'],
           'answer': 0,
         },
       ],
@@ -461,20 +445,14 @@ nestedQuizBank = {
         },
         {
           'id': 2,
-          'question':
-              'Find the missing number in the pattern: 2, 4, 6, ___, 10.',
+          'question': 'Find the missing number in the pattern: 2, 4, 6, ___, 10.',
           'options': ['7', '8', '9', '11'],
           'answer': 1,
         },
         {
           'id': 3,
           'question': 'Which pattern shows counting by 5s?',
-          'options': [
-            '2, 4, 6, 8',
-            '5, 10, 15, 20',
-            '3, 6, 9, 12',
-            '1, 2, 3, 4',
-          ],
+          'options': ['2, 4, 6, 8', '5, 10, 15, 20', '3, 6, 9, 12', '1, 2, 3, 4'],
           'answer': 1,
         },
         {
@@ -492,12 +470,7 @@ nestedQuizBank = {
         {
           'id': 6,
           'question': 'Which pattern is correct?',
-          'options': [
-            'A, B, C, D',
-            'A, A, B, B, C, C',
-            'A, C, B, D',
-            'A, B, D, E',
-          ],
+          'options': ['A, B, C, D', 'A, A, B, B, C, C', 'A, C, B, D', 'A, B, D, E'],
           'answer': 1,
         },
         {
@@ -587,41 +560,25 @@ nestedQuizBank = {
           'answer': 2,
         },
       ],
-      // Add more lessons here
     },
     'ENGLISH': {
       'Unit 1.1 I Am Special': [
         {
           'id': 1,
           'question': 'Who is special according to the poem?',
-          'options': [
-            'Only teachers',
-            'Only friends',
-            'Everyone',
-            'Only animals',
-          ],
+          'options': ['Only teachers', 'Only friends', 'Everyone', 'Only animals'],
           'answer': 2,
         },
         {
           'id': 2,
           'question': 'What makes you special?',
-          'options': [
-            'Your toys',
-            'Being kind and unique',
-            'Your clothes',
-            'Your school',
-          ],
+          'options': ['Your toys', 'Being kind and unique', 'Your clothes', 'Your school'],
           'answer': 1,
         },
         {
           'id': 3,
           'question': 'What should you always be proud of?',
-          'options': [
-            'Being yourself',
-            'Being someone else',
-            'Having more toys',
-            'Copying others',
-          ],
+          'options': ['Being yourself', 'Being someone else', 'Having more toys', 'Copying others'],
           'answer': 0,
         },
         {
@@ -765,7 +722,6 @@ nestedQuizBank = {
           'answer': 0,
         },
       ],
-
       'Unit 4.1 Numbers': [
         {
           'id': 1,
@@ -862,7 +818,6 @@ nestedQuizBank = {
           'answer': 0,
         },
       ],
-
       'Unit 5.2 Vegetables': [
         {
           'id': 1,
@@ -898,8 +853,7 @@ nestedQuizBank = {
       'Unit 6.1 Birds': [
         {
           'id': 1,
-          'question':
-              'Which bird is known for its colorful feathers and dancing?',
+          'question': 'Which bird is known for its colorful feathers and dancing?',
           'options': ['Crow', 'Peacock', 'Sparrow', 'Duck'],
           'answer': 1,
         },
@@ -1106,34 +1060,19 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'కాగితపు పడవను వానలో ఎందుకు వదలాలి?',
-          'options': [
-            'ఆడుకోవడానికి',
-            'తెరచడానికి',
-            'తడిపేందుకు',
-            'వేడి చేయడానికి',
-          ],
+          'options': ['ఆడుకోవడానికి', 'తెరచడానికి', 'తడిపేందుకు', 'వేడి చేయడానికి'],
           'answer': 0,
         },
         {
           'id': 4,
           'question': 'పాఠంలో పిల్లలు ఎలా ఉన్నారు?',
-          'options': [
-            'బయపడుతున్నారు',
-            'ఆనందిస్తున్నారు',
-            'నిద్రపోతున్నారు',
-            'పఠిస్తున్నారు',
-          ],
+          'options': ['బయపడుతున్నారు', 'ఆనందిస్తున్నారు', 'నిద్రపోతున్నారు', 'పఠిస్తున్నారు'],
           'answer': 1,
         },
         {
           'id': 5,
           'question': 'కుక్క పిల్ల ఏం చేస్తోంది?',
-          'options': [
-            'పదాలు చదువుతోంది',
-            'పడవ వదులుతోంది',
-            'పాట పాడుతోంది',
-            'ఆడుతోంది',
-          ],
+          'options': ['పదాలు చదువుతోంది', 'పడవ వదులుతోంది', 'పాట పాడుతోంది', 'ఆడుతోంది'],
           'answer': 1,
         },
       ],
@@ -1141,56 +1080,31 @@ nestedQuizBank = {
         {
           'id': 1,
           'question': '“మేలుకొలుపు” అనే పదం అర్థం ఏమిటి?',
-          'options': [
-            'నిద్రపోవడం',
-            'జాగ్రత్తగా ఉండడం',
-            'ఆహారం తినడం',
-            'ఆడుకోవడం',
-          ],
+          'options': ['నిద్రపోవడం', 'జాగ్రత్తగా ఉండడం', 'ఆహారం తినడం', 'ఆడుకోవడం'],
           'answer': 1,
         },
         {
           'id': 2,
           'question': 'ఉడత ఉడత హూచ్ అనే పద్యం లో ఉడత ఏం చేస్తుంది?',
-          'options': [
-            'పాట పాడుతుంది',
-            'ఆడుతుంది',
-            'పరుగెత్తుతుంది',
-            'తినుతుంది',
-          ],
+          'options': ['పాట పాడుతుంది', 'ఆడుతుంది', 'పరుగెత్తుతుంది', 'తినుతుంది'],
           'answer': 0,
         },
         {
           'id': 3,
           'question': 'మేలుకొలుపు పద్యంలో పిల్లలకు ఏమి చెప్పబడుతుంది?',
-          'options': [
-            'ఆడుకోవాలని',
-            'నిద్రపోవాలని',
-            'జాగ్రత్తగా ఉండాలని',
-            'తినాలని',
-          ],
+          'options': ['ఆడుకోవాలని', 'నిద్రపోవాలని', 'జాగ్రత్తగా ఉండాలని', 'తినాలని'],
           'answer': 2,
         },
         {
           'id': 4,
           'question': 'ఉడత ఉడత హూచ్ పద్యంలో ఉడత ఎలా ఉంటుంది?',
-          'options': [
-            'బయపడుతుంది',
-            'ఆనందంగా ఉంటుంది',
-            'నిద్రపోతుంది',
-            'కోపంగా ఉంటుంది',
-          ],
+          'options': ['బయపడుతుంది', 'ఆనందంగా ఉంటుంది', 'నిద్రపోతుంది', 'కోపంగా ఉంటుంది'],
           'answer': 1,
         },
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ఆహారం గురించి',
-            'జాగ్రత్తలు మరియు ఆనందం గురించి',
-            'పాటలు పాడడం గురించి',
-            'క్రీడలు గురించి',
-          ],
+          'options': ['ఆహారం గురించి', 'జాగ్రత్తలు మరియు ఆనందం గురించి', 'పాటలు పాడడం గురించి', 'క్రీడలు గురించి'],
           'answer': 1,
         },
       ],
@@ -1210,12 +1124,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'తకధిమితోం పద్యంలో పిల్లలు ఏం చేస్తున్నారు?',
-          'options': [
-            'ఆడుతున్నారు',
-            'నాట్యం చేస్తున్నారు',
-            'పాటలు పాడుతున్నారు',
-            'చిత్రాలు వేస్తున్నారు',
-          ],
+          'options': ['ఆడుతున్నారు', 'నాట్యం చేస్తున్నారు', 'పాటలు పాడుతున్నారు', 'చిత్రాలు వేస్తున్నారు'],
           'answer': 1,
         },
         {
@@ -1247,12 +1156,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'ఈ పద్యంలో పిల్లలు ఎలా ఉంటారు?',
-          'options': [
-            'బయపడతారు',
-            'ఆనందంగా ఉంటారు',
-            'కోపంగా ఉంటారు',
-            'నిద్రపోతారు',
-          ],
+          'options': ['బయపడతారు', 'ఆనందంగా ఉంటారు', 'కోపంగా ఉంటారు', 'నిద్రపోతారు'],
           'answer': 1,
         },
         {
@@ -1290,12 +1194,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'ఈ పాఠంలో పిల్లలు ఏం చేస్తున్నారు?',
-          'options': [
-            'ఆడుతున్నారు',
-            'తినుతున్నారు',
-            'పాటలు పాడుతున్నారు',
-            'నిద్రపోతున్నారు',
-          ],
+          'options': ['ఆడుతున్నారు', 'తినుతున్నారు', 'పాటలు పాడుతున్నారు', 'నిద్రపోతున్నారు'],
           'answer': 0,
         },
         {
@@ -1315,12 +1214,7 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'ఎలుకమ్మ ఏం చేస్తుంది?',
-          'options': [
-            'పాట పాడుతుంది',
-            'తినే పదార్థాలు తీసుకెళుతుంది',
-            'ఆడుతుంది',
-            'నిద్రపోతుంది',
-          ],
+          'options': ['పాట పాడుతుంది', 'తినే పదార్థాలు తీసుకెళుతుంది', 'ఆడుతుంది', 'నిద్రపోతుంది'],
           'answer': 1,
         },
         {
@@ -1338,12 +1232,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ఆహారం',
-            'ఇల్లు మరియు జంతువుల గురించి',
-            'పాటలు',
-            'క్రీడలు',
-          ],
+          'options': ['ఆహారం', 'ఇల్లు మరియు జంతువుల గురించి', 'పాటలు', 'క్రీడలు'],
           'answer': 1,
         },
       ],
@@ -1369,12 +1258,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': '“అమ్మ ఒడి” పద్యంలో పిల్లలు ఎలా ఉంటారు?',
-          'options': [
-            'బయపడతారు',
-            'ఆనందంగా ఉంటారు',
-            'నిద్రపోతారు',
-            'కోపంగా ఉంటారు',
-          ],
+          'options': ['బయపడతారు', 'ఆనందంగా ఉంటారు', 'నిద్రపోతారు', 'కోపంగా ఉంటారు'],
           'answer': 1,
         },
         {
@@ -1388,12 +1272,7 @@ nestedQuizBank = {
         {
           'id': 1,
           'question': 'పాఠశాల పండుగలో పిల్లలు ఏమి చేస్తారు?',
-          'options': [
-            'నిద్రపోతారు',
-            'ఆడతారు మరియు పాటలు పాడతారు',
-            'తినిపిస్తారు',
-            'పుస్తకాలు చదువుతారు',
-          ],
+          'options': ['నిద్రపోతారు', 'ఆడతారు మరియు పాటలు పాడతారు', 'తినిపిస్తారు', 'పుస్తకాలు చదువుతారు'],
           'answer': 1,
         },
         {
@@ -1411,12 +1290,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'పండుగ సమయంలో పిల్లలు ఎలా ఉంటారు?',
-          'options': [
-            'బయపడతారు',
-            'ఆనందంగా ఉంటారు',
-            'కోపంగా ఉంటారు',
-            'నిద్రపోతారు',
-          ],
+          'options': ['బయపడతారు', 'ఆనందంగా ఉంటారు', 'కోపంగా ఉంటారు', 'నిద్రపోతారు'],
           'answer': 1,
         },
         {
@@ -1448,12 +1322,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'గుణింతాలం నేర్చుకోవడం వల్ల ఏమి ఉపయోగం?',
-          'options': [
-            'ఆహారం తినడం',
-            'పాటలు పాడడం',
-            'తెలుగు చదవడం మరియు రాయడం',
-            'ఆడుకోవడం',
-          ],
+          'options': ['ఆహారం తినడం', 'పాటలు పాడడం', 'తెలుగు చదవడం మరియు రాయడం', 'ఆడుకోవడం'],
           'answer': 2,
         },
         {
@@ -1464,7 +1333,6 @@ nestedQuizBank = {
         },
       ],
     },
-    // Add more subjects here
   },
   'CLASS 2': {
     'MATHS': {
@@ -1527,8 +1395,7 @@ nestedQuizBank = {
         },
         {
           'id': 5,
-          'question':
-              'Ravi has 9 pencils and buys 6 more. How many pencils now?',
+          'question': 'Ravi has 9 pencils and buys 6 more. How many pencils now?',
           'options': ['14', '15', '16', '12'],
           'answer': 1,
         },
@@ -1775,12 +1642,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'Where do children keep their bags?',
-          'options': [
-            'Under the table',
-            'In the classroom',
-            'At home',
-            'In the playground',
-          ],
+          'options': ['Under the table', 'In the classroom', 'At home', 'In the playground'],
           'answer': 1,
         },
         {
@@ -1812,12 +1674,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'What should we not do while playing?',
-          'options': [
-            'Share toys',
-            'Push others',
-            'Take turns',
-            'Follow rules',
-          ],
+          'options': ['Share toys', 'Push others', 'Take turns', 'Follow rules'],
           'answer': 1,
         },
         {
@@ -1855,12 +1712,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'Which of these is good behaviour?',
-          'options': [
-            'Shouting',
-            'Helping others',
-            'Fighting',
-            'Throwing things',
-          ],
+          'options': ['Shouting', 'Helping others', 'Fighting', 'Throwing things'],
           'answer': 1,
         },
         {
@@ -1944,12 +1796,7 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'What should we say about ourselves?',
-          'options': [
-            'I can do nothing',
-            'I am perfect',
-            'I am lazy',
-            'I am bad',
-          ],
+          'options': ['I can do nothing', 'I am perfect', 'I am lazy', 'I am bad'],
           'answer': 1,
         },
         {
@@ -1967,12 +1814,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'Who should we respect?',
-          'options': [
-            'Only friends',
-            'Only elders',
-            'Everyone',
-            'Only teachers',
-          ],
+          'options': ['Only friends', 'Only elders', 'Everyone', 'Only teachers'],
           'answer': 2,
         },
       ],
@@ -1986,12 +1828,7 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'Where do we plant seeds?',
-          'options': [
-            'On the table',
-            'In the soil',
-            'In the bag',
-            'On the floor',
-          ],
+          'options': ['On the table', 'In the soil', 'In the bag', 'On the floor'],
           'answer': 1,
         },
         {
@@ -2061,12 +1898,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'What do people do during Christmas?',
-          'options': [
-            'Fly kites',
-            'Decorate trees',
-            'Burst crackers',
-            'Play Holi',
-          ],
+          'options': ['Fly kites', 'Decorate trees', 'Burst crackers', 'Play Holi'],
           'answer': 1,
         },
         {
@@ -2078,12 +1910,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'What do people exchange during festivals?',
-          'options': [
-            'Gifts and sweets',
-            'Stones',
-            'Books only',
-            'Clothes only',
-          ],
+          'options': ['Gifts and sweets', 'Stones', 'Books only', 'Clothes only'],
           'answer': 0,
         },
       ],
@@ -2129,12 +1956,7 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'What do we see more in villages?',
-          'options': [
-            'Cars',
-            'Trees and fields',
-            'Big buildings',
-            'Street lights',
-          ],
+          'options': ['Cars', 'Trees and fields', 'Big buildings', 'Street lights'],
           'answer': 1,
         },
         {
@@ -2146,12 +1968,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'What do children do in the village?',
-          'options': [
-            'Ride bicycles',
-            'Drive buses',
-            'Work in office',
-            'Fly planes',
-          ],
+          'options': ['Ride bicycles', 'Drive buses', 'Work in office', 'Fly planes'],
           'answer': 0,
         },
         {
@@ -2307,12 +2124,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'వాన పడినప్పుడు పిల్లలు ఏమి చేస్తారు?',
-          'options': [
-            'వర్షంలో ఆడతారు',
-            'పాఠశాలకు వెళ్తారు',
-            'ఇంటికి వెళ్లరు',
-            'నీళ్లు త్రాగుతారు',
-          ],
+          'options': ['వర్షంలో ఆడతారు', 'పాఠశాలకు వెళ్తారు', 'ఇంటికి వెళ్లరు', 'నీళ్లు త్రాగుతారు'],
           'answer': 0,
         },
         {
@@ -2328,7 +2140,6 @@ nestedQuizBank = {
           'answer': 0,
         },
       ],
-
       'పూచినపూలు, పరుగు పందెం': [
         {
           'id': 1,
@@ -2345,12 +2156,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'పూచినపూలు పద్యం ద్వారా ఏమి నేర్చుకుంటాం?',
-          'options': [
-            'ఆహారం గురించి',
-            'ఆడుకోవడం గురించి',
-            'సౌందర్యం మరియు ప్రకృతి గురించి',
-            'కథలు',
-          ],
+          'options': ['ఆహారం గురించి', 'ఆడుకోవడం గురించి', 'సౌందర్యం మరియు ప్రకృతి గురించి', 'కథలు'],
           'answer': 2,
         },
         {
@@ -2362,12 +2168,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'ఈ పాఠంలో పిల్లలు ఎలా ఉంటారు?',
-          'options': [
-            'బయపడతారు',
-            'ఆనందంగా ఉంటారు',
-            'నిద్రపోతారు',
-            'కోపంగా ఉంటారు',
-          ],
+          'options': ['బయపడతారు', 'ఆనందంగా ఉంటారు', 'నిద్రపోతారు', 'కోపంగా ఉంటారు'],
           'answer': 1,
         },
       ],
@@ -2381,23 +2182,13 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'కొంటెకోతి ఏ ఊరెళదాం అని ఎందుకు అంటోంది?',
-          'options': [
-            'ఆడుకోవడానికి',
-            'తినడానికి',
-            'ప్రయాణం చేయడానికి',
-            'నిద్రపోవడానికి',
-          ],
+          'options': ['ఆడుకోవడానికి', 'తినడానికి', 'ప్రయాణం చేయడానికి', 'నిద్రపోవడానికి'],
           'answer': 2,
         },
         {
           'id': 3,
           'question': 'కొంటెకోతి ఎలా ఉంటుంది?',
-          'options': [
-            'బయపడుతుంది',
-            'ఆనందంగా ఉంటుంది',
-            'నిద్రపోతుంది',
-            'కోపంగా ఉంటుంది',
-          ],
+          'options': ['బయపడుతుంది', 'ఆనందంగా ఉంటుంది', 'నిద్రపోతుంది', 'కోపంగా ఉంటుంది'],
           'answer': 1,
         },
         {
@@ -2417,12 +2208,7 @@ nestedQuizBank = {
         {
           'id': 1,
           'question': 'అప్పడాలు, బజ్జీలు ఏమిటి?',
-          'options': [
-            'ఆడుకునే వస్తువులు',
-            'తినే పదార్థాలు',
-            'పుస్తకాలు',
-            'పూలు',
-          ],
+          'options': ['ఆడుకునే వస్తువులు', 'తినే పదార్థాలు', 'పుస్తకాలు', 'పూలు'],
           'answer': 1,
         },
         {
@@ -2434,12 +2220,7 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'ఈ పాఠంలో పిల్లలు ఎలా ఉంటారు?',
-          'options': [
-            'బయపడతారు',
-            'ఆనందంగా ఉంటారు',
-            'నిద్రపోతారు',
-            'కోపంగా ఉంటారు',
-          ],
+          'options': ['బయపడతారు', 'ఆనందంగా ఉంటారు', 'నిద్రపోతారు', 'కోపంగా ఉంటారు'],
           'answer': 1,
         },
         {
@@ -2451,12 +2232,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ఆహారం మరియు ఆటల ఆనందం',
-            'కథలు',
-            'పాఠశాల జీవితం',
-            'పాటలు',
-          ],
+          'options': ['ఆహారం మరియు ఆటల ఆనందం', 'కథలు', 'పాఠశాల జీవితం', 'పాటలు'],
           'answer': 0,
         },
       ],
@@ -2482,23 +2258,13 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ఆహారం గురించి',
-            'ప్రకృతి మరియు ప్రవర్తన గురించి',
-            'క్రీడలు గురించి',
-            'పాటలు గురించి',
-          ],
+          'options': ['ఆహారం గురించి', 'ప్రకృతి మరియు ప్రవర్తన గురించి', 'క్రీడలు గురించి', 'పాటలు గురించి'],
           'answer': 1,
         },
         {
           'id': 5,
           'question': 'చిచ్చుబుడ్డి అరటి చెట్టును ఎందుకు చూస్తాడు?',
-          'options': [
-            'ఆడుకోవడానికి',
-            'తినడానికి',
-            'నిద్రపోవడానికి',
-            'పాడడానికి',
-          ],
+          'options': ['ఆడుకోవడానికి', 'తినడానికి', 'నిద్రపోవడానికి', 'పాడడానికి'],
           'answer': 1,
         },
       ],
@@ -2506,23 +2272,13 @@ nestedQuizBank = {
         {
           'id': 1,
           'question': 'అద్దాల బస్సు అంటే ఏమిటి?',
-          'options': [
-            'గాజు తలుపుల బస్సు',
-            'పిల్లల ఆట బస్సు',
-            'పెద్ద బస్సు',
-            'పాత బస్సు',
-          ],
+          'options': ['గాజు తలుపుల బస్సు', 'పిల్లల ఆట బస్సు', 'పెద్ద బస్సు', 'పాత బస్సు'],
           'answer': 0,
         },
         {
           'id': 2,
           'question': 'కొయ్యగుర్రం ఏమి సూచిస్తుంది?',
-          'options': [
-            'నిజమైన గుర్రం',
-            'చెక్కతో 만든 ఆట గుర్రం',
-            'బొమ్మ',
-            'పుస్తకం',
-          ],
+          'options': ['నిజమైన గుర్రం', 'చెక్కతో 만든 ఆట గుర్రం', 'బొమ్మ', 'పుస్తకం'],
           'answer': 1,
         },
         {
@@ -2540,12 +2296,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ప్రయాణం మరియు ఆటల ఆనందం',
-            'ఆహారం',
-            'కథలు',
-            'పాఠశాల జీవితం',
-          ],
+          'options': ['ప్రయాణం మరియు ఆటల ఆనందం', 'ఆహారం', 'కథలు', 'పాఠశాల జీవితం'],
           'answer': 0,
         },
       ],
@@ -2559,23 +2310,13 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': 'అమ్మమ్మగారి ఇల్లు ఎలా ఉంటుంది?',
-          'options': [
-            'పట్టణంలో',
-            'అలంకారంగా',
-            'గ్రామంలో, సాదాసీదాగా',
-            'అత్యాధునికంగా',
-          ],
+          'options': ['పట్టణంలో', 'అలంకారంగా', 'గ్రామంలో, సాదాసీదాగా', 'అత్యాధునికంగా'],
           'answer': 2,
         },
         {
           'id': 3,
           'question': 'పిల్లలు అమ్మమ్మగారి ఇంటికి ఎందుకు వెళ్తారు?',
-          'options': [
-            'ఆడుకోవడానికి',
-            'తినడానికి',
-            'విశ్రాంతి కోసం',
-            'అమ్మమ్మను చూడడానికి',
-          ],
+          'options': ['ఆడుకోవడానికి', 'తినడానికి', 'విశ్రాంతి కోసం', 'అమ్మమ్మను చూడడానికి'],
           'answer': 3,
         },
         {
@@ -2587,12 +2328,7 @@ nestedQuizBank = {
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'ఆహారం మరియు కుటుంబ ప్రేమ',
-            'క్రీడలు',
-            'పాటలు',
-            'పాఠశాల జీవితం',
-          ],
+          'options': ['ఆహారం మరియు కుటుంబ ప్రేమ', 'క్రీడలు', 'పాటలు', 'పాఠశాల జీవితం'],
           'answer': 0,
         },
       ],
@@ -2606,12 +2342,7 @@ nestedQuizBank = {
         {
           'id': 2,
           'question': '“ఒత్తులబుట్ట” లో ఏమి ఉంటుంది?',
-          'options': [
-            'ఆహారం',
-            'అక్షరాలు మరియు ఒత్తులు',
-            'పూలు',
-            'క్రీడా వస్తువులు',
-          ],
+          'options': ['ఆహారం', 'అక్షరాలు మరియు ఒత్తులు', 'పూలు', 'క్రీడా వస్తువులు'],
           'answer': 1,
         },
         {
@@ -2623,12 +2354,7 @@ nestedQuizBank = {
         {
           'id': 4,
           'question': 'ఒత్తులబుట్టను పిల్లలు ఎందుకు ఉపయోగిస్తారు?',
-          'options': [
-            'ఆడుకోవడానికి',
-            'తినడానికి',
-            'తెలుగు అక్షరాలు నేర్చుకోవడానికి',
-            'నిద్రపోవడానికి',
-          ],
+          'options': ['ఆడుకోవడానికి', 'తినడానికి', 'తెలుగు అక్షరాలు నేర్చుకోవడానికి', 'నిద్రపోవడానికి'],
           'answer': 2,
         },
         {
@@ -2654,40 +2380,6118 @@ nestedQuizBank = {
         {
           'id': 3,
           'question': 'పిల్లి generally ఏం చేస్తుంది?',
-          'options': [
-            'పాడుతుంది',
-            'పరుగెత్తుతుంది',
-            'నిద్రపోతుంది',
-            'ఆడుతుంది',
-          ],
+          'options': ['పాడుతుంది', 'పరుగెత్తుతుంది', 'నిద్రపోతుంది', 'ఆడుతుంది'],
           'answer': 2,
         },
         {
           'id': 4,
           'question': 'కాలచక్రం లో ఏవి మారతాయి?',
-          'options': [
-            'వాతావరణం మరియు ఋతువులు',
-            'ఆహారం',
-            'పాటలు',
-            'ఆడుకునే వస్తువులు',
-          ],
+          'options': ['వాతావరణం మరియు ఋతువులు', 'ఆహారం', 'పాటలు', 'ఆడుకునే వస్తువులు'],
           'answer': 0,
         },
         {
           'id': 5,
           'question': 'ఈ పాఠం ద్వారా పిల్లలు ఏమి నేర్చుకుంటారు?',
-          'options': [
-            'జంతువుల శబ్దాలు మరియు కాల మార్పులు',
-            'ఆహారం',
-            'క్రీడలు',
-            'పాఠశాల జీవితం',
-          ],
+          'options': ['జంతువుల శబ్దాలు మరియు కాల మార్పులు', 'ఆహారం', 'క్రీడలు', 'పాఠశాల జీవితం'],
           'answer': 0,
         },
       ],
     },
-  }, // Add more classes here
+  },
+  'CLASS 3': {
+    'MATHS': {
+      'Let’s Recall': [
+        {
+          'id': 1,
+          'question': 'What is the place value of 5 in the number 352?',
+          'options': ['500', '50', '5', '0'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Which number comes just after 99?',
+          'options': ['98', '100', '101', '90'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What is 45 + 23?',
+          'options': ['68', '78', '58', '65'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What is 80 - 35?',
+          'options': ['40', '45', '50', '55'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Which number is greater: 456 or 465?',
+          'options': ['456', '465', 'Both are equal', 'Cannot tell'],
+          'answer': 1,
+        },
+      ],
+      'Numbers': [
+        {
+          'id': 1,
+          'question': 'How many hundreds are there in 700?',
+          'options': ['70', '7', '700', '17'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What is the expanded form of 684?',
+          'options': ['600 + 80 + 4', '60 + 80 + 4', '600 + 8 + 4', '600 + 40 + 8'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Which of these is the smallest 3-digit number?',
+          'options': ['111', '999', '100', '101'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'What is the greatest 3-digit number?',
+          'options': ['900', '990', '999', '1000'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'In 829, which digit is in the tens place?',
+          'options': ['8', '2', '9', '0'],
+          'answer': 1,
+        },
+      ],
+      'Addition': [
+        {
+          'id': 1,
+          'question': 'What is 342 + 125?',
+          'options': ['467', '457', '477', '462'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'If you add 0 to any number, what is the result?',
+          'options': ['0', '1', 'The number itself', 'Double the number'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Find the sum of 150 and 250:',
+          'options': ['350', '400', '450', '500'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'A bus has 34 passengers and 18 more get in. Total passengers now are:',
+          'options': ['42', '50', '52', '54'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'What is 299 + 1?',
+          'options': ['290', '300', '301', '310'],
+          'answer': 1,
+        },
+      ],
+      'Subtraction': [
+        {
+          'id': 1,
+          'question': 'What is 586 - 234?',
+          'options': ['352', '342', '362', '252'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Subtracting a number from itself gives:',
+          'options': ['1', '0', 'The number', '-1'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Find the difference: 500 - 150 =',
+          'options': ['300', '350', '400', '250'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Raju had 85 marbles. He gave 27 to his sister. How many are left?',
+          'options': ['58', '62', '52', '48'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'What is 700 - 1?',
+          'options': ['600', '690', '699', '701'],
+          'answer': 2,
+        },
+      ],
+      'Multiplication': [
+        {
+          'id': 1,
+          'question': 'What is 6 × 7?',
+          'options': ['36', '42', '48', '40'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Multiplication is repeated:',
+          'options': ['Subtraction', 'Division', 'Addition', 'Counting backwards'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Any number multiplied by zero equals:',
+          'options': ['1', 'The number itself', '0', '10'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'A cat has 4 legs. How many legs do 5 cats have?',
+          'options': ['15', '20', '25', '16'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What is 12 × 5?',
+          'options': ['50', '55', '60', '65'],
+          'answer': 2,
+        },
+      ],
+      'Let’s Share': [
+        {
+          'id': 1,
+          'question': 'If 12 toffees are divided equally among 3 children, each gets:',
+          'options': ['3', '4', '5', '6'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What is the symbol for division?',
+          'options': ['+', '-', '×', '÷'],
+          'answer': 3,
+        },
+        {
+          'id': 3,
+          'question': 'What is 20 ÷ 5?',
+          'options': ['2', '4', '5', '10'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Sharing equally means dividing into:',
+          'options': ['Unequal groups', 'Equal groups', 'Larger groups', 'Smaller groups'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If 18 pencils are kept in packets of 6, how many packets are made?',
+          'options': ['2', '3', '4', '5'],
+          'answer': 1,
+        },
+      ],
+      'Data Handling': [
+        {
+          'id': 1,
+          'question': 'What is a chart using pictures called?',
+          'options': ['Bar graph', 'Pictograph', 'Tally chart', 'Pie chart'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Tally marks are usually bundled in groups of:',
+          'options': ['3', '4', '5', '10'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Data collection helps us to:',
+          'options': ['Draw paintings', 'Organize and understand information', 'Waste time', 'Write stories'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'If 1 picture represents 5 books, 3 pictures represent:',
+          'options': ['8 books', '15 books', '10 books', '20 books'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Which tool is commonly used to record counts quickly?',
+          'options': ['Eraser', 'Tally marks', 'Compass', 'Protractor'],
+          'answer': 1,
+        },
+      ],
+      'Share Equally': [
+        {
+          'id': 1,
+          'question': 'Divide 24 by 4:',
+          'options': ['4', '5', '6', '8'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'If 15 cookies are shared among 5 kids, how many does each kid get?',
+          'options': ['3', '4', '5', '2'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What is the remainder when 17 is divided by 4?',
+          'options': ['0', '1', '2', '3'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Division is the opposite operation of:',
+          'options': ['Addition', 'Subtraction', 'Multiplication', 'Fractions'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': '10 divided by 10 is equal to:',
+          'options': ['0', '1', '10', '100'],
+          'answer': 1,
+        },
+      ],
+      'Shapes Around Us': [
+        {
+          'id': 1,
+          'question': 'How many corners does a triangle have?',
+          'options': ['2', '3', '4', '0'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'A shape with 4 equal sides and 4 corners is a:',
+          'options': ['Rectangle', 'Circle', 'Square', 'Triangle'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Which of the following has NO corners?',
+          'options': ['Cube', 'Square', 'Circle', 'Triangle'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'A brick is shaped like a:',
+          'options': ['Cylinder', 'Cuboid', 'Sphere', 'Cone'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'A football is an example of a:',
+          'options': ['Cone', 'Sphere', 'Cylinder', 'Cube'],
+          'answer': 1,
+        },
+      ],
+      'Measurements': [
+        {
+          'id': 1,
+          'question': 'How many centimetres make 1 metre?',
+          'options': ['10 cm', '50 cm', '100 cm', '1000 cm'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Which unit is used to measure heavy weights?',
+          'options': ['Millilitre', 'Kilogram (kg)', 'Centimetre', 'Gram'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Liquids like milk and water are measured in:',
+          'options': ['Metres', 'Litres (L)', 'Grams', 'Kilometres'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Standard unit of length is:',
+          'options': ['Kilogram', 'Litre', 'Metre', 'Second'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Which is longer: 1 m or 50 cm?',
+          'options': ['1 m', '50 cm', 'Both are equal', 'Cannot say'],
+          'answer': 0,
+        },
+      ],
+    },
+    'ENGLISH': {
+      'Tenali Rama and the Thieves': [
+        {
+          'id': 1,
+          'question': 'Who was Tenali Rama?',
+          'options': ['A warrior', 'A clever poet in the court of Krishnadevaraya', 'A thief', 'A farmer'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What did Tenali Rama put in the heavy box?',
+          'options': ['Gold coins', 'Stones and pebbles', 'Books', 'Clothes'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Where did Tenali Rama drop the box?',
+          'options': ['In a river', 'In a well', 'In a cave', 'Under the bed'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the thieves draw water all night?',
+          'options': ['To quench their thirst', 'To take out the box from the well', 'To water the plants', 'To take a bath'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What did Tenali Rama thank the thieves for?',
+          'options': ['Giving him money', 'Watering his garden all night', 'Singing songs', 'Fixing the well'],
+          'answer': 1,
+        },
+      ],
+      'The Recipe Book': [
+        {
+          'id': 1,
+          'question': 'Who was Raj in the story?',
+          'options': ['A cook', 'A student who ran a small restaurant', 'A pilot', 'A doctor'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Why was Raj unable to cook food for the dinner order?',
+          'options': ['He was lazy', 'He fell ill', 'He forgot the recipe', 'He had no groceries'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Who helped Raj to cook the meal?',
+          'options': ['His neighbours', 'The kitchen utensils and appliances', 'His teacher', 'The postman'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Which appliance made the delicious juice?',
+          'options': ['The blender / mixer', 'The pan', 'The knife', 'The spoon'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'What was the result of the dinner order?',
+          'options': ['Failed completely', 'The food was delicious and ready on time', 'Food got burnt', 'Guests left hungry'],
+          'answer': 1,
+        },
+      ],
+      'The Loyal Mongoose': [
+        {
+          'id': 1,
+          'question': 'Who was the faithful pet in the farmer’s house?',
+          'options': ['A dog', 'A cat', 'A mongoose', 'A parrot'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'What dangerous creature entered the baby’s room?',
+          'options': ['A scorpion', 'A cobra snake', 'A rat', 'A spider'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What did the mongoose do to save the baby?',
+          'options': ['Ran away', 'Fought and killed the snake', 'Woke up the neighbours', 'Hid under the cot'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the farmer\'s wife hit the mongoose?',
+          'options': ['She saw blood and acted without thinking', 'The mongoose bit her', 'The baby was crying', 'She hated animals'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'What is the moral of the story?',
+          'options': ['Never keep pets', 'Think before you act in haste', 'Always run fast', 'Snakes are friendly'],
+          'answer': 1,
+        },
+      ],
+      'Help Me… Please!': [
+        {
+          'id': 1,
+          'question': 'Who was asking for help in the story?',
+          'options': ['A farmer in need', 'A little bird with an injured wing', 'A rabbit', 'A squirrel'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'How should we treat living beings in trouble?',
+          'options': ['Ignore them', 'With kindness and care', 'Scare them away', 'Lock them up'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What did the children do to help?',
+          'options': ['Fed and nursed the bird back to health', 'Threw stones', 'Called the police', 'Took pictures'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Kindness makes our community:',
+          'options': ['Angry', 'Sad', 'Stronger and happier', 'Selfish'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'What feeling do we get when we help others?',
+          'options': ['Guilt', 'Joy and satisfaction', 'Boredom', 'Fear'],
+          'answer': 1,
+        },
+      ],
+      'The Good Samaritan': [
+        {
+          'id': 1,
+          'question': 'Who was injured on the roadside?',
+          'options': ['A king', 'A traveler beaten by robbers', 'A soldier', 'A merchant'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Who stopped to bandage his wounds and help him?',
+          'options': ['The priest', 'The Levite', 'The Samaritan', 'The innkeeper'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Where did the Samaritan take the injured man?',
+          'options': ['To his home', 'To a hospital', 'To an inn', 'To a police station'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'What does \'Samaritan\' mean in everyday language?',
+          'options': ['A wealthy merchant', 'A person who helps strangers in distress', 'A wise judge', 'A traveler'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What lesson does this parable teach?',
+          'options': ['Love your neighbor and show mercy to all', 'Travel only at night', 'Keep valuable gold at home', 'Do not speak to strangers'],
+          'answer': 0,
+        },
+      ],
+      'Do Good and Reap Good': [
+        {
+          'id': 1,
+          'question': 'What principle is taught in \'Do Good and Reap Good\'?',
+          'options': ['Actions have no consequences', 'Good actions bring good rewards', 'Cheating brings wealth', 'Silence is golden'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'If you plant a seed of mango, you will reap:',
+          'options': ['Neem leaves', 'Sweet mangoes', 'Apples', 'Thorns'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Honesty and hard work always lead to:',
+          'options': ['Failure', 'True success and peace of mind', 'Punishment', 'Loneliness'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'When we speak truth, people:',
+          'options': ['Doubt us', 'Trust and respect us', 'Ignore us', 'Laugh at us'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Which virtue is praised in this lesson?',
+          'options': ['Greed', 'Selflessness and goodwill', 'Pride', 'Anger'],
+          'answer': 1,
+        },
+      ],
+      'The Lazy Grasshopper': [
+        {
+          'id': 1,
+          'question': 'What did the grasshopper do during summer?',
+          'options': ['Stored grains', 'Sang and danced all day', 'Built a house', 'Helped the ants'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What were the hardworking ants doing?',
+          'options': ['Sleeping', 'Storing food for the cold winter', 'Playing games', 'Swimming in the river'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What happened when winter arrived?',
+          'options': ['The grasshopper had plenty of food', 'The grasshopper was cold and hungry', 'The ants starved', 'Summer returned immediately'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Whom did the hungry grasshopper go to for help?',
+          'options': ['The bees', 'The ant colony', 'The butterfly', 'The spider'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What is the lesson of the fable?',
+          'options': ['Work hard today to secure tomorrow', 'Singing is bad', 'Winter is short', 'Ants are mean'],
+          'answer': 0,
+        },
+      ],
+      'King Sibi and the Dove': [
+        {
+          'id': 1,
+          'question': 'Who sought protection under King Sibi\'s throne?',
+          'options': ['A pigeon / dove fleeing an eagle', 'A deer', 'A rabbit', 'A sparrow'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Who was chasing the dove?',
+          'options': ['A falcon / hawk / eagle', 'A tiger', 'A hunter', 'A lion'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What did the hawk demand in exchange for letting the dove live?',
+          'options': ['All the king\'s gold', 'Equal weight of the King\'s own flesh', 'Half the kingdom', 'The palace garden'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What did King Sibi do?',
+          'options': ['Gave up the dove', 'Offered his own flesh on the balance scale', 'Fought the hawk with a sword', 'Refused both'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Who were the hawk and dove in reality?',
+          'options': ['Ordinary birds', 'Gods Indra and Agni testing the king\'s righteousness', 'Spies of another kingdom', 'Magicians'],
+          'answer': 1,
+        },
+      ],
+    },
+    'TELUGU': {
+      'తెలుగు తల్లి': [
+        {
+          'id': 1,
+          'question': '‘తెలుగు తల్లి’ గేయం దేని విశిష్టతను వివరిస్తుంది?',
+          'options': ['సముద్రం గురించి', 'తెలుగు భాష మరియు సంస్కృతి ఔన్నత్యం', 'పర్వతాల గురించి', 'ఆకాశం గురించి'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'తెలుగు భాషకు గల మరొక అందమైన పేరు ఏమిటి?',
+          'options': ['ద్రావిడ మాత', 'తేనె సోనలు చిందే తేట తెలుగు', 'హిందీ', 'సంస్కృతం'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': '‘అమృతం కురిసే’ అని దేనిని వర్ణించారు?',
+          'options': ['వర్షాన్ని', 'తెలుగు పలుకులను', 'గాలిని', 'వెన్నెలను'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'తెలుగు తల్లి చేతిలో ఉండే పవిత్ర చిహ్నం ఏది?',
+          'options': ['ఖడ్గం', 'రైతు నాగలి మరియు అక్షరమాల', 'తూకం', 'ధనుస్సు'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'మన మాతృభాషను మనం ఎలా కాపాడుకోవాలి?',
+          'options': ['మరచిపోవాలి', 'గౌరవించి, రోజూ నేర్చుకుని మాట్లాడాలి', 'తిరస్కరించాలి', 'ఇతరులను అడగాలి'],
+          'answer': 1,
+        },
+      ],
+      'మర్యాద చేద్దాం': [
+        {
+          'id': 1,
+          'question': '‘మర్యాద చేద్దాం’ కథలో ముఖ్య పాత్రలు ఎవరు?',
+          'options': ['రాజు మరియు మంత్రి', 'పరమానందయ్య శిష్యులు', 'వ్యాపారులు', 'రైతులు'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'పరమానందయ్య శిష్యులు ఎటువంటి స్వభావం కలవారు?',
+          'options': ['చాలా కుయుక్తి కలవారు', 'అమాయకులు మరియు హాస్యభరితులు', 'బలవంతులు', 'కోపిష్టులు'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'ఇంటికి వచ్చిన అతిథులకు శిష్యులు ఏమి చేశారు?',
+          'options': ['విందు పెట్టారు', 'వింత పనులు చేసి నవ్వులు పూయించారు', 'తరమగొట్టారు', 'నిద్రపోయారు'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'ఈ కథ మనకు ఏమి కలిగిస్తుంది?',
+          'options': ['భయం', 'ఆహ్లాదం మరియు చక్కని నవ్వు', 'విచారం', 'కోపం'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': '‘మర్యాద’ అంటే సరైన అర్థం ఏమిటి?',
+          'options': ['గౌరవం మరియు సత్కారం', 'అవమానం', 'ఆగ్రహం', 'మోసం'],
+          'answer': 0,
+        },
+      ],
+      'మంచి బాలుడు': [
+        {
+          'id': 1,
+          'question': '‘మంచి బాలుడు’ గేయంలో బాలుడు ఎవరికి సహాయం చేశాడు?',
+          'options': ['ఒక ధనవంతుడికి', 'దారి దాటలేక తడబడుతున్న వృద్ధురాలికి', 'తన స్నేహితుడికి', 'దొంగకు'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'బాటసారికి దారి చూపిన బాలుడి మనస్సు ఎటువంటిది?',
+          'options': ['కఠినమైనది', 'దయ మరియు ప్రేమతో నిండినది', 'గర్వంతో నిండినది', 'సోమరితనం'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'తోటివారికి సహాయం చేయడం వల్ల కలిగేది ఏమిటి?',
+          'options': ['ధన నష్టం', 'పుణ్యం మరియు ఆత్మసంతృప్తి', 'అలసట', 'శత్రుత్వం'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': '‘సహాయం’ అనే పదానికి పర్యాయపదం ఏమిటి?',
+          'options': ['చేయూత', 'ఆటంకం', 'పోరాటం', 'విభేదం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'మనం వృద్ధులను ఎలా చూడాలి?',
+          'options': ['నిర్లక్ష్యం చేయాలి', 'గౌరవంతో ఆదరించి సాయపడాలి', 'దూరం పెట్టాలి', 'ఎగతాళి చేయాలి'],
+          'answer': 1,
+        },
+      ],
+      'నా బాల్యం': [
+        {
+          'id': 1,
+          'question': '‘నా బాల్యం’ పాఠం దేనిని గుర్తుచేస్తుంది?',
+          'options': ['యుద్ధ విశేషాలు', 'పసిపాపల ఆటపాటలు, పాఠశాల తీపి జ్ఞాపకాలు', 'వ్యాపార లెక్కలు', 'విదేశీ ప్రయాణాలు'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'గ్రామీణ ప్రాంతంలో పిల్లలు ఎక్కువగా ఆడే ఆట ఏది?',
+          'options': ['వీడియో గేమ్స్', 'గోలీలాట, బొంగరాలాట, దాగుడుమూతలు', 'క్రికెట్ మాత్రమే', 'కార్ రేసింగ్'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'బాల్యం జీవితంలో ఎటువంటి దశ?',
+          'options': ['అతి మధురమైన మరియు నిష్కల్మషమైన దశ', 'కష్టాల దశ', 'విచారపు దశ', 'భయానక దశ'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'బడిలో గురువులు మనకు ఏమి నేర్పిస్తారు?',
+          'options': ['చదువు, సంస్కారం మరియు క్రమశిక్షణ', 'అల్లరి', 'సోమరితనం', 'పోట్లాటలు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘జ్ఞాపకం’ అంటే ఏమిటి?',
+          'options': ['గుర్తు', 'మరపు', 'కల', 'ఆలోచన లేకపోవడం'],
+          'answer': 0,
+        },
+      ],
+      'పొడుపు – విడుపు': [
+        {
+          'id': 1,
+          'question': 'పొడుపు కథలు వినడం వల్ల పిల్లల్లో ఏమి పెరుగుతుంది?',
+          'options': ['ఆలోచనా శక్తి మరియు మేధస్సు', 'నిద్ర', 'కోపం', 'ఆకలి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '‘తెల్లని బంతి, రాత్రి పూట కాంతి’ – దీనికి విడుపు ఏమిటి?',
+          'options': ['సూర్యుడు', 'చందమామ', 'నక్షత్రం', 'దీపం'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': '‘పచ్చని చెట్టుపై తెల్లని సున్నం’ – ఇది దేనిని సూచిస్తుంది?',
+          'options': ['కొబ్బరికాయ', 'మామిడిపండు', 'తాటికాయ', 'నిమ్మకాయ'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'పొడుపు కథలు ఏ సాహిత్య సంపదలో భాగం?',
+          'options': ['ఆధునిక నవలలు', 'జానపద తెలుగు విజ్ఞానం', 'శాస్త్ర పరిశోధనలు', 'వార్తాపత్రికలు'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': '‘విడుపు’ అంటే ఏమిటి?',
+          'options': ['సమస్యకు సరైన సమాధానం', 'ప్రశ్న', 'పద్యం', 'కథ'],
+          'answer': 0,
+        },
+      ],
+      'మేమే మేక పిల్ల': [
+        {
+          'id': 1,
+          'question': 'మేకపిల్ల ఎవరి చేతిలో చిక్కుకోకుండా తప్పించుకుంది?',
+          'options': ['కుక్క', 'దుష్ట తోడేలు / నక్క', 'పిల్లి', 'కోతి'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'అపాయం వచ్చినప్పుడు మనం ఏమి ఉపయోగించాలి?',
+          'options': ['భయం', 'సమయస్ఫూర్తి మరియు తెలివితేటలు', 'ఏడుపు', 'పారిపోవడం మాత్రమే'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'మేకపిల్ల తల్లి ఇంటి నుంచి వెళ్లేముందు ఏమి చెప్పింది?',
+          'options': ['ఎవరికీ తలుపు తీయవద్దని హెచ్చరించింది', 'ఆటలాడుకోమంది', 'పాటలు పాడమంది', 'నిద్రపొమ్మంది'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'తోడేలు ఎవరి గొంతును అనుకరించింది?',
+          'options': ['తల్లి మేక గొంతును', 'సింహం గొంతును', 'మనిషి గొంతును', 'కాకి గొంతును'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ కథ యొక్క నీతి ఏమిటి?',
+          'options': ['అపరిచితుల మాటలు నమ్మరాదు, జాగ్రత్తగా ఉండాలి', 'ఎవరినీ నమ్మకూడదు', 'తల్లి మాట వినవద్దు', 'అడవికి వెళ్లాలి'],
+          'answer': 0,
+        },
+      ],
+      'పద్యరత్నాలు': [
+        {
+          'id': 1,
+          'question': 'వేమన శతక పద్యాల చివర ఏ మకుటం ఉంటుంది?',
+          'options': ['విశ్వదాభిరామ వినుర వేమ', 'సుమతీ', 'కాళహస్తీశ్వర', 'దాశరథీ'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '‘ఉప్పు కప్పురంబు నొక్క పోలిక నుండు’ పద్యం దేనిని తెలుపుతుంది?',
+          'options': ['రుచుల గురించి', 'రూపానికి మనుషుల గుణానికి గల తేడాను', 'వంటకాల గురించి', 'వ్యాపారం గురించి'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'సుమతీ శతకాన్ని రచించిన కవి ఎవరు?',
+          'options': ['బద్దెన', 'వేమన', 'పోతన', 'శ్రీనాథుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘మేడిపండు చూడు మేలిమై యుండు’ పద్యం దేనిని హెచ్చరిస్తుంది?',
+          'options': ['పండ్ల నాణ్యతను', 'పైకి మంచిగా కనిపించే కపట వ్యక్తులను', 'తోట పనిని', 'చెట్లను'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'నీతి పద్యాలు నేర్చుకోవడం వల్ల పిల్లలకు కలిగే ప్రయోజనం ఏమిటి?',
+          'options': ['మంచి నడవడిక, సత్ప్రవర్తన అలవడతాయి', 'డబ్బు వస్తుంది', 'ఆటలు బాగా ఆడతారు', 'బలం పెరుగుతుంది'],
+          'answer': 0,
+        },
+      ],
+      'మా వూరి ఏరు': [
+        {
+          'id': 1,
+          'question': '‘మా వూరి ఏరు’ పాఠం దేని అందాన్ని వర్ణిస్తుంది?',
+          'options': ['నగరపు భవనాలు', 'పల్లెటూరి స్వచ్ఛమైన సెలయేరు, పచ్చని పంట పొలాలు', 'సముద్రపు అలలు', 'ఎడారి'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'ఏటి నీరు ఎవరి దాహం తీరుస్తుంది?',
+          'options': ['పశుపక్ష్యాదులు మరియు పంట చేల దాహం', 'ఫ్యాక్టరీల దాహం', 'వాహనాల దాహం', 'భవనాల దాహం'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'ఏటి ఒడ్డున పచ్చగా కనిపించేవి ఏవి?',
+          'options': ['చెట్లు, చేమలు, పంట పొలాలు', 'కాంక్రీట్ రోడ్లు', 'దుకాణాలు', 'ఇసుక తిన్నెలు మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'నదులు మరియు సెలయేర్లు మానవాళికి ఎటువంటివి?',
+          'options': ['జీవనాధారాలు', 'వృథా నీరు', 'ప్రమాదకారులు', 'అవసరం లేనివి'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘ఏరు’ అనే పదానికి సమానార్థకం ఏది?',
+          'options': ['వాగు / నది', 'కొండ', 'ఆకాశం', 'చెరువు'],
+          'answer': 0,
+        },
+      ],
+      'తొలిపండుగ': [
+        {
+          'id': 1,
+          'question': 'తెలుగువారి నూతన సంవత్సర తొలి పండుగ ఏది?',
+          'options': ['సంక్రాంతి', 'ఉగాది', 'దీపావళి', 'దసరా'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'ఉగాది పచ్చడిలో ఎన్ని రకాల రుచులు ఉంటాయి?',
+          'options': ['నాలుగు', 'ఆరు (షడ్రుచులు)', 'ఎనిమిది', 'రెండు'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'ఉగాది పచ్చడిలోని చేదు దేనిని సూచిస్తుంది?',
+          'options': ['జీవితంలోని కష్టాలు మరియు బాధలను', 'ఆనందాన్ని', 'ఆశ్చర్యాన్ని', 'ధైర్యాన్ని'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఉగాది రోజు సాయంత్రం జరిగే ముఖ్య కార్యక్రమం ఏది?',
+          'options': ['పంచాంగ శ్రవణం', 'బాణసంచా కాల్చడం', 'పడవ పందాలు', 'నాటకాలు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఉగాది పచ్చడిలో తీపి కోసం దేనిని వాడతారు?',
+          'options': ['ఉప్పు', 'బెల్లం', 'మిరపకాయ', 'వేపపువ్వు'],
+          'answer': 1,
+        },
+      ],
+    },
+    'EVS': {
+      'Rani’s Happy Family': [
+        {
+          'id': 1,
+          'question': 'What type of family consists of parents and their children?',
+          'options': ['Nuclear family', 'Joint family', 'Extended family', 'Hostel'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'In a family, work should be shared:',
+          'options': ['Only by mother', 'Equally among family members', 'Only by children', 'By neighbours'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Who are our grandparents?',
+          'options': ['Father and mother\'s parents', 'Our cousins', 'Our uncles', 'Our friends'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'A healthy family atmosphere is built on:',
+          'options': ['Fighting', 'Love, respect, and mutual care', 'Silence', 'Strict rules'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'How should children help at home?',
+          'options': ['Keeping toys tidy and helping with small chores', 'Breaking plates', 'Watching TV all day', 'Refusing to study'],
+          'answer': 0,
+        },
+      ],
+      'Plants Around Us': [
+        {
+          'id': 1,
+          'question': 'Which part of the plant absorbs water and minerals from the soil?',
+          'options': ['Leaves', 'Flowers', 'Roots', 'Fruits'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Leaves are usually green in colour due to the presence of:',
+          'options': ['Sunlight', 'Water', 'Chlorophyll', 'Mud'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Which plant is an example of a climber?',
+          'options': ['Rose', 'Money plant', 'Banyan', 'Mango'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Very tall and strong plants with woody trunks are called:',
+          'options': ['Herbs', 'Shrubs', 'Trees', 'Creepers'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Plants give us which essential gas to breathe?',
+          'options': ['Carbon dioxide', 'Oxygen', 'Nitrogen', 'Hydrogen'],
+          'answer': 1,
+        },
+      ],
+      'Animals Around Us': [
+        {
+          'id': 1,
+          'question': 'Which of the following is a domestic animal?',
+          'options': ['Tiger', 'Cow', 'Lion', 'Bear'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Animals that eat only plants and grass are called:',
+          'options': ['Carnivores', 'Herbivores', 'Omnivores', 'Scavengers'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Birds fly in the air with the help of their:',
+          'options': ['Fins', 'Wings and hollow bones', 'Gills', 'Teeth'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Which animal is known as the \'Ship of the Desert\'?',
+          'options': ['Horse', 'Camel', 'Elephant', 'Donkey'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Where do bees live and store honey?',
+          'options': ['Nest', 'Beehive', 'Burrow', 'Den'],
+          'answer': 1,
+        },
+      ],
+      'Our Body Parts': [
+        {
+          'id': 1,
+          'question': 'How many sense organs do we have?',
+          'options': ['3', '4', '5', '6'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Which sense organ helps us taste sweet and sour flavors?',
+          'options': ['Nose', 'Tongue', 'Skin', 'Eyes'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Our brain is protected inside the:',
+          'options': ['Chest', 'Skull', 'Stomach', 'Backbone'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'We should brush our teeth:',
+          'options': ['Once a week', 'Twice a day', 'Once a month', 'Never'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Which organ pumps blood to all parts of the body?',
+          'options': ['Lungs', 'Heart', 'Kidneys', 'Liver'],
+          'answer': 1,
+        },
+      ],
+      'Food Keeps us Fit and Healthy': [
+        {
+          'id': 1,
+          'question': 'Which food gives us instant energy?',
+          'options': ['Carbohydrates (Rice, Potato)', 'Stale food', 'Too much salt', 'Cold water'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Milk, eggs, and pulses help in:',
+          'options': ['Body building and growth', 'Only tooth decay', 'Making us tired', 'Dehydration'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Why should we wash fruits and vegetables before eating?',
+          'options': ['To remove germs and dust', 'To change their taste', 'To peel them easily', 'To make them warm'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Eating too much junk food causes:',
+          'options': ['Good health', 'Obesity and stomach problems', 'High energy', 'Sharp eyes'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'How many glasses of clean water should we drink daily?',
+          'options': ['1 glass', '2 glasses', '6 to 8 glasses', 'None'],
+          'answer': 2,
+        },
+      ],
+      'Water – The Gift from Nature': [
+        {
+          'id': 1,
+          'question': 'What is the main natural source of fresh water?',
+          'options': ['Sea', 'Rain', 'Pond', 'Canal'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'To make water safe for drinking, we should:',
+          'options': ['Boil and filter it', 'Keep it in open sun', 'Add sugar', 'Freeze it'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Which of these is a way to save water?',
+          'options': ['Leaving the tap running while brushing', 'Fixing leaking taps promptly', 'Washing cars with hosepipes daily', 'Throwing away leftover water'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Water freezes into ice at:',
+          'options': ['100°C', '50°C', '0°C', '25°C'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Plants need water for:',
+          'options': ['Germination and making food', 'Staying dry', 'Losing leaves', 'Nothing'],
+          'answer': 0,
+        },
+      ],
+      'Shelter for All': [
+        {
+          'id': 1,
+          'question': 'Houses made of mud, bamboo, and thatch are called:',
+          'options': ['Pucca houses', 'Kutcha houses', 'Apartments', 'Skyscrapers'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'A house protects us from:',
+          'options': ['Heat, cold, rain, and wild animals', 'Only sunlight', 'Television', 'Schools'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Where does a dog live?',
+          'options': ['Den', 'Kennel', 'Stable', 'Coop'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Houses on wheels that can move from place to place are called:',
+          'options': ['Igloos', 'Caravans', 'Tents', 'Houseboats'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Birds build nests to:',
+          'options': ['Store food', 'Lay eggs and protect chicks', 'Sleep during the day', 'Play'],
+          'answer': 1,
+        },
+      ],
+      'Let’s Travel Together': [
+        {
+          'id': 1,
+          'question': 'Which is the fastest means of transport?',
+          'options': ['Train', 'Aeroplane', 'Bullock cart', 'Ship'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Vehicles like buses and cars move on:',
+          'options': ['Land', 'Water', 'Air', 'Tracks only'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'A red traffic light signals drivers to:',
+          'options': ['Go fast', 'Stop', 'Get ready', 'Turn left'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What should pedestrians use to cross busy roads safely?',
+          'options': ['Zebra crossing', 'Flyover rails', 'Middle of the road', 'Anywhere'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Which vehicle does not cause smoke or air pollution?',
+          'options': ['Car', 'Bicycle', 'Diesel bus', 'Truck'],
+          'answer': 1,
+        },
+      ],
+      'Together with Everyone': [
+        {
+          'id': 1,
+          'question': 'Who treats us when we fall sick?',
+          'options': ['Teacher', 'Doctor', 'Carpenter', 'Baker'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Who maintains law and order in the neighborhood?',
+          'options': ['Postman', 'Police officer', 'Electrician', 'Tailor'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'People who live near our house are called our:',
+          'options': ['Relatives', 'Neighbours', 'Guests', 'Classmates'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'A postman delivers:',
+          'options': ['Medicine', 'Letters and parcels', 'Groceries', 'Clothes'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Living happily in a community requires:',
+          'options': ['Cooperation and mutual respect', 'Jealousy', 'Selfishness', 'Arguments'],
+          'answer': 0,
+        },
+      ],
+      'Games and Recreation': [
+        {
+          'id': 1,
+          'question': 'Which of the following is an indoor game?',
+          'options': ['Football', 'Cricket', 'Carrom', 'Hockey'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Playing outdoor games helps to:',
+          'options': ['Make us lazy', 'Keep our body fit and active', 'Hurt our brain', 'Waste time'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What value do we learn from playing games in a team?',
+          'options': ['Selfishness', 'Teamwork and sportsmanship', 'Fighting', 'Cheating'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Kabaddi is an example of:',
+          'options': ['Indoor game', 'Outdoor game', 'Water game', 'Computer game'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Exercise and games keep our muscles and heart:',
+          'options': ['Weak', 'Strong and healthy', 'Tired forever', 'Sick'],
+          'answer': 1,
+        },
+      ],
+      'This is the Way': [
+        {
+          'id': 1,
+          'question': 'What should we do before and after eating food?',
+          'options': ['Wash our hands with soap', 'Wash our feet', 'Comb our hair', 'Run around'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Where should we throw garbage?',
+          'options': ['On the street', 'In the dustbin', 'In the classroom corner', 'In the garden'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Good habits help us become:',
+          'options': ['Careless', 'Healthy, disciplined, and responsible', 'Weak', 'Forgetful'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'When somebody helps you, you should say:',
+          'options': ['Sorry', 'Thank you', 'Excuse me', 'Nothing'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'To keep our environment clean, we should:',
+          'options': ['Plant more trees and avoid plastic', 'Burn garbage', 'Litter everywhere', 'Cut down trees'],
+          'answer': 0,
+        },
+      ],
+    },
+  },
+  'CLASS 4': {
+    'MATHS': {
+      'Let’s Recall': [
+        {
+          'id': 1,
+          'question': 'What is the successor of 999?',
+          'options': ['998', '1000', '1001', '1010'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Round off 47 to the nearest 10:',
+          'options': ['40', '45', '50', '60'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Which is the smallest 4-digit number?',
+          'options': ['1000', '9999', '1001', '1111'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'How many tens are in 250?',
+          'options': ['25', '250', '2', '5'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'What is 540 + 360?',
+          'options': ['800', '900', '950', '1000'],
+          'answer': 1,
+        },
+      ],
+      'Large Numbers': [
+        {
+          'id': 1,
+          'question': 'What is the face value of 7 in 74,520?',
+          'options': ['70000', '7000', '7', '700'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'What is the place value of 3 in 43,890?',
+          'options': ['300', '3000', '30000', '30'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Write 50,000 + 4,000 + 300 + 20 + 5 in standard form:',
+          'options': ['54325', '540325', '543025', '54352'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Which symbol correctly compares: 34,512 ___ 34,215?',
+          'options': ['>', '<', '=', '≈'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'How many thousands make one lakh in Indian numbering system?',
+          'options': ['10', '100', '1000', '50'],
+          'answer': 1,
+        },
+      ],
+      'Addition': [
+        {
+          'id': 1,
+          'question': 'Find the sum of 4,325 and 2,561:',
+          'options': ['6,886', '6,876', '6,986', '7,000'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'If a factory produces 2,340 toys on Monday and 3,120 toys on Tuesday, total production is:',
+          'options': ['5,460', '5,400', '5,560', '6,000'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What is 9,999 + 1?',
+          'options': ['10,000', '10,001', '99,990', '1,00,000'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Changing the order of addends changes the sum:',
+          'options': ['Always', 'Never', 'Sometimes', 'Only for even numbers'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Estimate the sum of 420 and 580 to nearest hundred:',
+          'options': ['900', '1000', '1100', '800'],
+          'answer': 1,
+        },
+      ],
+      'Subtraction': [
+        {
+          'id': 1,
+          'question': 'Subtract 3,245 from 7,869:',
+          'options': ['4,624', '4,524', '4,614', '5,624'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What must be added to 3,500 to get 5,000?',
+          'options': ['1,000', '1,500', '2,000', '1,200'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Find the difference: 10,000 - 1 =',
+          'options': ['9,000', '9,900', '9,990', '9,999'],
+          'answer': 3,
+        },
+        {
+          'id': 4,
+          'question': 'A town has 8,500 residents. If 4,200 are females, how many are males?',
+          'options': ['4,200', '4,300', '4,500', '4,100'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Checking subtraction is done by:',
+          'options': ['Multiplying', 'Adding the difference to the subtrahend', 'Dividing', 'Subtracting again'],
+          'answer': 1,
+        },
+      ],
+      'Multiplication': [
+        {
+          'id': 1,
+          'question': 'What is 45 × 100?',
+          'options': ['450', '4,500', '45,000', '455'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Find the product: 24 × 15 =',
+          'options': ['340', '360', '380', '400'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Any number multiplied by 1 equals:',
+          'options': ['1', '0', 'The number itself', 'Double'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'If 1 notebook costs ₹25, what is the cost of 8 notebooks?',
+          'options': ['₹150', '₹175', '₹200', '₹225'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'What is 70 × 60?',
+          'options': ['420', '4,200', '42,000', '4,020'],
+          'answer': 1,
+        },
+      ],
+      'Division': [
+        {
+          'id': 1,
+          'question': 'Divide 484 by 4:',
+          'options': ['111', '121', '122', '141'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'In 35 ÷ 5 = 7, what is 7 called?',
+          'options': ['Divisor', 'Dividend', 'Quotient', 'Remainder'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'What is the remainder when 47 is divided by 5?',
+          'options': ['0', '1', '2', '4'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Can any number be divided by zero?',
+          'options': ['Yes, always', 'No, division by zero is undefined', 'Result is 0', 'Result is 1'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If ₹500 is distributed equally among 10 students, each receives:',
+          'options': ['₹40', '₹50', '₹60', '₹100'],
+          'answer': 1,
+        },
+      ],
+      'Geometry': [
+        {
+          'id': 1,
+          'question': 'A line segment has how many endpoints?',
+          'options': ['0', '1', '2', 'Infinite'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'A ray has how many fixed endpoints?',
+          'options': ['1', '2', '0', '3'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'A polygon with 5 sides is called a:',
+          'options': ['Quadrilateral', 'Pentagon', 'Hexagon', 'Octagon'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'The perimeter of a square with side 6 cm is:',
+          'options': ['12 cm', '24 cm', '36 cm', '18 cm'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'The distance around the boundary of a closed shape is called its:',
+          'options': ['Area', 'Perimeter', 'Volume', 'Diameter'],
+          'answer': 1,
+        },
+      ],
+      'Data Handling': [
+        {
+          'id': 1,
+          'question': 'In a bar graph, data is represented using:',
+          'options': ['Dots only', 'Bars of equal width', 'Curved lines', 'Pictures of animals'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The title of a graph tells us:',
+          'options': ['The artist\'s name', 'What information the graph displays', 'The page number', 'The author\'s age'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'If a symbol represents 10 students, half of that symbol represents:',
+          'options': ['1 student', '5 students', '10 students', '20 students'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'The axis drawn horizontally in a bar graph is called the:',
+          'options': ['Y-axis', 'X-axis', 'Z-axis', 'Slanted axis'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Data collection from observations is organized first into a:',
+          'options': ['Story', 'Tally table', 'Newspaper', 'Dictionary'],
+          'answer': 1,
+        },
+      ],
+      'Fractions': [
+        {
+          'id': 1,
+          'question': 'In the fraction 3/5, what is the number 3 called?',
+          'options': ['Denominator', 'Numerator', 'Quotient', 'Fraction bar'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Which fraction represents half?',
+          'options': ['1/4', '1/2', '2/3', '3/4'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Fractions with the same denominator are called:',
+          'options': ['Unlike fractions', 'Like fractions', 'Proper fractions', 'Unit fractions'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What is 2/7 + 3/7?',
+          'options': ['5/14', '5/7', '6/7', '1/7'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If a pizza is cut into 8 equal slices and you eat 3, what fraction did you eat?',
+          'options': ['3/8', '5/8', '8/3', '1/8'],
+          'answer': 0,
+        },
+      ],
+      'Measurements': [
+        {
+          'id': 1,
+          'question': 'How many grams are in 1 kilogram?',
+          'options': ['100 g', '500 g', '1000 g', '10000 g'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'How many millilitres (ml) make 1 litre (L)?',
+          'options': ['10 ml', '100 ml', '1000 ml', '500 ml'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'How many millimetres are in 1 centimetre?',
+          'options': ['10 mm', '100 mm', '1000 mm', '5 mm'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Distance between two cities is measured in:',
+          'options': ['Metres', 'Kilometres', 'Centimetres', 'Millimetres'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Convert 3 m into centimetres:',
+          'options': ['30 cm', '300 cm', '3000 cm', '35 cm'],
+          'answer': 1,
+        },
+      ],
+    },
+    'ENGLISH': {
+      'Three Butterflies': [
+        {
+          'id': 1,
+          'question': 'What were the colors of the three butterflies in the garden?',
+          'options': ['Red, Blue, Green', 'White, Yellow, Pink', 'Red, Yellow, White', 'Blue, Black, Gold'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Why were the butterflies looking for shelter?',
+          'options': ['It was raining heavily', 'It was too sunny', 'A bird chased them', 'Night had fallen'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What did the flowers tell the butterflies?',
+          'options': ['They would shelter only one or two matching colors', 'They had no petals', 'They were closed', 'They welcomed all three'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What did the butterflies reply to the flowers?',
+          'options': ['They agreed to separate', 'They would stay together in friendship, rain or shine', 'They flew away angry', 'They destroyed the flowers'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Seeing their true friendship, who stopped the rain and shone brightly?',
+          'options': ['The Moon', 'The Sun God', 'The Wind', 'The Rainbow'],
+          'answer': 1,
+        },
+      ],
+      'Major Dhyan Chand': [
+        {
+          'id': 1,
+          'question': 'Major Dhyan Chand is celebrated as the Wizard of:',
+          'options': ['Cricket', 'Football', 'Hockey', 'Tennis'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'In which game did India win consecutive Olympic Gold medals under his leadership?',
+          'options': ['Kabaddi', 'Field Hockey', 'Badminton', 'Wrestling'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Why was Dhyan Chand given the nickname \'Chand\' (Moon)?',
+          'options': ['He was born on full moon', 'He practiced hockey at night under moonlight', 'His eyes were round', 'He liked stars'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'National Sports Day in India is celebrated on his birthday on:',
+          'options': ['15th August', '29th August', '2nd October', '14th November'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Even Adolf Hitler was amazed by Dhyan Chand\'s skill during which Olympic games?',
+          'options': ['1920 Antwerp', '1936 Berlin Olympics', '1948 London', '1952 Helsinki'],
+          'answer': 1,
+        },
+      ],
+      'A Trip of Memories': [
+        {
+          'id': 1,
+          'question': 'Where did the children go on their school excursion trip?',
+          'options': ['To an amusement park', 'To Araku Valley and Borra Caves', 'To the beach in Chennai', 'To Delhi'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Borra Caves are famous for natural limestone structures called:',
+          'options': ['Stalactites and Stalagmites', 'Volcanic rocks', 'Coral reefs', 'Fossils'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Which scenic train journey takes passengers through many tunnels and bridges?',
+          'options': ['Visakhapatnam to Araku train', 'Chennai Express', 'Konkan Railway', 'Kalka Shimla'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The children learned about the rich culture of which community in Araku?',
+          'options': ['Fishermen', 'Tribal community', 'Weavers', 'Potters'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What did the children carry back with them?',
+          'options': ['Only toys', 'Cherished memories and knowledge', 'Stones from caves', 'Bags of coffee plants'],
+          'answer': 1,
+        },
+      ],
+      'Swami Vivekananda': [
+        {
+          'id': 1,
+          'question': 'What was Swami Vivekananda\'s childhood name?',
+          'options': ['Narendranath Datta (Naren)', 'Siddhartha', 'Mohandas', 'Subhas'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Who was the spiritual guru of Swami Vivekananda?',
+          'options': ['Ramana Maharshi', 'Ramakrishna Paramahamsa', 'Aurobindo', 'Dayananda'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'In which historic event did Swami Vivekananda begin with \'Sisters and Brothers of America\'?',
+          'options': ['United Nations Assembly', 'Parliament of World\'s Religions, Chicago (1893)', 'London Royal Society', 'Kolkata Town Hall'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What was his inspiring message to the youth?',
+          'options': ['Rest and sleep', 'Arise, awake, and stop not till the goal is reached', 'Seek comfort', 'Avoid hard work'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'National Youth Day in India is celebrated on his birth anniversary on:',
+          'options': ['January 12', 'February 28', 'October 2', 'December 25'],
+          'answer': 0,
+        },
+      ],
+      'The Magic Fish': [
+        {
+          'id': 1,
+          'question': 'Who caught the golden speaking fish in the sea?',
+          'options': ['A rich merchant', 'A poor humble fisherman', 'A prince', 'A pirate'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What did the magical fish promise the fisherman if he let it go?',
+          'options': ['A palace', 'To fulfill his wishes', 'A gold coin', 'A pearl necklace'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Who became increasingly greedy with endless demands?',
+          'options': ['The fisherman', 'The fisherman\'s wife', 'The village chief', 'The fish'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What happened when her greed exceeded all limits?',
+          'options': ['She got even more palaces', 'Everything vanished and they were back to their old hut', 'The fish died', 'The kingdom cheered'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What is the moral of \'The Magic Fish\'?',
+          'options': ['Greed leads to downfall; be content and grateful', 'Always catch big fish', 'Fish can talk', 'Never listen to sea creatures'],
+          'answer': 0,
+        },
+      ],
+      'The Seed of Truth': [
+        {
+          'id': 1,
+          'question': 'Who gave seeds to all the children of the kingdom to choose his successor?',
+          'options': ['The King Vidyadhara', 'The Prime Minister', 'A wise monk', 'A merchant'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What was special about the seeds given by the King?',
+          'options': ['They were magical', 'They were boiled and roasted so they could not grow', 'They grew into diamonds', 'They grew in one day'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Which honest boy brought an empty pot with nurtured soil?',
+          'options': ['Pingala', 'Ravi', 'Vikram', 'Somu'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the other children bring beautiful blooming plants?',
+          'options': ['They were great gardeners', 'They bought plants or used other seeds due to dishonesty', 'Their soil was magical', 'The king helped them'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Why did the King crown Pingala as the next ruler?',
+          'options': ['Pingala had the highest courage and honesty (the seed of truth)', 'Pingala was rich', 'Pingala cried loudly', 'Pingala was the oldest'],
+          'answer': 0,
+        },
+      ],
+      'Birbal Caught the Thief': [
+        {
+          'id': 1,
+          'question': 'In whose court was Birbal renowned for his wit and intelligence?',
+          'options': ['Emperor Akbar', 'King Krishnadevaraya', 'Shah Jahan', 'Babur'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What had been stolen from the merchant\'s house?',
+          'options': ['A prized horse', 'A bag of precious gems and gold', 'A royal sword', 'Rare carpets'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What clever trick did Birbal use with the suspects?',
+          'options': ['He gave them magical sticks that would grow 2 inches', 'He locked them in a dark cellar', 'He checked their hands', 'He used truth serum'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'How was the real thief identified the next morning?',
+          'options': ['He ran away', 'He had cut his stick by 2 inches out of guilt and fear', 'His stick turned gold', 'He confessed in tears'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What does this story show about Birbal?',
+          'options': ['He was a cruel judge', 'He understood human psychology and used wisdom', 'He believed in magic', 'He was lucky'],
+          'answer': 1,
+        },
+      ],
+      'The Tree and the River': [
+        {
+          'id': 1,
+          'question': 'What did the tree and the river discuss in the story?',
+          'options': ['Human greed and environmental destruction', 'The birds', 'The seasons', 'The rocks'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'How do trees help the earth?',
+          'options': ['They cause soil erosion', 'They give oxygen, shade, prevent erosion, and bring rain', 'They take away soil', 'They make loud noise'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'How was the river being harmed by humans?',
+          'options': ['By drinking its water', 'By dumping plastic, chemicals, and industrial sewage', 'By fishing only', 'By swimming'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What message does nature give us in this lesson?',
+          'options': ['Protect forests and keep water bodies clean and pollution-free', 'Cut down older trees', 'Build factories on riverbanks', 'Ignore pollution'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'A healthy environment is necessary for:',
+          'options': ['Only wild animals', 'Survival of all living beings on Earth', 'Only trees', 'Nobody'],
+          'answer': 1,
+        },
+      ],
+    },
+    'TELUGU': {
+      'గాంధీ మహాత్ముడు': [
+        {
+          'id': 1,
+          'question': 'మహాత్మా గాంధీ పూర్తి పేరు ఏమిటి?',
+          'options': ['మోహన్ దాస్ కరమ్ చంద్ గాంధీ', 'గోపాల కృష్ణ గోఖలే', 'జవాహర్ లాల్ నెహ్రూ', 'సర్దార్ పటేల్'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'గాంధీజీ స్వాతంత్య్ర పోరాటంలో వాడిన ఆయుధాలు ఏవి?',
+          'options': ['తుపాకులు', 'సత్యం మరియు అహింస', 'ఖడ్గాలు', 'రహస్య దాడులు'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'భారత జాతిపితగా మనం ఎవరిని పిలుస్తాము?',
+          'options': ['సుభాష్ చంద్రబోస్', 'మహాత్మా గాంధీ', 'భగత్ సింగ్', 'లాల్ బహదూర్ శాస్త్రి'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'గాంధీజీ జయంతిని అక్టోబర్ 2న ఏ దినోత్సవంగా జరుపుకుంటారు?',
+          'options': ['అంతర్జాతీయ అహింసా దినోత్సవం', 'కార్మిక దినోత్సవం', 'బాలల దినోత్సవం', 'విజ్ఞాన దినోత్సవం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'గాంధీజీ బోధించిన ముఖ్య సూత్రం ఏమిటి?',
+          'options': ['ధన సంపాదన', 'సత్యమేవ జయతే - సత్యమే దైవం', 'యుద్ధం చేయుట', 'గర్వము'],
+          'answer': 1,
+        },
+      ],
+      'గోపాల్ తెలివి': [
+        {
+          'id': 1,
+          'question': 'గోపాల్ ఏ రాజు ఆస్థానంలో తెలివైన హాస్యగాడు?',
+          'options': ['విక్రమార్కుడు', 'నవాబు / మహారాజు దర్బారులో', 'అశోకుడు', 'హర్షవర్ధనుడు'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'ఆస్థాన పండితులు అడిగిన చిక్కు ప్రశ్నలకు గోపాల్ ఎలా జవాబిచ్చాడు?',
+          'options': ['భయపడి పారిపోయాడు', 'సమయస్ఫూర్తి మరియు తెలివితేటలతో సమాధానం చెప్పాడు', 'ఏడ్చాడు', 'యుద్ధానికి దిగాడు'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'గోపాల్ స్వభావం ఎటువంటిది?',
+          'options': ['తెలివైనవాడు మరియు నవ్వులు పంచేవాడు', 'దుర్మార్గుడు', 'పిరికివాడు', 'ద్రోహి'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'సమయస్ఫూర్తి అంటే ఏమిటి?',
+          'options': ['ఆపద సమయంలో తగిన విధంగా సమర్థవంతంగా ఆలోచించడం', 'సమయం వృథా చేయడం', 'ఆలస్యంగా మేల్కొనడం', 'భయపడటం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'రాజు గోపాల్ తెలివికి మెచ్చి ఏమి చేశాడు?',
+          'options': ['శిక్షించాడు', 'బహుమతులు ఇచ్చి సత్కరించాడు', 'రాజ్యం నుంచి పంపించాడు', 'బందిఖానాలో పెట్టాడు'],
+          'answer': 1,
+        },
+      ],
+      'దేశమును ప్రేమించుమన్నా…': [
+        {
+          'id': 1,
+          'question': '‘దేశమును ప్రేమించుమన్నా మంచియన్నది పెంచుమన్నా’ గేయ కర్త ఎవరు?',
+          'options': ['గురజాడ అప్పారావు', 'రాయప్రోలు సుబ్బారావు', 'శ్రీశ్రీ', 'దేవులపల్లి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '‘దేశమంటే మట్టి కాదోయ్ దేశమంటే’ అని కవి ఎవరిని అన్నారు?',
+          'options': ['పర్వతాలు', 'మనుషులోయ్', 'చెట్లు', 'నదులు'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'కవి చెప్పిన ప్రకారం మనం దేనిని విడిచిపెట్టాలి?',
+          'options': ['చదువును', 'వ్యర్థమైన మాటలు, అసూయ, స్వార్థాన్ని', 'కృషిని', 'మంచితనాన్ని'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'సాటి మనుషులకు మనం ఎలా తోడ్పడాలి?',
+          'options': ['అన్నదమ్ముల వలె ఐకమత్యంతో తోడుండాలి', 'దూరం పెట్టాలి', 'శత్రువులుగా చూడాలి', 'మోసం చేయాలి'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ గేయం విద్యార్థుల్లో దేనిని రగిలిస్తుంది?',
+          'options': ['దేశభక్తి మరియు సమాజ శ్రేయస్సును', 'భయాన్ని', 'అలసత్వాన్ని', 'విభేదాలను'],
+          'answer': 0,
+        },
+      ],
+      'పరివర్తన': [
+        {
+          'id': 1,
+          'question': '‘పరివర్తన’ అంటే సరైన అర్థం ఏమిటి?',
+          'options': ['చెడు మార్గం నుంచి మంచి మార్గంలోకి మానసిక మార్పు', 'దారి తప్పుట', 'కోపం పెంచుకోవడం', 'ఓటమి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'కథలో బాలుడు ఎలా మారాడు?',
+          'options': ['సోమరితనం వీడి క్రమశిక్షణ గల విద్యార్థిగా మారాడు', 'ఇల్లు వదిలి వెళ్ళాడు', 'దొంగగా మారాడు', 'బడి మానేశాడు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'జీవితంలో విజయం సాధించడానికి ఏది ముఖ్యం?',
+          'options': ['నిరంతర సాధన మరియు సత్ప్రవర్తన', 'అబద్ధాలు చెప్పడం', 'సోమరితనం', 'పోట్లాట'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'పిల్లల భవిష్యత్తును తీర్చిదిద్దేది ఎవరు?',
+          'options': ['తల్లిదండ్రులు మరియు గురువులు', 'శత్రువులు', 'దొంగలు', 'టీవీ'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'తప్పు తెలుసుకున్న వ్యక్తిని మనం ఏమి చేయాలి?',
+          'options': ['అవమానించాలి', 'క్షమించి సరైన మార్గంలో ప్రోత్సహించాలి', 'దండించాలి', 'దూరం పెట్టాలి'],
+          'answer': 1,
+        },
+      ],
+      'సత్యమహిమ': [
+        {
+          'id': 1,
+          'question': 'సత్యం పలకడం వల్ల వ్యక్తికి ఏమి లభిస్తుంది?',
+          'options': ['గౌరవం, విశ్వసనీయత మరియు మానసిక ప్రశాంతత', 'ధన నష్టం', 'శత్రువులు', 'భయం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'హరిశ్చంద్రుడు దేని కోసం సర్వస్వాన్ని త్యాగం చేశాడు?',
+          'options': ['రాజ్యం కోసం', 'సత్యవాక్పాలన కోసం', 'బలం కోసం', 'కీర్తి మాత్రమే కోసం'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'అబద్ధం చెప్పే వ్యక్తిని సమాజం ఎలా చూస్తుంది?',
+          'options': ['నమ్మదు, గౌరవించదు', 'పూజిస్తుంది', 'రాజుగా చేస్తుంది', 'సత్కరిస్తుంది'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘సత్యమేవ జయతే’ అనే సూక్తి అర్థం ఏమిటి?',
+          'options': ['సత్యమే ఎల్లప్పుడూ జయిస్తుంది', 'అబద్ధం గెలుస్తుంది', 'డబ్బు గెలుస్తుంది', 'యుద్ధం గెలుస్తుంది'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'సత్యం ఎల్లప్పుడూ ఎలా ఉంటుంది?',
+          'options': ['శాశ్వతమైనది మరియు పవిత్రమైనది', 'క్షణికమైనది', 'బలహీనమైనది', 'చీకటి వంటిది'],
+          'answer': 0,
+        },
+      ],
+      'ముగ్గుల్లో సంక్రాంతి': [
+        {
+          'id': 1,
+          'question': 'సంక్రాంతి పండుగ ఏ నెలలో వస్తుంది?',
+          'options': ['జనవరి (పుష్య మాసం)', 'మార్చి', 'ఆగస్టు', 'నవంబరు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'సంక్రాంతి పండుగ ఎన్ని రోజుల పాటు జరుపుకుంటారు?',
+          'options': ['మూడు / నాలుగు రోజులు (భోగి, సంక్రాంతి, కనుమ)', 'ఒక రోజు', 'పది రోజులు', 'వారం రోజులు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'సంక్రాంతి రోజున ఇంటి ముంగిట వేసేవి ఏవి?',
+          'options': ['రంగురంగుల రంగవల్లులు (ముగ్గులు) మరియు గొబ్బెమ్మలు', 'లైట్లు మాత్రమే', 'తోరణాలు మాత్రమే', 'బాణసంచా'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'కనుమ పండుగ నాడు ఎవరిని పూజిస్తారు?',
+          'options': ['పంటలకు తోడ్పడే పశువులను (ఎద్దులు, ఆవులు)', 'వాహనాలను మాత్రమే', 'చెట్లను మాత్రమే', 'పుస్తకాలను'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'రైతులకు సంక్రాంతి ఎటువంటి పండుగ?',
+          'options': ['కష్టాల పండుగ', 'పంట చేతికి వచ్చిన ఆనందపు సిరి సంపదల పండుగ', 'విచారపు పండుగ', 'సాధారణ రోజు'],
+          'answer': 1,
+        },
+      ],
+      'పద్యరత్నాలు': [
+        {
+          'id': 1,
+          'question': '‘ఎప్పుడు సంపద గలిగిన అప్పుడే బంధువులు వత్తురది యెట్లన్నన్’ పద్యం భావం ఏమిటి?',
+          'options': ['చెరువు నిండితే కప్పలు చేరినట్లు, సిరి ఉంటేనే బంధువులు వస్తారు', 'బంధువులు ఎప్పుడూ రారు', 'కప్పలు మంచివి', 'ధనం ముఖ్యం కాదు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'తెలుగు శతక పద్యాలు ప్రధానంగా దేనిని బోధిస్తాయి?',
+          'options': ['నీతి, సదాచారం మరియు లోకజ్ఞానం', 'రాజకీయాలు', 'వ్యాపారం', 'యుద్ధం'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': '‘ఆపద యందు ధైర్యము’ అనేది ఎవరి లక్షణం?',
+          'options': ['ఉత్తముల లక్షణం', 'పిరికివారి లక్షణం', 'మూర్ఖుల లక్షణం', 'దొంగల లక్షణం'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'కవి బద్దెన ఏ శతకాన్ని రచించాడు?',
+          'options': ['సుమతీ శతకం', 'వేమన శతకం', 'భర్తృహరి శతకం', 'కాళహస్తి శతకం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘మకుటం’ అంటే పద్యంలో ఎక్కడ ఉంటుంది?',
+          'options': ['పద్యం చివరి పాదంలో', 'పద్యం మొదట్లో', 'మధ్యలో', 'శీర్షికలో'],
+          'answer': 0,
+        },
+      ],
+      'బారిష్టర్ పార్వతీశం': [
+        {
+          'id': 1,
+          'question': 'బారిష్టర్ పార్వతీశం నవలా రచయిత ఎవరు?',
+          'options': ['మొక్కపాటి నరసింహశాస్త్రి', 'గురజాడ', 'కందుకూరి', 'చిలకమర్తి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'పార్వతీశం ఏ చదువు చదవడానికి ఇంగ్లాండ్ బయలుదేరాడు?',
+          'options': ['బారిష్టర్ (న్యాయశాస్త్రం - లా)', 'వైద్యం', 'ఇంజనీరింగ్', 'వ్యవసాయం'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'రైలు ప్రయాణంలో పార్వతీశం చేసిన పనులు ఎలాంటివి?',
+          'options': ['హాస్యభరితమైన మరియు అమాయకపు పనులు', 'భయంకరమైనవి', 'చాలా తీవ్రమైనవి', 'పోరాటాలు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఈ కథ ప్రధానంగా దేనిని అందిస్తుంది?',
+          'options': ['కడుపుబ్బా నవ్వించే చక్కని నిర్మలమైన హాస్యం', 'విచారం', 'భయం', 'అసహ్యం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'పార్వతీశం స్వగ్రామం ఏ తీర ప్రాంతంలో ఉంది?',
+          'options': ['గోదావరి జిల్లా పల్లెటూరు', 'హైదరాబాద్', 'విజయవాడ', 'తిరుపతి'],
+          'answer': 0,
+        },
+      ],
+      'రాజు – కవి': [
+        {
+          'id': 1,
+          'question': '‘రాజు – కవి’ పాఠంలో ఎవరి గొప్పతనాన్ని సరిపోల్చారు?',
+          'options': ['రాజు మరియు కవి', 'మంత్రి మరియు భటుడు', 'రైతు మరియు వ్యాపారి', 'గురువు మరియు శిష్యుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'రాజు అధికారం దేనిపై మాత్రమే ఉంటుంది?',
+          'options': ['తన రాజ్యం మరియు జీవించి ఉన్నంత కాలం', 'అన్ని కాలాల్లో', 'ప్రపంచమంతా', 'ఎప్పటికీ'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'కవి కీర్తి ఎలా నిలిచి ఉంటుంది?',
+          'options': ['శాశ్వతంగా, తరతరాలుగా ప్రజల హృదయాల్లో', 'క్షణికంగా', 'డబ్బు ఉన్నంతవరకే', 'రాజ్యం ఉన్నంతవరకే'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'కవి ఆయుధం ఏమిటి?',
+          'options': ['కలం మరియు అక్షర సంపద', 'ఖడ్గం', 'బాణం', 'తుపాకీ'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ పాఠం ద్వారా కవిత్వం యొక్క ఏ లక్షణం తెలుస్తుంది?',
+          'options': ['అమరత్వం మరియు సాంస్కృతిక వైభవం', 'అధికారం', 'ధనం', 'ఆగ్రహం'],
+          'answer': 0,
+        },
+      ],
+    },
+    'EVS': {
+      'Family': [
+        {
+          'id': 1,
+          'question': 'Changes in family structure happen due to:',
+          'options': ['Marriage, birth, or job transfer', 'Only climate change', 'Television shows', 'None'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Our relatives from our mother\'s side are called:',
+          'options': ['Paternal relatives', 'Maternal relatives', 'Neighbors', 'Colleagues'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'A joint family includes:',
+          'options': ['Grandparents, parents, uncles, aunts, and cousins living together', 'Only parents', 'Friends in a room', 'School hostel'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What values are nurtured in a supportive family?',
+          'options': ['Love, empathy, sharing, and responsibility', 'Selfishness', 'Anger', 'Disrespect'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Who is the head of a traditional joint family?',
+          'options': ['The eldest family member (e.g., Grandfather/Grandmother)', 'The youngest baby', 'The neighbor', 'The teacher'],
+          'answer': 0,
+        },
+      ],
+      'Green World': [
+        {
+          'id': 1,
+          'question': 'Which underground part of the plant fixes it firmly in the soil?',
+          'options': ['Stem', 'Roots', 'Leaves', 'Flowers'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What are the tiny pores on leaves for gas exchange called?',
+          'options': ['Stomata', 'Chloroplasts', 'Veins', 'Petals'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Taproot system is seen in which plant?',
+          'options': ['Gram / Mango / Mustard', 'Maize', 'Wheat', 'Grass'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Fibrous roots are characteristic of:',
+          'options': ['Grass, wheat, and rice', 'Banyan', 'Carrot', 'Neem'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Desert plants like Cactus have leaves reduced to spines to:',
+          'options': ['Attract birds', 'Prevent loss of water through transpiration', 'Look scary', 'Absorb heat'],
+          'answer': 1,
+        },
+      ],
+      'Animals Around Us': [
+        {
+          'id': 1,
+          'question': 'Animals that give birth to babies and feed them with milk are:',
+          'options': ['Mammals', 'Reptiles', 'Birds', 'Amphibians'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'External ears (pinnae) are found in:',
+          'options': ['Snakes', 'Mammals like humans, dogs, cows', 'Birds', 'Frogs'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Animals that lay eggs are called:',
+          'options': ['Viviparous', 'Oviparous', 'Carnivores', 'Nocturnal'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Which animal lives in a colony with a queen, workers, and soldiers?',
+          'options': ['Ants and honeybees', 'Tiger', 'Eagle', 'Frog'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The thick fur of polar bears helps them to:',
+          'options': ['Swim faster', 'Stay warm in freezing arctic temperatures', 'Fly', 'Hear sounds'],
+          'answer': 1,
+        },
+      ],
+      'Sense Organs': [
+        {
+          'id': 1,
+          'question': 'Which organ enables us to see shapes, colors, and distance?',
+          'options': ['Ears', 'Eyes', 'Nose', 'Skin'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Ears help in hearing and also in maintaining:',
+          'options': ['Body temperature', 'Body balance and posture', 'Blood pressure', 'Digestion'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The largest sense organ covering our whole body is:',
+          'options': ['Tongue', 'Skin', 'Liver', 'Lungs'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'To protect our eyesight, we should avoid:',
+          'options': ['Eating carrots', 'Reading in moving vehicles or dim light', 'Washing eyes', 'Sleeping 8 hours'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'People with visual impairment read using a special script called:',
+          'options': ['Morse code', 'Braille script', 'Hieroglyphs', 'Shorthand'],
+          'answer': 1,
+        },
+      ],
+      'Eat Together': [
+        {
+          'id': 1,
+          'question': 'The Mid-Day Meal scheme in government schools ensures:',
+          'options': ['Children get nutritious food and eat together unitedly', 'Only teachers eat', 'Children go home early', 'Classes are cancelled'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Community dining like \'Langar\' in Gurudwaras promotes:',
+          'options': ['Inequality', 'Equality, brotherhood, and service', 'High fees', 'Silence'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Special festive foods made during Eid include:',
+          'options': ['Biryani and Sheer Khurma', 'Plum cake only', 'Ugadi pachadi only', 'Modak only'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Eating food together with family members strengthens:',
+          'options': ['Arguments', 'Family bonding and emotional health', 'Hunger', 'Indigestion'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Washing hands thoroughly before meals prevents:',
+          'options': ['Water waste', 'Intestinal infections and disease transmission', 'Food cooling', 'Thirst'],
+          'answer': 1,
+        },
+      ],
+      'Water': [
+        {
+          'id': 1,
+          'question': 'Water that is fit and safe for drinking is called:',
+          'options': ['Distilled water', 'Potable water', 'Saline water', 'Hard water'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The continuous circulation of water between earth and atmosphere is the:',
+          'options': ['Nitrogen cycle', 'Water cycle', 'Carbon cycle', 'Rock cycle'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Rainwater harvesting means:',
+          'options': ['Allowing rainwater to flood roads', 'Collecting and storing rainwater for underground recharge and use', 'Boiling rain', 'Evaporating all water'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Contaminated water can spread diseases like:',
+          'options': ['Cholera, typhoid, and diarrhea', 'Fractures', 'Diabetes', 'Common cold'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Water turns into water vapor through the process of:',
+          'options': ['Condensation', 'Evaporation', 'Freezing', 'Precipitation'],
+          'answer': 1,
+        },
+      ],
+      'Professions and Services': [
+        {
+          'id': 1,
+          'question': 'Who cultivates crops and produces food grains for our nation?',
+          'options': ['Carpenter', 'Farmer', 'Blacksmith', 'Banker'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Who spins yarn and weaves clothes on looms?',
+          'options': ['Weaver', 'Potter', 'Barber', 'Mechanic'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Every profession deserves respect; this value is called:',
+          'options': ['Dignity of labour', 'Class division', 'Hierarchy', 'Discrimination'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Who repairs electrical wiring and appliances?',
+          'options': ['Plumber', 'Electrician', 'Mason', 'Painter'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Public services like fire stations help us by:',
+          'options': ['Selling vegetables', 'Putting out accidental fires and rescuing victims', 'Building roads', 'Delivering mail'],
+          'answer': 1,
+        },
+      ],
+      'Transportation': [
+        {
+          'id': 1,
+          'question': 'Which fuel is cleaner and produces less pollution for vehicles?',
+          'options': ['CNG / Electricity', 'Coal', 'Crude oil', 'Kerosene'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Helicopters are especially useful for rescue operations during:',
+          'options': ['Floods, earthquakes, and disasters in hilly terrain', 'Deep sea diving', 'Underground tunnels', 'Indoor transport'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'A ticket checker on a passenger train is called:',
+          'options': ['Pilot', 'TTE (Travelling Ticket Examiner)', 'Conductor', 'Guard'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Goods transported across oceans are carried by large:',
+          'options': ['Cargo ships and container vessels', 'Motorboats', 'Canoes', 'Rafts'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Seat belts and helmets are essential for:',
+          'options': ['Vehicle decoration', 'Passenger safety during sudden brakes and accidents', 'Looking fashionable', 'Speeding'],
+          'answer': 1,
+        },
+      ],
+      'Communication': [
+        {
+          'id': 1,
+          'question': 'Sending letters, postcards, and inland letters is handled by:',
+          'options': ['The Postal Department', 'Railway station', 'Police station', 'Hospital'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which device allows instant audio and video communication globally?',
+          'options': ['Smartphone / Internet', 'Telegram', 'Newspaper', 'Radio'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Mass communication mediums that reach millions at once include:',
+          'options': ['Radio, television, and newspapers', 'Private diary', 'Whispering', 'Letters'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'PIN code on a letter stands for:',
+          'options': ['Personal Identification Number', 'Postal Index Number', 'Public Information Network', 'Postage India Number'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Social media and internet should be used:',
+          'options': ['Carefully and under parental guidance', 'All night without sleep', 'To share private passwords', 'To bully others'],
+          'answer': 0,
+        },
+      ],
+      'Let us Visit': [
+        {
+          'id': 1,
+          'question': 'A historical monument tells us about:',
+          'options': ['Future technology', 'Our rich past, heritage, and architectural skill', 'Weather forecast', 'Farming methods'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The famous Amaravati stupa is associated with:',
+          'options': ['Buddhism', 'Jainism only', 'Mughal era', 'British rule'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'When visiting historical places and museums, we must:',
+          'options': ['Touch and scratch ancient carvings', 'Maintain silence, follow rules, and preserve monuments', 'Litter plastic bottles', 'Shout loudly'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'A person who guides tourists and explains history at a heritage site is a:',
+          'options': ['Driver', 'Tourist Guide', 'Conductor', 'Security guard'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Museums are places where:',
+          'options': ['Old historical artifacts and treasures are preserved for public learning', 'Movies are screened', 'Vegetables are sold', 'Trains are parked'],
+          'answer': 0,
+        },
+      ],
+      'Where are we?': [
+        {
+          'id': 1,
+          'question': 'The model of the Earth is called a:',
+          'options': ['Map', 'Globe', 'Compass', 'Satellite'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'A drawing of an area on a flat sheet of paper is a:',
+          'options': ['Globe', 'Map', 'Sphere', 'Photograph'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The four cardinal directions are:',
+          'options': ['North, South, East, West', 'Up, Down, Left, Right', 'Top, Bottom, Front, Back', 'North-East, South-West'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'On standard maps, the top direction always points towards:',
+          'options': ['South', 'North', 'East', 'West'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Our home state Andhra Pradesh is located along the coast of the:',
+          'options': ['Arabian Sea', 'Bay of Bengal', 'Indian Ocean', 'Red Sea'],
+          'answer': 1,
+        },
+      ],
+    },
+  },
+  'CLASS 5': {
+    'MATHS': {
+      'Let’s Recall': [
+        {
+          'id': 1,
+          'question': 'What is the value of 1 Lakh in international system?',
+          'options': ['10,000', '100,000', '1,000,000', '10,000,000'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Smallest 5-digit number is:',
+          'options': ['10,000', '99,999', '10,001', '11,111'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Largest 5-digit number is:',
+          'options': ['90,000', '99,990', '99,999', '1,00,000'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Rounding 3,684 to nearest hundred gives:',
+          'options': ['3,600', '3,700', '3,680', '4,000'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'In Roman numerals, 50 is represented by:',
+          'options': ['V', 'X', 'L', 'C'],
+          'answer': 2,
+        },
+      ],
+      'My Number World': [
+        {
+          'id': 1,
+          'question': 'How many zeroes are there in One Million?',
+          'options': ['5', '6', '7', '8'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'In Indian system, commas are placed after how many digits from the right initially?',
+          'options': ['2 digits', '3 digits', '4 digits', '5 digits'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Which is greater: 5,42,890 or 5,42,980?',
+          'options': ['5,42,890', '5,42,980', 'Equal', 'Cannot tell'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'One Crore equals how many Millions?',
+          'options': ['1 Million', '10 Millions', '100 Millions', '0.1 Million'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Expanded form of 7,05,230 is:',
+          'options': ['7,00,000 + 5,000 + 200 + 30', '70,000 + 5,000 + 230', '7,00,000 + 50,000 + 200 + 30', '7,05,000 + 230'],
+          'answer': 0,
+        },
+      ],
+      'Addition and Subtraction': [
+        {
+          'id': 1,
+          'question': 'Add 3,45,210 and 2,14,350:',
+          'options': ['5,59,560', '5,58,560', '5,49,560', '6,00,000'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Find the difference between 8,00,000 and 3,25,000:',
+          'options': ['4,75,000', '5,25,000', '4,25,000', '5,75,000'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The sum of the greatest 5-digit number and smallest 5-digit number is:',
+          'options': ['1,09,999', '99,999', '1,00,000', '1,99,999'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Minuend - Subtrahend = :',
+          'options': ['Product', 'Difference', 'Quotient', 'Sum'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If a library has 45,670 books and buys 12,450 more, total books are:',
+          'options': ['58,120', '57,120', '58,000', '60,000'],
+          'answer': 0,
+        },
+      ],
+      'Multiplication and Division': [
+        {
+          'id': 1,
+          'question': 'Multiply 325 × 24:',
+          'options': ['7,800', '7,600', '7,500', '8,000'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Divide 4,500 by 50:',
+          'options': ['9', '90', '900', '45'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Dividend = (Divisor × Quotient) + :',
+          'options': ['Product', 'Remainder', 'Fraction', 'Sum'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Product of any number and 0 is:',
+          'options': ['1', '0', 'The number', 'Undefined'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If 15 bags of rice weigh 750 kg, 1 bag weighs:',
+          'options': ['40 kg', '50 kg', '60 kg', '75 kg'],
+          'answer': 1,
+        },
+      ],
+      'Multiples and Factors': [
+        {
+          'id': 1,
+          'question': 'Which of these is a prime number?',
+          'options': ['4', '9', '13', '15'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'The only even prime number is:',
+          'options': ['0', '2', '4', '6'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The Highest Common Factor (HCF) of 12 and 18 is:',
+          'options': ['2', '3', '6', '36'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'The Least Common Multiple (LCM) of 4 and 6 is:',
+          'options': ['10', '12', '24', '18'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Numbers that have more than two factors are called:',
+          'options': ['Prime numbers', 'Composite numbers', 'Odd numbers', 'Twin primes'],
+          'answer': 1,
+        },
+      ],
+      'Geometry': [
+        {
+          'id': 1,
+          'question': 'An angle measuring exactly 90 degrees is called a:',
+          'options': ['Acute angle', 'Right angle', 'Obtuse angle', 'Straight angle'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'An angle smaller than 90 degrees is an:',
+          'options': ['Acute angle', 'Obtuse angle', 'Right angle', 'Reflex angle'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'An angle greater than 90° and less than 180° is an:',
+          'options': ['Right angle', 'Acute angle', 'Obtuse angle', 'Complete angle'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'The instrument used to measure angles in degrees is a:',
+          'options': ['Ruler', 'Compass', 'Protractor', 'Divider'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'The sum of all angles in a triangle is always:',
+          'options': ['90°', '180°', '270°', '360°'],
+          'answer': 1,
+        },
+      ],
+      'Data Handling': [
+        {
+          'id': 1,
+          'question': 'In a pie chart (circle graph), the entire circle represents:',
+          'options': ['50%', '100% (the whole)', '25%', '360 items only'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'To find the average of numbers 10, 20, and 30:',
+          'options': ['Multiply them', 'Add them and divide by 3 (Average = 20)', 'Subtract them', 'Find the largest'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Bar graphs can be drawn:',
+          'options': ['Only vertically', 'Only horizontally', 'Both vertically and horizontally', 'Only as circles'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Data represented in a table form makes it:',
+          'options': ['Difficult to read', 'Easy to analyze and compare', 'Confusing', 'Outdated'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'If a symbol represents 50 trees, 4 symbols represent:',
+          'options': ['100 trees', '150 trees', '200 trees', '250 trees'],
+          'answer': 2,
+        },
+      ],
+      'Fractions': [
+        {
+          'id': 1,
+          'question': 'A fraction where the numerator is smaller than denominator is a:',
+          'options': ['Proper fraction', 'Improper fraction', 'Mixed fraction', 'Equivalent fraction'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which fraction is equivalent to 1/2?',
+          'options': ['2/4', '3/5', '2/6', '4/10'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Convert the improper fraction 7/3 into a mixed fraction:',
+          'options': ['2 1/3', '3 1/2', '1 4/3', '2 2/3'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Simplify 12/16 to its lowest terms:',
+          'options': ['6/8', '3/4', '2/3', '4/5'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'What is 3/5 + 1/5?',
+          'options': ['4/10', '4/5', '2/5', '3/10'],
+          'answer': 1,
+        },
+      ],
+      'Measurements': [
+        {
+          'id': 1,
+          'question': 'Area is measured in:',
+          'options': ['Square units (e.g. sq cm, sq m)', 'Linear metres', 'Cubic litres', 'Kilograms'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Area of a rectangle with length 8 cm and breadth 5 cm is:',
+          'options': ['13 sq cm', '26 sq cm', '40 sq cm', '45 sq cm'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'Area of a square with side 6 m is:',
+          'options': ['12 sq m', '24 sq m', '36 sq m', '48 sq m'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Perimeter of a rectangle is calculated as:',
+          'options': ['Length × Breadth', '2 × (Length + Breadth)', '4 × Side', 'Length + Breadth'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'How many square metres are in 1 hectare?',
+          'options': ['100 sq m', '1,000 sq m', '10,000 sq m', '1,00,000 sq m'],
+          'answer': 2,
+        },
+      ],
+      'Time': [
+        {
+          'id': 1,
+          'question': 'How many minutes are in 2 hours and 30 minutes?',
+          'options': ['120 min', '150 min', '180 min', '230 min'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'How many seconds are in 1 minute?',
+          'options': ['30 s', '60 s', '100 s', '360 s'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'In a 24-hour clock, 3:00 PM is written as:',
+          'options': ['03:00', '15:00', '13:00', '17:00'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'A leap year has how many days?',
+          'options': ['364 days', '365 days', '366 days', '367 days'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'In a leap year, the month of February has:',
+          'options': ['28 days', '29 days', '30 days', '31 days'],
+          'answer': 1,
+        },
+      ],
+    },
+    'ENGLISH': {
+      'Mallika Goes to School!': [
+        {
+          'id': 1,
+          'question': 'Why could Mallika not walk like other children?',
+          'options': ['She was lazy', 'She had a physical disability and used a wheelchair', 'She had no shoes', 'She was scared'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What prevented Mallika\'s wheelchair from reaching the school?',
+          'options': ['A high wall', 'A rough, uneven, and stony path', 'A wide river', 'A locked gate'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Who organized the village children to level the path for Mallika?',
+          'options': ['Ranga', 'The Village Headmaster', 'Her mother', 'The postman'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What wonderful quality did the children and teachers demonstrate?',
+          'options': ['Selfishness', 'Inclusion, teamwork, and empathy', 'Strictness', 'Indifference'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'How did Mallika feel when she entered the school campus?',
+          'options': ['Sad', 'Overjoyed and filled with tears of happiness', 'Afraid', 'Bored'],
+          'answer': 1,
+        },
+      ],
+      'My Sweet Memories': [
+        {
+          'id': 1,
+          'question': 'Where did the author spend the memorable summer holidays?',
+          'options': ['At his grandparents\' picturesque village', 'In a big city hotel', 'At a hill station', 'In a foreign country'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What outdoor activities did the children enjoy in the village?',
+          'options': ['Swimming in the canal, climbing mango trees, and flying kites', 'Playing video games', 'Watching television', 'Shopping in malls'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Grandmother lovingly cooked traditional dishes using:',
+          'options': ['Fast food', 'Fresh farm produce and firewood stove', 'Canned food', 'Microwave'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Village life gives us a deep connection with:',
+          'options': ['Pollution and traffic', 'Nature, peace, and loving relationships', 'Noise', 'Crowds'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Memories of childhood holidays are described as:',
+          'options': ['Sweet, unforgettable treasures of life', 'Painful', 'Boring', 'Worthless'],
+          'answer': 0,
+        },
+      ],
+      'The Necklace': [
+        {
+          'id': 1,
+          'question': 'Who is the central character who yearned for a life of luxury?',
+          'options': ['Mathilde Loisel', 'Madame Forestier', 'Jane', 'Mary'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What did Mathilde borrow from her wealthy friend for the grand ball?',
+          'options': ['A diamond necklace', 'A gold ring', 'A silk dress', 'A tiara'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What tragedy occurred after the ball?',
+          'options': ['The dress was torn', 'The necklace was lost', 'She lost her shoes', 'Her carriage broke'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'How long did the couple work in extreme poverty to pay the debt for replacement?',
+          'options': ['1 year', '5 years', '10 grueling years', '20 years'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'What shocking truth did Madame Forestier reveal years later?',
+          'options': ['The original necklace was fake and worth only 500 francs', 'It was real gold', 'She never lent it', 'She sold it'],
+          'answer': 0,
+        },
+      ],
+      'Kalam with Children': [
+        {
+          'id': 1,
+          'question': 'Dr. APJ Abdul Kalam was known as India’s:',
+          'options': ['Iron Man', 'Missile Man and People’s President', 'Father of Nation', 'Grand Old Man'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Dr. Kalam loved spending his time inspiring:',
+          'options': ['Politicians', 'Students and children', 'Celebrities', 'Businessmen'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What did Dr. Kalam encourage every child to do?',
+          'options': ['Memorize books', 'Dream big and work hard with perseverance', 'Seek government jobs only', 'Give up after failure'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'According to Dr. Kalam, which weapon can transform any nation?',
+          'options': ['Nuclear arms', 'Education and moral values', 'Gold reserves', 'Strict laws'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Dr. Kalam served as the ___ President of India:',
+          'options': ['9th', '10th', '11th', '12th'],
+          'answer': 2,
+        },
+      ],
+      'The Wondrous Women': [
+        {
+          'id': 1,
+          'question': 'Kalpana Chawla achieved fame as the first Indian-origin woman in:',
+          'options': ['Space', 'Deep sea exploration', 'Antarctica', 'Aviation only'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Mary Kom is an Olympic medalist in which sport?',
+          'options': ['Boxing', 'Wrestling', 'Weightlifting', 'Badminton'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Tessy Thomas is famously acclaimed as the:',
+          'options': ['Missile Woman of India', 'Rocket Lady', 'Space Pioneer', 'Metro Woman'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What barrier did these wondrous women shatter through dedication?',
+          'options': ['Language barriers', 'Gender stereotypes and limitations', 'Physical health', 'Age limits'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'The message of the lesson is that girls can achieve:',
+          'options': ['Only domestic work', 'Any peak of excellence through determination', 'Limited success', 'Nothing without luck'],
+          'answer': 1,
+        },
+      ],
+      'The Wise Judgement': [
+        {
+          'id': 1,
+          'question': 'Two women came to King Solomon claiming to be the mother of the same:',
+          'options': ['Puppy', 'Baby child', 'Gold jewel', 'Kitten'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What shocking command did the wise King issue to resolve the claim?',
+          'options': ['Give the baby to the guards', 'Divide the child into two halves with a sword', 'Cast lots', 'Send the baby to another country'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'How did the real mother react instantly?',
+          'options': ['She agreed to divide the baby', 'She wept and begged the king to give the baby to the other woman alive', 'She remained silent', 'She drew a sword'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the King know she was the genuine mother?',
+          'options': ['A mother\'s sacrificial love prefers the child\'s life above all else', 'She was richer', 'She had proof documents', 'She was older'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'True wisdom is characterized by understanding:',
+          'options': ['Deep human emotions and righteousness', 'Only written law books', 'Strict punishment', 'Wealth'],
+          'answer': 0,
+        },
+      ],
+      'Kabaddi… Kabaddi… Kabaddi…': [
+        {
+          'id': 1,
+          'question': 'Kabaddi is an indigenous, traditional sport of:',
+          'options': ['India', 'England', 'Greece', 'Japan'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'In Kabaddi, what must a raider chant continuously without breaking breath?',
+          'options': ['Run run', 'Kabaddi, Kabaddi, Kabaddi', 'Catch catch', 'Win win'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'How many active players represent each team on court during a match?',
+          'options': ['5 players', '7 players', '9 players', '11 players'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Kabaddi develops physical agility, quick reflexes, lung capacity, and:',
+          'options': ['Laziness', 'Mental tactics and teamwork', 'Fear', 'Aggression alone'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'A raider earns points by:',
+          'options': ['Touching defenders and crossing the mid-line safely', 'Kicking a ball', 'Catching a hoop', 'Running out of bounds'],
+          'answer': 0,
+        },
+      ],
+      'A Birthday Letter': [
+        {
+          'id': 1,
+          'question': 'Who wrote this inspiring birthday letter from Naini Prison?',
+          'options': ['Mahatma Gandhi', 'Jawaharlal Nehru', 'Subhas Chandra Bose', 'Sardar Patel'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'To whom was this historic letter addressed on her 13th birthday?',
+          'options': ['Sarojini Naidu', 'Indira Gandhi', 'Kasturba Gandhi', 'Vijayalakshmi Pandit'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Nehru emphasized that great leaders make ordinary people feel like:',
+          'options': ['Kings', 'Heroes working for freedom and truth', 'Spectators', 'Followers only'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What advice did Nehru give about honesty in public work?',
+          'options': ['Always work in the light of truth and never do anything secretly in fear', 'Keep secrets', 'Fear the rulers', 'Avoid active service'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Which historical struggle was taking place in India during that period?',
+          'options': ['First World War', 'Freedom Movement against British colonial rule', 'Sepoy Mutiny', 'French Revolution'],
+          'answer': 1,
+        },
+      ],
+    },
+    'TELUGU': {
+      'ఏ దేశమేగినా': [
+        {
+          'id': 1,
+          'question': '‘ఏ దేశమేగినా ఎందు కాలిడినా... పొగడరా నీ తల్లి భూమి భారతిని’ గేయ కర్త ఎవరు?',
+          'options': ['రాయప్రోలు సుబ్బారావు', 'గురజాడ', 'శ్రీశ్రీ', 'పోతన'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'కవి మనల్ని దేనిని కొనియాడమని ప్రబోధించారు?',
+          'options': ['స్వదేశీ సంపద మరియు భరతమాత కీర్తిని', 'విదేశీ విలాసాలను', 'డబ్బును', 'అధికారాన్ని'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'మన జాతి గౌరవాన్ని మనం ఎలా నిలబెట్టాలి?',
+          'options': ['మంచి నడవడిక, దేశభక్తి మరియు సంస్కారంతో', 'గర్వంతో', 'మౌనంతో', 'దేశాన్ని వదిలి వెళ్ళడం ద్వారా'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘భారతి’ అంటే ఇక్కడ ఎవరిని సూచిస్తుంది?',
+          'options': ['భరతమాతను', 'సరస్వతీ దేవిని మాత్రమే', 'భూమిని మాత్రమే', 'నదిని'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ గేయం విద్యార్థుల్లో ఏ భావాన్ని కలిగిస్తుంది?',
+          'options': ['విశాలమైన దేశభక్తి మరియు జాతీయ సమైక్యతను', 'విభేదాలను', 'భయాన్ని', 'స్వార్థాన్ని'],
+          'answer': 0,
+        },
+      ],
+      'సాయం': [
+        {
+          'id': 1,
+          'question': '‘సాయం’ కథలో ముఖ్య సందేశం ఏమిటి?',
+          'options': ['తోటి జీవులకు ఆపదలో నిస్వార్థంగా సహాయం చేయడం', 'ధన సంపాదన', 'ఆటలాడడం', 'చదువు మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'రోడ్డుపై గాయపడిన పక్షిని లేదా జంతువును చూసినప్పుడు మనం ఏమి చేయాలి?',
+          'options': ['కాపాడి చికిత్స చేయాలి', 'రాయి విసరాలి', 'ఫోటోలు తీసి వదిలేయాలి', 'దాటించి వెళ్ళాలి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'మానవత్వానికి నిదర్శనం ఏది?',
+          'options': ['దయ, కరుణ మరియు ఆపన్నహస్తం అందించడం', 'కోపం చూపించడం', 'అహంకారం', 'కఠినంగా ఉండడం'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘ఆపద్భాంధవుడు’ అంటే ఎవరు?',
+          'options': ['కష్టాల్లో ఆదుకునేవాడు', 'కష్టాలు తెచ్చేవాడు', 'పారిపోయేవాడు', 'చూస్తూ ఉండేవాడు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'మనం చేసే చిన్న సాయం ఇతరుల జీవితంలో ఏమి తెస్తుంది?',
+          'options': ['గొప్ప మార్పు మరియు ప్రాణరక్షణ', 'నష్టం', 'బాధ', 'అలసట'],
+          'answer': 0,
+        },
+      ],
+      'కొండవాగు': [
+        {
+          'id': 1,
+          'question': '‘కొండవాగు’ పాఠం ఏ ప్రక్రియకు చెందినది?',
+          'options': ['లేఖ / వ్యాసం / ప్రకృతి వర్ణన', 'నాటకం', 'పద్యం', 'జానపదం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'కొండవాగు ప్రయాణం దేని గుండా సాగుతుంది?',
+          'options': ['అడవులు, రాళ్ళు, రప్పలు మరియు లోయల గుండా', 'నగరపు రోడ్ల గుండా', 'భవనాల గుండా', 'ఎడారి గుండా'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'కొండవాగు గలగలలు దేనిని గుర్తుచేస్తాయి?',
+          'options': ['ప్రకృతి మాత మధుర సంగీతాన్ని', 'శబ్ధ కాలుష్యాన్ని', 'భయాన్ని', 'కోపాన్ని'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ప్రకృతి అందాలు మానవ మనస్సుకు ఏమి ఇస్తాయి?',
+          'options': ['ఆహ్లాదం, శాంతి మరియు నూతనోత్తేజం', 'ఆందోళన', 'విచారం', 'భయం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'కొండవాగు చివరకు దేనిలో కలుస్తుంది?',
+          'options': ['పెద్ద నదిలో లేదా సముద్రంలో', 'ఆకాశంలో', 'బావిలో', 'గుంటలో'],
+          'answer': 0,
+        },
+      ],
+      'జయగీతం': [
+        {
+          'id': 1,
+          'question': '‘జయగీతం’ ఎవరి ఘనతను కీర్తిస్తుంది?',
+          'options': ['భారత రాజ్యాంగ నిర్మాత డాక్టర్ బి.ఆర్. అంబేద్కర్', 'రాజులను', 'వ్యాపారులను', 'సైనికులను మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'బాబాసాహెబ్ అంబేద్కర్ ఏ వర్గాల అభ్యున్నతికి జీవితాంతం పోరాడారు?',
+          'options': ['పీడిత, అణగారిన మరియు పేద వర్గాల సమాన హక్కుల కోసం', 'ధనికుల కోసం', 'వలసపాలకుల కోసం', 'తన కుటుంబం కోసం మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'అంబేద్కర్ గారు ఇచ్చిన ముఖ్య నినాదం ఏమిటి?',
+          'options': ['బోధించు, సమీకరించు, పోరాడు', 'విశ్రమించు', 'మౌనంగా ఉండు', 'లొంగిపోవు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'భారత రాజ్యాంగం మనకు ఏమి ప్రసాదించింది?',
+          'options': ['సమానత్వం, స్వేచ్ఛ మరియు సౌభ్రాతృత్వం', 'అసమానతలు', 'బానిసత్వం', 'నిరంకుశత్వం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'అంబేద్కర్ గారికి భారత ప్రభుత్వం అందించిన అత్యున్నత పురస్కారం ఏది?',
+          'options': ['భారతరత్న', 'పద్మశ్రీ', 'నోబెల్', 'పరమవీర చక్ర'],
+          'answer': 0,
+        },
+      ],
+      'తోలుబొమ్మలాట – ఒక జానపదకళ': [
+        {
+          'id': 1,
+          'question': 'తోలుబొమ్మలాట ఆంధ్రప్రదేశ్ రాష్ట్రంలో ప్రసిద్ధి చెందిన ఏ కళ?',
+          'options': ['ప్రాచీన జానపద కళారూపం', 'ఆధునిక సినిమా', 'కంప్యూటర్ గ్రాఫిక్స్', 'విదేశీ కళ'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'తోలుబొమ్మలను సాంప్రదాయకంగా ఏ చర్మంతో తయారు చేస్తారు?',
+          'options': ['మేక లేదా జింక చర్మంతో', 'ప్లాస్టిక్ తో', 'కాగితంతో', 'చెక్కతో'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'తోలుబొమ్మలాటలో ఎక్కువగా ప్రదర్శించే కథలు ఏవి?',
+          'options': ['రామాయణం, మహాభారత పురాణ కథలు', 'ఆధునిక కథలు', 'క్రైమ్ కథలు', 'హాస్య కథలు మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'బొమ్మల వెనుక దీపం వెలుగు మరియు ముందు భాగంలో ఉండేది ఏది?',
+          'options': ['తెల్లని తెర (స్క్రీన్)', 'గోడ', 'అద్దం', 'నల్లని వస్త్రం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'మన ప్రాచీన జానపద కళలను మనం ఏమి చేయాలి?',
+          'options': ['మరచిపోవాలి', 'ఆదరించి, రక్షించి భావితరాలకు అందించాలి', 'నిషేధించాలి', 'ఎగతాళి చేయాలి'],
+          'answer': 1,
+        },
+      ],
+      'పెన్నేటి పాట': [
+        {
+          'id': 1,
+          'question': '‘పెన్నేటి పాట’ గ్రంథాన్ని రచించిన విద్వాన్ కవి ఎవరు?',
+          'options': ['విద్వాన్ విశ్వం', 'శ్రీశ్రీ', 'జాషువా', 'దేవులపల్లి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'పెన్నేటి పాట ప్రధానంగా ఏ ప్రాంతపు కరువు, రైతుల వేదనను ప్రతిబింబిస్తుంది?',
+          'options': ['రాయలసీమ (పెన్నా నదీ పరీవాహక ప్రాంతం)', 'కోస్తాంధ్ర', 'తెలంగాణ పీఠభూమి', 'ఉత్తరాంధ్ర'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'రైతు కన్నీటిని కవి దేనితో పోల్చారు?',
+          'options': ['ఎండిన పెన్నా నది ఇసుక తిన్నెలతో', 'సముద్రపు నీటితో', 'వర్షంతో', 'తేనెతో'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'వర్షాలు లేక పంటలు ఎండిపోయినప్పుడు రైతులు పడే బాధను ఏమంటారు?',
+          'options': ['కరువు కాటకాలు', 'సమృద్ధి', 'సంపద', 'విందు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'రాయలసీమ ప్రజల జీవనదిగా పేరుగాంచిన నది ఏది?',
+          'options': ['పెన్నా నది', 'గోదావరి', 'కృష్ణా', 'తుంగభద్ర'],
+          'answer': 0,
+        },
+      ],
+      'పద్యరత్నాలు': [
+        {
+          'id': 1,
+          'question': '‘అల్పుడెప్పుడు పల్కు నాడంబరముగాను, సజ్జనుండు పల్కు చల్లగాను’ భావం ఏమిటి?',
+          'options': ['మంచివారు నెమ్మదిగా హితవు పలుకుతారు, నీచుడు ఆడంబరంగా అరుస్తాడు', 'అందరూ ఒకేలా మాట్లాడతారు', 'శబ్దం ముఖ్యం', 'నిశ్శబ్దం మంచిది'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'కంచు మోగునట్లు కనకంబు మోగునా? - ఇక్కడ కనకం అంటే ఏమిటి?',
+          'options': ['బంగారం', 'ఇనుము', 'రాగి', 'వెండి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'శతక పద్యాల ముఖ్య ప్రయోజనం ఏమిటి?',
+          'options': ['జీవిత సత్యాలు మరియు నైతిక విలువల బోధన', 'కాలక్షేపం', 'కథలు చెప్పడం', 'వ్యాపారం'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘దానధర్మము’ చేయడం వల్ల మానవుడికి ఏమి లభిస్తుంది?',
+          'options': ['పుణ్యం, సమాజ గౌరవం మరియు శాంతి', 'నష్టం', 'శత్రువులు', 'దరిద్రం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘సజ్జనుడు’ అంటే సరైన అర్థం ఏమిటి?',
+          'options': ['మంచి గుణములు కల ఉత్తముడు', 'ధనవంతుడు', 'బలవంతుడు', 'పాలకుడు'],
+          'answer': 0,
+        },
+      ],
+      'ఇటీజ్ పండుగ': [
+        {
+          'id': 1,
+          'question': 'ఇటీజ్ పండుగను ఏ గిరిజన తెగవారు ఎంతో ఉత్సాహంగా జరుపుకుంటారు?',
+          'options': ['కోయ మరియు గోండు తెగల ప్రజలు', 'చెంచులు', 'యానాదులు', 'లంబాడీలు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ఈ పండుగలో గిరిజనులు ఎవరిని ఆరాధిస్తారు?',
+          'options': ['ప్రకృతి దేవతను, పంటలను మరియు గ్రామ దేవతలను', 'రాజులను', 'వాహనాలను', 'యంత్రాలను'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'గిరిజనుల పండుగలలో ప్రధానమైన ఆకర్షణ ఏది?',
+          'options': ['సాంప్రదాయ నృత్యాలు (రేలా నృత్యం) మరియు డప్పు వాయిద్యాలు', 'డిస్కో డ్యాన్స్', 'సినిమాలు', 'కార్ రేసింగ్'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'గిరిజన సంస్కృతి దేనితో విడదీయరాని సంబంధం కలిగి ఉంటుంది?',
+          'options': ['అడవులు మరియు ప్రకృతితో', 'నగర జీవనంతో', 'ఫ్యాక్టరీలతో', 'విదేశాలతో'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'మన దేశంలో గిరిజన ఆచారాలు దేనిని చాటుతాయి?',
+          'options': ['భారతదేశ సాంస్కృతిక వైవిధ్యాన్ని', 'అసమానతలను', 'బలహీనతను', 'విభజనను'],
+          'answer': 0,
+        },
+      ],
+      'తరిగొండ వెంగమాంబ': [
+        {
+          'id': 1,
+          'question': 'తరిగొండ వెంగమాంబ ఏ శతాబ్దానికి చెందిన ప్రసిద్ధ తెలుగు కవయిత్రి మరియు భక్తురాలు?',
+          'options': ['18వ శతాబ్దం', '12వ శతాబ్దం', '15వ శతాబ్దం', '20వ శతాబ్దం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'వెంగమాంబ ఏ దైవాన్ని తన ఆరాధ్య దైవంగా కొలిచింది?',
+          'options': ['తరిగొండ నరసింహస్వామి మరియు తిరుపతి వేంకటేశ్వరస్వామి', 'శివుడు', 'ఇంద్రుడు', 'సూర్యుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'తిరుమలలో వెంగమాంబ భక్తుల కోసం ప్రారంభించిన పవిత్ర సేవ ఏది?',
+          'options': ['నిత్యాన్నదాన సేవ', 'గోశాల', 'రథయాత్ర', 'పాఠశాల'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'వెంగమాంబ రచించిన ప్రసిద్ధ యక్షగానం ఏది?',
+          'options': ['చెంచు నాటకం / జలక్రీడలు', 'భోజ చరిత్ర', 'హరిశ్చంద్ర', 'పాండవోద్యోగం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'వెంగమాంబ జీవితం దేనికి ఆదర్శం?',
+          'options': ['స్త్రీశక్తి, దృఢ సంకల్పం మరియు నిష్కల్మష భక్తికి', 'రాజకీయాలకు', 'ధనార్జనకు', 'యుద్ధానికి'],
+          'answer': 0,
+        },
+      ],
+      'మంచి బహుమతి': [
+        {
+          'id': 1,
+          'question': '‘మంచి బహుమతి’ పాఠంలో స్నేహితుడికి ఇచ్చిన కానుక ఏది?',
+          'options': ['ఒక విలువైన పుస్తకం', 'బంగారు గొలుసు', 'విడియో గేమ్', 'ఖరీదైన బట్టలు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'పుస్తకాలు మానవుడికి ఎటువంటి స్నేహితులు?',
+          'options': ['శాశ్వతమైన, జ్ఞానాన్ని పంచే ఉత్తమ నేస్తాలు', 'తాత్కాలికమైనవి', 'మోసపూరితమైనవి', 'శ్రమ కలిగించేవి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'గ్రంథాలయాలు (లైబ్రరీలు) దేనికి నిలయాలు?',
+          'options': ['విజ్ఞాన భాండాగారాలు', 'వస్తువుల గిడ్డంగులు', 'ఆట స్థలాలు', 'విశ్రాంతి గదులు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'పుస్తక పఠనం వల్ల విద్యార్థుల్లో ఏమి అలవడుతుంది?',
+          'options': ['విశాల దృక్పథం, భాషా పరిజ్ఞానం మరియు ఆలోచనా శక్తి', 'అలసట', 'దృష్టి లోపం', 'నిరాశ'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘పుస్తకం హస్త భూషణం’ అంటే ఏమిటి?',
+          'options': ['చేతికి నిజమైన ఆభరణం పుస్తకమే', 'పుస్తకం కొనడం కష్టం', 'చేతికి గాజులు కావాలి', 'పుస్తకం బరువు'],
+          'answer': 0,
+        },
+      ],
+    },
+    'EVS': {
+      'Migration of People': [
+        {
+          'id': 1,
+          'question': 'Movement of people from one place to another for livelihood or work is called:',
+          'options': ['Tourism', 'Migration', 'Exploration', 'Picnic'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Major reasons for rural families migrating to urban cities include:',
+          'options': ['Drought, crop failure, and seeking employment', 'Excess food in village', 'Vacation', 'Buying cars'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What challenges do children of migrant workers often face?',
+          'options': ['Disruption of schooling and education', 'Too many schools', 'Excess toys', 'Too much wealth'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Slums in big cities develop due to:',
+          'options': ['Overcrowded migrant population with inadequate civic amenities', 'Proper city planning', 'Rich bungalows', 'Parks'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Government schemes like MNREGA aim to provide:',
+          'options': ['100 days of guaranteed wage employment in rural areas', 'Free flight tickets', 'Luxury hotels', 'Overseas jobs'],
+          'answer': 0,
+        },
+      ],
+      'Climate Change': [
+        {
+          'id': 1,
+          'question': 'The gradual increase in Earth\'s average surface temperature is known as:',
+          'options': ['Global warming', 'Ozone purification', 'Ice age', 'Photosynthesis'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which greenhouse gas is released in large quantities by burning fossil fuels?',
+          'options': ['Oxygen', 'Carbon dioxide (CO2)', 'Hydrogen', 'Helium'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Effects of climate change include:',
+          'options': ['Melting polar glaciers, rising sea levels, and unpredictable weather extremes', 'Stable seasons', 'More fresh drinking water', 'Cooler summers'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Renewable, eco-friendly energy sources include:',
+          'options': ['Solar and Wind power', 'Coal burning', 'Petrol engines', 'Diesel generators'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Planting millions of trees to fight climate change is called:',
+          'options': ['Deforestation', 'Afforestation', 'Soil erosion', 'Urbanization'],
+          'answer': 1,
+        },
+      ],
+      'Clothes We Wear': [
+        {
+          'id': 1,
+          'question': 'Cotton clothes are preferred in summer because they:',
+          'options': ['Trap heat', 'Absorb sweat and allow air circulation', 'Are waterproof', 'Are made of wool'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Wool is a natural fiber obtained from the fleece of:',
+          'options': ['Silk worms', 'Sheep and goats', 'Cotton plants', 'Jute plants'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Silk fiber is produced from the cocoons of:',
+          'options': ['Silkworms (Sericulture)', 'Spiders', 'Honeybees', 'Earthworms'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Synthetic man-made fibers include:',
+          'options': ['Nylon and Polyester', 'Cotton and Wool', 'Silk and Jute', 'Linen and Flax'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'In cold winter regions, woollen clothes keep us warm by:',
+          'options': ['Producing heat', 'Trapping body heat in air pockets between fibers', 'Absorbing water', 'Being thin'],
+          'answer': 1,
+        },
+      ],
+      'Know Our Organ System': [
+        {
+          'id': 1,
+          'question': 'Which organ system breaks down complex food into absorbable nutrients?',
+          'options': ['Digestive system', 'Respiratory system', 'Excretory system', 'Skeletal system'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The human skeletal system comprises how many bones in an adult?',
+          'options': ['106', '206', '306', '150'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Lungs are the primary organs of which body system?',
+          'options': ['Respiratory system', 'Digestive system', 'Circulatory system', 'Nervous system'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The heart pumps oxygenated blood through blood vessels called:',
+          'options': ['Veins', 'Arteries', 'Nerves', 'Bones'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Kidneys filter waste products and excess water from blood to form:',
+          'options': ['Saliva', 'Urine', 'Bile', 'Sweat only'],
+          'answer': 1,
+        },
+      ],
+      'Agriculture': [
+        {
+          'id': 1,
+          'question': 'The process of loosening and turning the soil before sowing is called:',
+          'options': ['Ploughing / Tilling', 'Harvesting', 'Threshing', 'Weeding'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Unwanted plants that grow along with main crops and compete for nutrients are:',
+          'options': ['Crops', 'Weeds', 'Fertilizers', 'Saplings'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Modern water-saving irrigation methods include:',
+          'options': ['Flood irrigation', 'Drip and Sprinkler irrigation', 'Overhead canals', 'Open trenches'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Compost, vermicompost, and cow dung are examples of:',
+          'options': ['Chemical pesticides', 'Organic fertilizers / Manure', 'Plastic mulch', 'Weedicides'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Harvest festivals celebrated across Indian states include:',
+          'options': ['Makar Sankranti, Pongal, Baisakhi, and Onam', 'Diwali only', 'Holi only', 'Christmas only'],
+          'answer': 0,
+        },
+      ],
+      'Every Drop is Precious': [
+        {
+          'id': 1,
+          'question': 'Over-extraction of groundwater through excessive borewells causes:',
+          'options': ['Rise in water table', 'Depletion of water table', 'Floods', 'Purification of water'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What method recharges underground aquifers using rooftop rain?',
+          'options': ['Rainwater harvesting soak pits', 'Dumping sewage', 'Evaporating water', 'Paving roads with concrete'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Industries discharging untreated effluents into rivers causes:',
+          'options': ['Aquatic life thriving', 'Severe water pollution and toxicity', 'Drinkable water', 'Clear rivers'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Drip irrigation saves up to what percentage of water in farming?',
+          'options': ['10%', '50% to 70%', '0%', '99%'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Conserving water at home includes:',
+          'options': ['Turning off taps while brushing teeth and fixing leaks', 'Using hose to wash driveways', 'Long running showers', 'Leaving taps open'],
+          'answer': 0,
+        },
+      ],
+      'Who Serves Us?': [
+        {
+          'id': 1,
+          'question': 'The Gram Panchayat in a village is headed by the elected:',
+          'options': ['Sarpanch / Village President', 'District Collector', 'MLA', 'Police Constable'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Primary Health Centres (PHCs) in rural areas provide:',
+          'options': ['Basic healthcare, vaccinations, and maternity care', 'Hotel accommodation', 'Air tickets', 'Vehicle loans'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The three levels of local self-government in India are collectively called:',
+          'options': ['Panchayati Raj', 'Parliament', 'Supreme Court', 'Cabinet'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Anganwadi centres take care of:',
+          'options': ['Early childhood nutrition, mother health, and pre-school care', 'Industrial production', 'Road construction', 'Banking'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Sanitation workers ensure our towns and cities remain:',
+          'options': ['Dirty', 'Clean, hygienic, and disease-free', 'Crowded', 'Dark'],
+          'answer': 1,
+        },
+      ],
+      'Let Us See an Amazing World': [
+        {
+          'id': 1,
+          'question': 'The seven continents in order of size are headed by which largest continent?',
+          'options': ['Africa', 'Asia', 'North America', 'Europe'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The deepest and largest ocean on Earth is the:',
+          'options': ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'The equator divides the Earth into which two hemispheres?',
+          'options': ['Northern and Southern Hemispheres', 'Eastern and Western only', 'Top and Bottom', 'Polar regions'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The imaginary vertical lines running from North Pole to South Pole are:',
+          'options': ['Lines of Latitude', 'Lines of Longitude (Meridians)', 'Equator', 'Tropics'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'India is located in which continent?',
+          'options': ['Africa', 'Europe', 'Asia', 'Australia'],
+          'answer': 2,
+        },
+      ],
+      'Alert Today Alive Tomorrow': [
+        {
+          'id': 1,
+          'question': 'Why must motor vehicle riders wear approved safety helmets?',
+          'options': ['To look stylish', 'To prevent fatal head injuries in collisions', 'To avoid police fines only', 'To keep hair clean'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The international emergency helpline number for ambulance in India is:',
+          'options': ['100', '101', '108', '102'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'At an intersection, a steady yellow traffic light indicates:',
+          'options': ['Speed up quickly', 'Slow down and prepare to stop safely', 'Stop immediately', 'Turn right'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'First Aid is defined as:',
+          'options': ['Final hospital surgery', 'Immediate assistance given to an injured person before professional medical help arrives', 'Medicine prescription', 'Calling relatives'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Pedestrians should always walk on the:',
+          'options': ['Middle of highway', 'Footpath / Pavement', 'Railway track', 'Road divider'],
+          'answer': 1,
+        },
+      ],
+      'The Journey of India for Freedom': [
+        {
+          'id': 1,
+          'question': 'The historic First War of Indian Independence broke out in the year:',
+          'options': ['1857 (Sepoy Mutiny)', '1947', '1919', '1942'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Who led the Salt Satyagraha (Dandi March) in 1930?',
+          'options': ['Mahatma Gandhi', 'Jawaharlal Nehru', 'Subhas Chandra Bose', 'Bhagat Singh'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Netaji Subhas Chandra Bose founded the patriotic army named:',
+          'options': ['Azad Hind Fauj (Indian National Army)', 'Red Army', 'British Army', 'Khalsa Fauj'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The tragic Jallianwala Bagh massacre occurred in Amritsar in:',
+          'options': ['1905', '1919', '1929', '1942'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'India attained independence from British colonial rule on:',
+          'options': ['26 January 1950', '15 August 1947', '2 October 1869', '14 November 1889'],
+          'answer': 1,
+        },
+      ],
+      'Earth to Space': [
+        {
+          'id': 1,
+          'question': 'The celestial body around which the Earth orbits is the:',
+          'options': ['Moon', 'Sun', 'Mars', 'Jupiter'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'The only natural satellite orbiting planet Earth is the:',
+          'options': ['Sun', 'Moon', 'Sputnik', 'Comet'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Who was the first human being to journey into outer space (1961)?',
+          'options': ['Neil Armstrong', 'Yuri Gagarin', 'Rakesh Sharma', 'Buzz Aldrin'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'India\'s premier space research agency is:',
+          'options': ['NASA', 'ISRO (Indian Space Research Organisation)', 'ESA', 'Roscosmos'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'India\'s historic Chandrayaan-3 mission successfully landed near the Moon\'s:',
+          'options': ['North Pole', 'Equator', 'South Polar region', 'Dark side only'],
+          'answer': 2,
+        },
+      ],
+    },
+  },
+  'CLASS 6': {
+    'MATHS': {
+      'Numbers All Around us Notes': [
+        {
+          'id': 1,
+          'question': 'What is the successor of 99,99,999?',
+          'options': ['1,00,00,000 (One Crore)', '99,99,998', '10,00,000', '99,99,990'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'In the Indian system, 10 million is equivalent to:',
+          'options': ['10 Lakhs', '1 Crore', '10 Crores', '100 Lakhs'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'How many zeroes are there in One Crore?',
+          'options': ['5', '6', '7', '8'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Estimate 730 + 998 to the nearest hundred:',
+          'options': ['1,600', '1,700', '1,800', '1,500'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'In Roman numerals, 1000 is written as:',
+          'options': ['C', 'D', 'M', 'L'],
+          'answer': 2,
+        },
+      ],
+      'Whole Numbers Notes': [
+        {
+          'id': 1,
+          'question': 'What is the smallest whole number?',
+          'options': ['-1', '0', '1', '2'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Does the natural number 1 have a predecessor in natural numbers?',
+          'options': ['Yes, 0', 'No', 'Yes, -1', 'Yes, 2'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Which property states: a + b = b + a?',
+          'options': ['Associative property', 'Commutative property', 'Distributive property', 'Closure property'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Division of any whole number by zero is:',
+          'options': ['Zero', 'One', 'Not defined', 'The number itself'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'The additive identity for whole numbers is:',
+          'options': ['0', '1', '-1', 'None'],
+          'answer': 0,
+        },
+      ],
+      'HCF & LCM Notes': [
+        {
+          'id': 1,
+          'question': 'Two numbers having only 1 as a common factor are called:',
+          'options': ['Twin primes', 'Co-prime numbers', 'Composite numbers', 'Even numbers'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What is the HCF of two consecutive numbers (like 14 and 15)?',
+          'options': ['0', '1', '2', 'Their product'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The smallest prime number is:',
+          'options': ['0', '1', '2', '3'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Find the LCM of 12 and 16:',
+          'options': ['24', '36', '48', '96'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Product of two numbers = :',
+          'options': ['HCF + LCM', 'HCF × LCM', 'HCF ÷ LCM', 'LCM - HCF'],
+          'answer': 1,
+        },
+      ],
+      'Integers Notes': [
+        {
+          'id': 1,
+          'question': 'Which integer is neither positive nor negative?',
+          'options': ['1', '-1', '0', 'None'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Which number is greater: -15 or -3?',
+          'options': ['-15', '-3', 'Both are equal', 'Cannot compare'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The absolute value of -25 is:',
+          'options': ['-25', '25', '0', '50'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Calculate: (-8) + (+12) =',
+          'options': ['-4', '4', '-20', '20'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'On a number line, negative integers lie to the ___ of zero:',
+          'options': ['Right', 'Left', 'Above', 'Below'],
+          'answer': 1,
+        },
+      ],
+      'Fractions and Decimals Notes': [
+        {
+          'id': 1,
+          'question': 'A fraction where the numerator is greater than denominator is an:',
+          'options': ['Proper fraction', 'Improper fraction', 'Unit fraction', 'Decimal fraction'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Convert 0.75 into a simple fraction:',
+          'options': ['1/4', '1/2', '3/4', '7/5'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'What is 2.5 + 3.75?',
+          'options': ['5.25', '6.25', '6.50', '7.00'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Fractions 2/3 and 4/6 are:',
+          'options': ['Unlike fractions', 'Equivalent fractions', 'Improper fractions', 'Reciprocals'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Write 3/10 as a decimal:',
+          'options': ['0.03', '0.3', '3.0', '0.003'],
+          'answer': 1,
+        },
+      ],
+      'Basic Arithmetic Notes': [
+        {
+          'id': 1,
+          'question': 'According to BODMAS / PEMDAS rule, which operation is done first?',
+          'options': ['Addition', 'Multiplication', 'Brackets / Parentheses', 'Subtraction'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'Evaluate: 20 - 4 × 3 + 2 =',
+          'options': ['50', '10', '14', '18'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What is the multiplicative identity for numbers?',
+          'options': ['0', '1', '-1', '10'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Which number when multiplied by any number gives 0?',
+          'options': ['0', '1', '-1', 'Infinity'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Simplifying 15 ÷ 3 × 2 gives:',
+          'options': ['1', '2.5', '10', '15'],
+          'answer': 2,
+        },
+      ],
+      'Introduction to Algebra Notes': [
+        {
+          'id': 1,
+          'question': 'In algebra, a letter used to represent an unknown quantity is a:',
+          'options': ['Constant', 'Variable', 'Operator', 'Equation'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'In the expression 4x + 7, what is the constant term?',
+          'options': ['4', 'x', '7', '4x'],
+          'answer': 2,
+        },
+        {
+          'id': 3,
+          'question': 'If 2x = 10, then the value of x is:',
+          'options': ['2', '5', '8', '20'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Write an algebraic expression for \'7 added to y\':',
+          'options': ['7 - y', 'y + 7', '7y', 'y / 7'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'An algebraic statement with an equality sign (=) is called an:',
+          'options': ['Expression', 'Equation', 'Term', 'Variable'],
+          'answer': 1,
+        },
+      ],
+      'Basic Geometric Concepts Notes': [
+        {
+          'id': 1,
+          'question': 'A point has:',
+          'options': ['Length only', 'Breadth only', 'No length, breadth, or thickness', 'Area'],
+          'answer': 2,
+        },
+        {
+          'id': 2,
+          'question': 'How many lines can pass through two distinct points?',
+          'options': ['Zero', 'Exactly one', 'Two', 'Infinitely many'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'Lines that lie in the same plane and never intersect are called:',
+          'options': ['Intersecting lines', 'Parallel lines', 'Perpendicular lines', 'Collinear lines'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'An angle whose measure is exactly 180° is a:',
+          'options': ['Right angle', 'Straight angle', 'Complete angle', 'Reflex angle'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Three or more points lying on the same straight line are called:',
+          'options': ['Coplanar points', 'Collinear points', 'Concurrent points', 'Vertex points'],
+          'answer': 1,
+        },
+      ],
+      '2D-3D Shapes Notes': [
+        {
+          'id': 1,
+          'question': 'A cube has how many faces, vertices, and edges?',
+          'options': ['6 faces, 8 vertices, 12 edges', '4 faces, 4 vertices, 6 edges', '8 faces, 6 vertices, 12 edges', '6 faces, 6 vertices, 6 edges'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'A circle\'s diameter is equal to:',
+          'options': ['Radius ÷ 2', '2 × Radius', 'Radius + 2', 'Radius × Radius'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'A solid shape with one curved surface and two identical circular flat ends is a:',
+          'options': ['Cone', 'Cylinder', 'Sphere', 'Pyramid'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'How many vertices does a sphere have?',
+          'options': ['0', '1', '2', 'Infinite'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'A regular polygon with 6 equal sides is a:',
+          'options': ['Pentagon', 'Hexagon', 'Heptagon', 'Octagon'],
+          'answer': 1,
+        },
+      ],
+      'Practical Geometry Notes': [
+        {
+          'id': 1,
+          'question': 'Which instrument is used to draw circles of a specific radius?',
+          'options': ['Protractor', 'Compass', 'Ruler only', 'Set-square'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'A line that divides an angle into two equal parts is an:',
+          'options': ['Angle bisector', 'Perpendicular', 'Tangent', 'Median'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'To draw a 90° angle accurately, we use a:',
+          'options': ['Protractor or compass construction', 'Ruler only', 'Divider', 'Thread'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The perpendicular bisector of a line segment divides it into:',
+          'options': ['Two unequal parts', 'Two equal halves at right angles', 'Three parts', 'Parallel lines'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Set-squares in a geometry box have angles of:',
+          'options': ['45°-45°-90° and 30°-60°-90°', '60°-60°-60° only', '90°-90°-90°', '20°-70°-90°'],
+          'answer': 0,
+        },
+      ],
+      'Perimeter and Area Notes': [
+        {
+          'id': 1,
+          'question': 'Perimeter of an equilateral triangle with side 7 cm is:',
+          'options': ['14 cm', '21 cm', '28 cm', '49 cm'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Area of a rectangle = :',
+          'options': ['Length + Breadth', 'Length × Breadth', '2(Length + Breadth)', 'Side × Side'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'If perimeter of a square is 36 cm, its side is:',
+          'options': ['6 cm', '9 cm', '12 cm', '18 cm'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Area of a square with side 8 cm is:',
+          'options': ['16 sq cm', '32 sq cm', '64 sq cm', '128 sq cm'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Cost of fencing a field depends on its:',
+          'options': ['Area', 'Perimeter', 'Volume', 'Diagonal'],
+          'answer': 1,
+        },
+      ],
+      'Data Handling Notes': [
+        {
+          'id': 1,
+          'question': 'A representation of numbers using bars of uniform width is called a:',
+          'options': ['Bar graph', 'Pictograph', 'Tally chart', 'Histogram'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'In a tally chart, the fifth tally mark is drawn:',
+          'options': ['Vertically next to the 4th', 'Diagonally across the four vertical marks', 'As a circle', 'As a dot'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The difference between highest and lowest value in a dataset is the:',
+          'options': ['Mean', 'Median', 'Range', 'Mode'],
+          'answer': 2,
+        },
+        {
+          'id': 4,
+          'question': 'Data collected directly from original sources is called:',
+          'options': ['Secondary data', 'Primary data', 'Rough data', 'Final data'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Pictographs represent data using:',
+          'options': ['Bars', 'Pictures and symbols', 'Numbers only', 'Curves'],
+          'answer': 1,
+        },
+      ],
+    },
+    'ENGLISH': {
+      'Who Did Patrick’s Homework?': [
+        {
+          'id': 1,
+          'question': 'What did Patrick hate doing the most?',
+          'options': ['Playing Nintendo', 'Doing homework', 'Playing basketball', 'Watching movies'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'Whom did Patrick rescue from his cat?',
+          'options': ['A little mouse', 'A tiny man / Elf', 'A parrot', 'A puppy'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What condition did the elf put for helping Patrick?',
+          'options': ['Patrick must read out the words, find meanings, and solve the math problems', 'Patrick must give him gold', 'Patrick must do no work', 'The elf would do everything alone'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What grade did Patrick achieve at the end of the semester?',
+          'options': ['Grade C', 'Grade B', 'Straight \'A\'s', 'He failed'],
+          'answer': 2,
+        },
+        {
+          'id': 5,
+          'question': 'Who actually did Patrick\'s homework all along?',
+          'options': ['The elf', 'Patrick himself through continuous self-study and effort', 'His parents', 'His teacher'],
+          'answer': 1,
+        },
+      ],
+      'How the Dog Found Himself a New Master': [
+        {
+          'id': 1,
+          'question': 'Why did the ancient wild dog search for a master?',
+          'options': ['He wanted someone stronger than anyone on Earth to protect him', 'He was lonely', 'He wanted food', 'He was tired'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Why did the dog leave the Wolf?',
+          'options': ['The Wolf was afraid of the Bear', 'The Wolf was mean', 'The Wolf ran too fast', 'The Wolf had no den'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Why did the dog leave the Bear?',
+          'options': ['The Bear was afraid of the Lion', 'The Bear ate honey', 'The Bear was sleepy', 'The Bear was slow'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the dog finally choose Man as his lifelong master?',
+          'options': ['Even the mighty Lion feared Man', 'Man had delicious food', 'Man built warm kennels', 'Man was small'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Since that day, the dog has served man as his most:',
+          'options': ['Fierce enemy', 'Faithful, loyal, and loving servant', 'Wild companion', 'Independent pet'],
+          'answer': 1,
+        },
+      ],
+      'Taro’s Reward': [
+        {
+          'id': 1,
+          'question': 'What was Taro\'s profession in the story?',
+          'options': ['A fisherman', 'A young, devoted woodcutter', 'A carpenter', 'A hunter'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What expensive drink did Taro\'s elderly father yearn for to warm his body?',
+          'options': ['Sake', 'Warm milk', 'Tea', 'Herbal soup'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What miraculous discovery did Taro make near the rocks in the deep forest?',
+          'options': ['A chest of gold', 'A cascading waterfall tasting of delicious sake', 'A magic sword', 'A warm spring of tea'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Why did the magic waterfall taste only like plain cold water to greedy villagers?',
+          'options': ['The water was poisoned', 'The waterfall rewarded only Taro for his filial piety and pure love for his parents', 'The villagers came at night', 'The spring dried up'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'How did the Emperor of Japan honour Taro?',
+          'options': ['Made him a general', 'Rewarded him with twenty pieces of gold and named the fountain after him', 'Gave him a palace', 'Banished him'],
+          'answer': 1,
+        },
+      ],
+      'An Indian American Woman in Space': [
+        {
+          'id': 1,
+          'question': 'Who was the first Indian-origin woman astronaut to fly into outer space?',
+          'options': ['Kalpana Chawla', 'Sunita Williams', 'Indira Gandhi', 'Sarojini Naidu'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'In which town of Haryana, India was Kalpana Chawla born?',
+          'options': ['Karnal', 'Ambala', 'Rohtak', 'Panipat'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What was the name of the NASA Space Shuttle on her tragic final mission STS-107?',
+          'options': ['Apollo 11', 'Columbia', 'Discovery', 'Challenger'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What did Kalpana Chawla hold a degree in before joining NASA?',
+          'options': ['Aeronautical Engineering', 'Civil Engineering', 'Biotechnology', 'Computer Science'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Her inspiring life proves that:',
+          'options': ['The path from dreams to success exists; you only need the vision and courage to get onto it', 'Space is impossible', 'Dreams are useless', 'Only wealthy people succeed'],
+          'answer': 0,
+        },
+      ],
+      'A Different Kind of School': [
+        {
+          'id': 1,
+          'question': 'Who was the headmistress of this remarkable school?',
+          'options': ['Miss Beam', 'Miss Sullivan', 'Miss Mary', 'Miss Smith'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What unique practice did Miss Beam\'s school enforce every term?',
+          'options': ['No exams', 'A blind day, lame day, deaf day, and dumb day for every child', 'Only sports days', 'Foreign travel'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What was the core aim of these special days?',
+          'options': ['To punish naughty students', 'To cultivate genuine empathy and understanding for people with disabilities', 'To save school books', 'To test acting skills'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'How did the visitor feel after being guided around the campus?',
+          'options': ['Bored', 'Deeply touched and ten times more thoughtful and sympathetic', 'Confused', 'Angry'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Which day was universally regarded as the most difficult by children?',
+          'options': ['The deaf day', 'The blind day', 'The lame day', 'The injured day'],
+          'answer': 1,
+        },
+      ],
+      'Who I Am': [
+        {
+          'id': 1,
+          'question': 'What does the lesson \'Who I Am\' celebrate?',
+          'options': ['Every child\'s unique talents, interests, and individuality', 'Winning academic trophies', 'Following the crowd', 'Strict discipline'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What was Peter\'s favorite day of the month?',
+          'options': ['Second Sunday when the whole family went to the cinema hall', 'Monday morning', 'Friday afternoon', 'Exam day'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What did Radha love to do despite her mother\'s warnings?',
+          'options': ['Climbing the guava tree outside her house', 'Swimming in the sea', 'Cooking', 'Driving cars'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What did Nasir want to become when he grew up?',
+          'options': ['A pilot', 'A seed collector to save cotton seeds', 'A politician', 'A doctor'],
+          'answer': 1,
+        },
+        {
+          'id': 5,
+          'question': 'Understanding diverse talents teaches children:',
+          'options': ['Mutual respect and self-confidence', 'Jealousy', 'Comparison', 'Boredom'],
+          'answer': 0,
+        },
+      ],
+      'Fair Play': [
+        {
+          'id': 1,
+          'question': 'Who were the two inseparable childhood friends in the story?',
+          'options': ['Jumman Sheikh and Algu Chowdhry', 'Akbar and Birbal', 'Ravi and Somu', 'Hari and Ramu'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Who brought a complaint against Jumman to the village Panchayat?',
+          'options': ['His old aunt', 'His brother', 'His neighbor', 'The headman'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'As Head Panch, what verdict did Algu deliver?',
+          'options': ['Favoured Jumman blindly', 'Ruled in favour of the aunt, stating Jumman must pay a monthly allowance or return the property', 'Dismissed the case', 'Punished the aunt'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'Why did Jumman give a fair verdict when he became Head Panch later in Algu\'s case?',
+          'options': ['He realized that the voice of the Panch is the voice of God and above personal enmity', 'He wanted money', 'He was scared of the villagers', 'Algu threatened him'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The moral of \'Fair Play\' is:',
+          'options': ['Friendship is corrupt', 'Justice and truth are sacred and above personal relations', 'Panchayats are biased', 'Never trust friends'],
+          'answer': 1,
+        },
+      ],
+      'The Banyan Tree': [
+        {
+          'id': 1,
+          'question': 'What classic battle did the young boy witness from the banyan tree?',
+          'options': ['A fight between a mongoose and a black cobra', 'A battle between tigers', 'A fight between eagles', 'A battle between dogs'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Who won the fierce battle under the tree?',
+          'options': ['The cobra', 'The mongoose', 'The crow', 'The myna'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'What happened to the foolish crow that interfered in the fight?',
+          'options': ['Won a prize', 'Was struck by the cobra and died', 'Flew away unharmed', 'Killed the snake'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'The great banyan tree was older than:',
+          'options': ['The boy, his grandfather, and the house itself', 'The mountains', 'The sky', 'The oceans'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'What did the banyan tree serve as for the narrator?',
+          'options': ['A private library and lookout post filled with adventures', 'A place to hide money', 'A firewood source', 'A prison'],
+          'answer': 0,
+        },
+      ],
+      'Poem 1 A House, A Home': [
+        {
+          'id': 1,
+          'question': 'According to the poet, what is a \'house\' made of?',
+          'options': ['Brick, stone, wood, glass, and tiles', 'Love and affection only', 'Feelings', 'Family members only'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What transforms a brick-and-mortar house into a \'home\'?',
+          'options': ['Expensive furniture', 'A loving family sharing unselfish acts and caring for each other', 'Big chandeliers', 'Tall boundary walls'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'A home is characterized by:',
+          'options': ['Brothers, sisters, fathers, and mothers sharing mutual love', 'Only iron gates', 'Empty rooms', 'Silence'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Who wrote the poem \'A House, A Home\'?',
+          'options': ['Lorraine M. Halli', 'Robert Frost', 'William Wordsworth', 'Sarojini Naidu'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The contrast drawn in the poem is between:',
+          'options': ['Physical building structure and warm emotional sanctuary', 'Old and new cities', 'Nature and machines', 'Day and night'],
+          'answer': 0,
+        },
+      ],
+      'Poem 2 The Kite': [
+        {
+          'id': 1,
+          'question': 'How does a new kite look in the bright blue sky?',
+          'options': ['Dull', 'Bright and beautiful', 'Scary', 'Invisible'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'What makes the kite soar high like a ship on waves?',
+          'options': ['A strong breeze / wind', 'A heavy string', 'Rain', 'Thunder'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'When the wind falls, what happens to the kite?',
+          'options': ['It flies faster', 'It rests and slackens until a new breeze blows', 'It tears instantly', 'It vanishes'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'What makes a soaring kite look ragged and ruined?',
+          'options': ['When it gets tangled in the branches of a tree top', 'When it touches clouds', 'When it flies very high', 'When birds sing'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The poem compares the motion of a kite to:',
+          'options': ['A sailing ship upon ocean crests', 'A galloping horse', 'A falling leaf', 'An aeroplane'],
+          'answer': 0,
+        },
+      ],
+      'Poem 3 The Quarrel': [
+        {
+          'id': 1,
+          'question': 'Between whom did the quarrel start in the poem?',
+          'options': ['Two strangers', 'The poet and her brother', 'Two neighbors', 'Two classmates'],
+          'answer': 1,
+        },
+        {
+          'id': 2,
+          'question': 'How did the initial quarrel begin?',
+          'options': ['Over a big fight', 'Over a slight, trivial matter that neither remembered clearly', 'Over stolen gold', 'Over broken toys'],
+          'answer': 1,
+        },
+        {
+          'id': 3,
+          'question': 'The afternoon turned black and unpleasant because:',
+          'options': ['It rained heavily', 'They stayed angry and refused to speak', 'The lights went out', 'They lost their way'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'How was the quarrel happily resolved?',
+          'options': ['The brother thumped her on the back and apologized to end the fight', 'Their mother beat them', 'They called the police', 'They never spoke again'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The poem teaches us that sibling arguments should:',
+          'options': ['Last forever', 'Be forgotten quickly with warmth and understanding', 'Be taken to court', 'Cause hatred'],
+          'answer': 1,
+        },
+      ],
+      'Poem 4 Beauty': [
+        {
+          'id': 1,
+          'question': 'Where can beauty be seen according to the poem?',
+          'options': ['In the sunlight, the trees, the birds, corn growing, and people working', 'Only in expensive jewellery', 'Only in mirrors', 'Nowhere'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Where can beauty be heard?',
+          'options': ['In the night, wind sighing, rain falling, or a singer chanting', 'In traffic honking', 'In noisy machines', 'Only in concerts'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Where does true beauty reside within ourselves?',
+          'options': ['In good deeds, pure thoughts, and happy dreams', 'In expensive clothes', 'In physical makeup', 'In gold rings'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Who is the poet of the poem \'Beauty\'?',
+          'options': ['E-Yeh-Shure\'', 'John Keats', 'Walt Whitman', 'Rabindranath Tagore'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'True beauty is described as:',
+          'options': ['Everlasting and present all around us and inside our hearts', 'Temporary', 'Costly', 'Fake'],
+          'answer': 0,
+        },
+      ],
+      'Poem 5 Where Do All the Teachers Go?': [
+        {
+          'id': 1,
+          'question': 'What does the curious child wonder about his teachers at 4:00 o\'clock?',
+          'options': ['Where they go when school finishes', 'Why they mark exams', 'Why they shout', 'Where they buy books'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'What normal things does the child wonder if teachers do like ordinary humans?',
+          'options': ['Wear pyjamas, wash socks, watch TV, and pick their noses', 'Fly like birds', 'Live in caves', 'Never eat food'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Did teachers ever spell words wrongly or lose their hymn books when they were young?',
+          'options': ['Yes, the child wonders if they too were once mischievous children', 'Never', 'Teachers are robots', 'Teachers are born old'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'What does the child plan to do to uncover the truth?',
+          'options': ['Follow one teacher home to see what they really do and write a poem about it', 'Ask the police', 'Hide in school', 'Stop going to school'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The theme of the poem highlights:',
+          'options': ['A child\'s innocent perspective of teachers as superhuman beings', 'Strict discipline', 'Homework struggles', 'School holidays'],
+          'answer': 0,
+        },
+      ],
+      'Poem 6 The Wonderful Words': [
+        {
+          'id': 1,
+          'question': 'Why should we never let a thought shrivel and die for lack of words?',
+          'options': ['English is a wonderful game and language to express our thoughts clearly', 'Words are expensive', 'Silence is best', 'Thoughts are bad'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Words are described as the:',
+          'options': ['Food and dress of thought', 'Chains of the mind', 'Noise of society', 'Enemies of silence'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'What do human minds always long to hear?',
+          'options': ['Fresh, beautiful, and inspiring thoughts', 'Harsh gossip', 'Lies', 'Boring lectures'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Who can free a thought imprisoned behind our eyes?',
+          'options': ['Rich words spoken or written skillfully', 'A key', 'A doctor', 'Silence'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The poet encourages children to:',
+          'options': ['Enrich their vocabulary and express their thoughts freely', 'Never speak', 'Use simple slangs only', 'Keep thoughts secret'],
+          'answer': 0,
+        },
+      ],
+      'Poem 7 Vocation': [
+        {
+          'id': 1,
+          'question': 'Who is the poet of the evocative poem \'Vocation\'?',
+          'options': ['Rabindranath Tagore', 'Sarojini Naidu', 'Toru Dutt', 'R.K. Narayan'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'When the school gong sounds at 10 AM, whom does the child wish to be like?',
+          'options': ['The hawker crying \'Bangles, crystal bangles!\' without hurry or fixed road', 'The teacher', 'The principal', 'The policeman'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'At 4 PM returning from school, whom does the child observe and envy?',
+          'options': ['The gardener digging the ground freely with mud on his clothes', 'The bus driver', 'The shopkeeper', 'The bird'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'At night through the open window, whom does the child yearn to accompany?',
+          'options': ['The watchman swinging his lantern and chasing his shadow all night', 'The milkman', 'The baker', 'The sailor'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The poem captures:',
+          'options': ['A child\'s innocent yearning for unrestricted freedom and adventure', 'Career planning', 'Hard labour', 'Poverty'],
+          'answer': 0,
+        },
+      ],
+    },
+    'HINDI': {
+      'बारिश': [
+        {
+          'id': 1,
+          'question': 'बारिश के मौसम में आसमान में क्या छा जाते हैं?',
+          'options': ['काले घने बादल', 'तारे', 'धूप', 'पतंगें'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'वर्षा ऋतु में बच्चे कागज़ की क्या बनाकर पानी में तैराते हैं?',
+          'options': ['नाव (कश्ती)', 'हवाई जहाज', 'कार', 'गेंद'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'बारिश होने पर कौन सा पक्षी पंख फैलाकर खुशी से नाचता है?',
+          'options': ['मोर', 'कौआ', 'तोता', 'कबूतर'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'बारिश का पानी किसानों की किस चीज़ के लिए वरदान है?',
+          'options': ['फसलों और खेती के लिए', 'मकानों के लिए', 'सड़कों के लिए', 'गाड़ियों के लिए'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'बादल गरजना और बिजली चमकना किस मौसम की पहचान है?',
+          'options': ['वर्षा ऋतु', 'सर्दी', 'गर्मी', 'पतझड़'],
+          'answer': 0,
+        },
+      ],
+      'तितली': [
+        {
+          'id': 1,
+          'question': 'तितली के पंख कैसे होते हैं?',
+          'options': ['रंग-बिरंगे और सुंदर', 'काले और खुरदुरे', 'सफेद और भारी', 'पारदर्शी केवल'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'तितली फूलों पर बैठकर क्या चूसती है?',
+          'options': ['फूलों का मीठा रस (पराग)', 'पानी', 'पत्ते', 'धूल'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'तितली एक फूल से दूसरे फूल पर क्या करती है?',
+          'options': ['उड़ती और मंडराती है', 'सोती है', 'चलती है', 'लड़ती है'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'तितली प्रकृति की क्या बढ़ाती है?',
+          'options': ['सुंदरता और शोभा', 'गंदगी', 'शोर', 'प्रदूषण'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'बच्चों को तितली देखकर कैसा लगता है?',
+          'options': ['बहुत आनंद और खुशी मिलती है', 'डर लगता है', 'गुस्सा आता है', 'दुख होता है'],
+          'answer': 0,
+        },
+      ],
+      'ऊँट चला': [
+        {
+          'id': 1,
+          'question': 'ऊँट को किस क्षेत्र का \'जहाज\' कहा जाता है?',
+          'options': ['रेगिस्तान का जहाज', 'पहाड़ों का', 'जंगलों का', 'नदियों का'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ऊँट की गर्दन और पीठ कैसी होती है?',
+          'options': ['ऊँची गर्दन और कूबड़ वाली पीठ', 'छोटी', 'गोल', 'सपाट'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'रेत में ऊँट के पैर क्यों नहीं धँसते?',
+          'options': ['उसके पैर गद्दीदार और चौड़े होते हैं', 'उसके पंजे नुकीले होते हैं', 'वह जूते पहनता है', 'वह हल्का होता है'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ऊँट कई दिनों तक बिना किसके रह सकता है?',
+          'options': ['पानी और भोजन', 'सोए', 'सांस लिए', 'चले'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '\'ऊँट चला भाई ऊँट चला, हिलता डुलता ऊँट चला\' कविता का भाव क्या है?',
+          'options': ['ऊँट की मस्त चाल का वर्णन', 'ऊँट की दौड़', 'ऊँट का गुस्सा', 'शिकार'],
+          'answer': 0,
+        },
+      ],
+      'मेरा देश महान है': [
+        {
+          'id': 1,
+          'question': 'हमारे देश का नाम क्या है?',
+          'options': ['भारत (इंडिया / हिंदुस्तान)', 'नेपाल', 'भूटान', 'श्रीलंका'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'भारत के उत्तर में कौन सा विशाल पर्वत प्रहरी के समान खड़ा है?',
+          'options': ['हिमालय पर्वत', 'अरावली', 'विंध्याचल', 'नीलगिरी'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'भारत के राष्ट्रीय ध्वज (तिरंगे) में कितने रंग हैं?',
+          'options': ['तीन (केसरिया, सफेद, हरा और बीच में चक्र)', 'चार', 'दो', 'पाँच'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'भारत की मुख्य विशेषता क्या है?',
+          'options': ['अनेकता में एकता', 'झगड़े', 'भेदभाव', 'कमजोरी'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'हमें अपने देश के प्रति क्या भाव रखना चाहिए?',
+          'options': ['सच्ची देशभक्ति, सम्मान और समर्पण', 'उपेक्षा', 'स्वार्थ', 'घृणा'],
+          'answer': 0,
+        },
+      ],
+      'मेरी बहना': [
+        {
+          'id': 1,
+          'question': 'भाई-बहन के पवित्र प्रेम का त्योहार कौन सा है?',
+          'options': ['रक्षाबंधन और भाई दूज', 'होली', 'दीवाली', 'दशहरा'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'बहन अपने भाई की कलाई पर क्या बाँधती है?',
+          'options': ['स्नेह भरी राखी', 'घड़ी', 'धागा मात्र', 'पट्टी'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'भाई अपनी बहन को रक्षाबंधन पर क्या वचन देता है?',
+          'options': ['जीवन भर रक्षा और सहायता करने का', 'पिटाई करने का', 'दूर जाने का', 'कुछ नहीं'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'परिवार में भाई-बहन का रिश्ता कैसा होता है?',
+          'options': ['मीठी नोक-झोंक और गहरे प्यार से भरा', 'शत्रुता का', 'व्यापारिक', 'उदासीन'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '\'मेरी बहना\' कविता में बहन के प्रति कैसा भाव प्रकट हुआ है?',
+          'options': ['असीम वात्सल्य और स्नेह', 'क्रोध', 'ईर्ष्या', 'दुख'],
+          'answer': 0,
+        },
+      ],
+      'खिलौनेवाला': [
+        {
+          'id': 1,
+          'question': 'खिलौनेवाला कविता की प्रसिद्ध कवयित्री कौन हैं?',
+          'options': ['सुभद्रा कुमारी चौहान', 'महादेवी वर्मा', 'सरोजिनी नायडू', 'मीराबाई'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'खिलौनेवाला गली में क्या बेचने आता है?',
+          'options': ['तरह-तरह के सुंदर खिलौने', 'मिठाई', 'कपड़े', 'सब्जियाँ'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'बालक अपनी माँ से कौन सा खिलौना खरीदने की इच्छा जताता है?',
+          'options': ['तीर-कमान या तलवार (राम जैसा बनने के लिए)', 'गुड़िया', 'रेलगाड़ी', 'मोटर'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'बालक राम बनकर क्या करना चाहता है?',
+          'options': ['राक्षसों का संहार और माँ की सेवा', 'जंगल में सोना', 'लड़ाई करना', 'खिलौने तोड़ना'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'यह कविता बालमन की किस भावना को दर्शाती है?',
+          'options': ['वीरता, कल्पनाशीलता और मातृ-प्रेम', 'कायरता', 'लालच', 'क्रोध'],
+          'answer': 0,
+        },
+      ],
+      'तरकारी दरबार': [
+        {
+          'id': 1,
+          'question': '\'तरकारी\' शब्द का सामान्य अर्थ क्या है?',
+          'options': ['सब्जी (Vegetables)', 'फल', 'मिठाई', 'अनाज'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'सब्जियों का राजा किसे माना गया है?',
+          'options': ['आलू या बैंगन (सिर पर ताज)', 'मिर्च', 'टिंडा', 'करेला'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'हरी पत्तेदार सब्जियाँ (जैसे पालक, मेथी) खाने से क्या मिलता है?',
+          'options': ['आयरन, विटामिन और उत्तम स्वास्थ्य', 'बीमारी', 'मोटापा मात्र', 'थकान'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'तरकारी दरबार में सभी सब्जियों ने मिलकर क्या निर्णय लिया?',
+          'options': ['सब मिलकर बच्चों को स्वस्थ और बलवान बनाएँगी', 'लड़ाई करेंगी', 'बाजार नहीं जाएँगी', 'सड़ जाएँगी'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'हमें प्रतिदिन के भोजन में क्या शामिल करना चाहिए?',
+          'options': ['ताजी हरी सब्जियाँ और सलाद', 'केवल जंक फूड', 'केवल चाकलेट', 'केवल चिप्स'],
+          'answer': 0,
+        },
+      ],
+      'दो मित्र': [
+        {
+          'id': 1,
+          'question': 'सच्चे मित्र की पहचान कब होती है?',
+          'options': ['विपत्ति और संकट के समय', 'खेलते समय', 'पार्टी में', 'धन होने पर'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'जंगल में भालू को आते देख एक मित्र ने क्या किया?',
+          'options': ['स्वार्थी होकर अकेले पेड़ पर चढ़ गया', 'भालू को मारा', 'मित्र को गोद में लिया', 'दौड़ लगाई'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'दूसरे मित्र ने अपनी जान बचाने के लिए क्या उपाय किया?',
+          'options': ['सांस रोककर जमीन पर मुर्दे की तरह लेट गया', 'चिल्लाया', 'पेड़ हिलाया', 'भालू से लड़ा'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'भालू ने उसके कान सूंघकर क्या किया?',
+          'options': ['उसे मरा हुआ समझकर चुपचाप चला गया', 'उसे खा गया', 'पेड़ उखाड़ दिया', 'हंसा'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'इस प्रसिद्ध कहानी की सीख क्या है?',
+          'options': ['संकट में साथ छोड़ने वाला सच्चा मित्र नहीं होता', 'भालू कान खाता है', 'पेड़ पर नहीं चढ़ना चाहिए', 'जंगल मत जाओ'],
+          'answer': 0,
+        },
+      ],
+      'जन्मदिन': [
+        {
+          'id': 1,
+          'question': 'जन्मदिन पर बच्चे क्या काटते हैं?',
+          'options': ['स्वादिष्ट केक', 'पेड़', 'कागज', 'सब्जी'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'जन्मदिन के अवसर पर घर को कैसे सजाया जाता है?',
+          'options': ['गुब्बारों, झालरों और रंग-बिरंगी रोशनी से', 'पत्थरों से', 'किताबों से', 'अंधेरे से'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'जन्मदिन पर बड़े बुजुर्ग क्या देते हैं?',
+          'options': ['शुभकामनाएं और मंगल आशीर्वाद', 'डांट', 'सजा', 'गृहकार्य'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'अपने जन्मदिन पर एक अच्छा और नेक काम क्या हो सकता है?',
+          'options': ['पौधा लगाना और जरूरतमंदों की मदद करना', 'पैसे उड़ाना', 'शोर मचाना', 'झगड़ा करना'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'जन्मदिन हमारे जीवन में क्या लाता है?',
+          'options': ['उत्साह, खुशियाँ और नए संकल्प', 'उदासी', 'क्रोध', 'आलस्य'],
+          'answer': 0,
+        },
+      ],
+    },
+    'TELUGU': {
+      'అమ్మ ఒడి': [
+        {
+          'id': 1,
+          'question': '‘అమ్మ ఒడి’ గేయ రచయిత ఎవరు?',
+          'options': ['బాడిగ వెంకటనరసింహారావు (బి.వి. నరసింహారావు)', 'గురజాడ', 'శ్రీశ్రీ', 'దేవులపల్లి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'బిడ్డకు తొలి గురువు మరియు మొదటి బడి ఏది?',
+          'options': ['తల్లి మరియు అమ్మ ఒడి', 'పాఠశాల మాత్రమే', 'కళాశాల', 'వీధి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'అమ్మ లాలిపాటలు బిడ్డకు దేనిని అందిస్తాయి?',
+          'options': ['మధురమైన జోల, సంస్కారం మరియు మానసిక ప్రశాంతత', 'భయం', 'అలసట', 'కోపం'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఈ పాఠం ద్వారా విద్యార్థులకు ఏ విలువ బోధింపబడింది?',
+          'options': ['మాతృభక్తి మరియు తల్లిదండ్రులపై గౌరవం', 'స్వార్థం', 'ధనార్జన', 'విలాసాలు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'తల్లి ప్రేమను దేనితో పోల్చవచ్చు?',
+          'options': ['అమృతంతో', 'తేనెతో మాత్రమే', 'సముద్రపు నీటితో', 'ఏదీ సరిపోలదు (అనంతమైనది)'],
+          'answer': 3,
+        },
+      ],
+      'తృప్తి': [
+        {
+          'id': 1,
+          'question': '‘తృప్తి’ కథా రచయిత ఎవరు?',
+          'options': ['సత్యం శంకరమంచి (అమరావతి కథలు)', 'ముళ్లపూడి', 'శ్రీపాద', 'చలం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ఈ కథలో అందరినీ ఆప్యాయంగా కడుపునిండా తినిపించే పాత్ర ఏది?',
+          'options': ['పూర్ణయ్య (పూర్ణం బావ)', 'సుబ్బయ్య', 'రామయ్య', 'వెంకటేశ్వర్లు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'పూర్ణం బావకు నిజమైన తృప్తి ఎందులో లభిస్తుంది?',
+          'options': ['తాను ఎక్కువగా తినడంలో', 'ఇతరులకు ప్రేమగా వడ్డించి వారు సంతృప్తిగా తినడం చూడడంలో', 'డబ్బు సంపాదించడంలో', 'నిద్రపోవడంలో'],
+          'answer': 1,
+        },
+        {
+          'id': 4,
+          'question': 'విందు భోజనంలో వడ్డించిన ముఖ్యమైన పిండివంటలు ఏవి?',
+          'options': ['జిలేబీ, బూరెలు, పాయసం, శాఖాహార రుచులు', 'ఫాస్ట్ ఫుడ్', 'రొట్టెలు మాత్రమే', 'పండ్లు మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘తృప్తి’ అనే పదానికి సరైన అర్థం ఏమిటి?',
+          'options': ['సంతోషం / సంపూర్ణ సంతృప్తి', 'ఆకలి', 'అసంతృప్తి', 'కోపం'],
+          'answer': 0,
+        },
+      ],
+      'మాకొద్దీ తెల్ల దొరతనము': [
+        {
+          'id': 1,
+          'question': '‘మాకొద్దీ తెల్ల దొరతనము’ చారిత్రాత్మక గేయాన్ని రచించిన జాతీయ కవి ఎవరు?',
+          'options': ['గరిమెళ్ళ సత్యనారాయణ', 'గురజాడ', 'త్రిపురనేని', 'రాయప్రోలు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ఈ గేయం ఏ కాలంలో ఆంధ్రదేశంలో విప్లవాత్మక ఉత్తేజాన్ని రగిలించింది?',
+          'options': ['భారత స్వాతంత్య్రోద్యమ కాలంలో', 'మొఘల్ కాలంలో', 'విజయనగర కాలంలో', 'ఆధునిక కాలంలో'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'బ్రిటిష్ వారి అన్యాయమైన పాలనను, పన్నుల భారాలను ఈ గేయం ఎలా నిరసించింది?',
+          'options': ['నిర్భయంగా, స్పష్టంగా ప్రజలను చైతన్యవంతం చేస్తూ', 'బ్రిటిషర్లను ప్రశంసిస్తూ', 'మౌనంగా', 'కవిత రూపం లేకుండా'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఈ గేయం రాసినందుకు గరిమెళ్ళ సత్యనారాయణ గారికి బ్రిటిష్ ప్రభుత్వం ఏమి చేసింది?',
+          'options': ['జైలు శిక్ష విధించింది', 'బహుమతి ఇచ్చింది', 'ఉద్యోగం ఇచ్చింది', 'విదేశాలకు పంపింది'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘తెల్ల దొరలు’ అని ఎవరిని ఉద్దేశించి అన్నారు?',
+          'options': ['బ్రిటిష్ పాలకులను', 'రైతులను', 'భారతీయులను', 'వ్యాపారులను'],
+          'answer': 0,
+        },
+      ],
+      'సమయస్ఫూర్తి': [
+        {
+          'id': 1,
+          'question': '‘సమయస్ఫూర్తి’ కథ ఏ ప్రాచీన సంస్కృత నీతి గ్రంథం నుండి తీసుకోబడింది?',
+          'options': ['పంచతంత్రం (కందుకూరి వీరేశలింగం అనువాదం)', 'హితోపదేశం', 'భాగవతం', 'మహాభారతం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ఈ కథలో ప్రాణాపాయం నుండి తెలివిగా తప్పించుకున్న ఎలుక పేరు ఏమిటి?',
+          'options': ['పలితుడు', 'హిరణ్యకుడు', 'రోమశుడు', 'లఘుపతనకుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'వలలో చిక్కుకున్న పిల్లి పేరు ఏమిటి?',
+          'options': ['రోమశుడు', 'చిత్రగ్రీవుడు', 'మంథరకుడు', 'దమనకుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఎలుక పిల్లితో ఎందుకు స్నేహం ఒప్పందం చేసుకుంది?',
+          'options': ['గద్ద మరియు పాము బారి నుండి తన ప్రాణం కాపాడుకోవడానికి', 'పిల్లిని చంపడానికి', 'ఆహారం కోసం', 'సరదా కోసం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ కథ యొక్క శాశ్వత నీతి ఏమిటి?',
+          'options': ['సమయానుకూలంగా ఆలోచించి ఆపదనుండి బయటపడాలి (సమయస్ఫూర్తి)', 'ఎవరినీ నమ్మకూడదు', 'శత్రువులు ఎప్పుడూ మిత్రులు కారు', 'భయపడాలి'],
+          'answer': 0,
+        },
+      ],
+      'మన మహనీయులు (ఉపవాచకం)': [
+        {
+          'id': 1,
+          'question': 'ఆంధ్ర కేసరి అని ఎవరిని బిరుదాంకితులుగా పిలుస్తారు?',
+          'options': ['టంగుటూరి ప్రకాశం పంతులు', 'పొట్టి శ్రీరాములు', 'అల్లూరి సీతారామరాజు', 'కొండా వెంకటప్పయ్య'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'ప్రత్యేక ఆంధ్ర రాష్ట్ర సాధన కోసం 58 రోజులు ఆమరణ నిరాహారదీక్ష చేసి ప్రాణాలర్పించిన అమరజీవి ఎవరు?',
+          'options': ['పొట్టి శ్రీరాములు', 'సుభాష్ బోస్', 'భగత్ సింగ్', 'గోఖలే'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'బ్రిటిష్ తుపాకీలకు గుండెనెదురొడ్డి సైమన్ కమిషన్ బహిష్కరణలో నిలిచిన ధీరుడు ఎవరు?',
+          'options': ['టంగుటూరి ప్రకాశం పంతులు', 'గాంధీజీ', 'నెహ్రూ', 'తిలక్'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'మన్యం విప్లవ వీరుడు, గిరిజనుల విముక్తి పోరాట యోధుడు ఎవరు?',
+          'options': ['అల్లూరి సీతారామరాజు', 'కొమరం భీమ్', 'రాయలవారు', 'కందుకూరి'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'మన మహనీయుల జీవిత చరిత్రలు విద్యార్థులకు ఏమి నేర్పుతాయి?',
+          'options': ['దేశభక్తి, త్యాగనిరతి మరియు నిస్వార్థ ప్రజాసేవ', 'రాజకీయ పదవులు', 'ధనార్జన', 'విలాసవంతమైన జీవితం'],
+          'answer': 0,
+        },
+      ],
+      'సుభాషితాలు': [
+        {
+          'id': 1,
+          'question': '‘సుభాషితాలు’ అనగా అర్థం ఏమిటి?',
+          'options': ['మంచి మాటలు / నీతి వాక్యాలు', 'హాస్య కథలు', 'యుద్ధ వార్తలు', 'పొడుపు కథలు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '‘చదువది ఎంత గలిగిన గుణసంపద లేకున్న’ పద్యం దేనిని హెచ్చరిస్తుంది?',
+          'options': ['సంస్కారం లేని చదువు వ్యర్థం', 'చదువు అక్కర్లేదు', 'ధనం ఉంటే చాలు', 'గుణం ముఖ్యం కాదు'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'విద్వాంసుడిని (జ్ఞానిని) ఎక్కడ గౌరవిస్తారు?',
+          'options': ['సర్వత్ర (ప్రపంచంలో ఎక్కడైనా)', 'తన ఇంట్లో మాత్రమే', 'తన ఊర్లో మాత్రమే', 'ఎక్కడా గౌరవించరు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఉత్తమ మిత్రుడి లక్షణం ఏది?',
+          'options': ['కష్టాల్లో తోడుండి సహాయం చేయడం', 'డబ్బు ఉన్నప్పుడే రావడం', 'చెడు మార్గంలో ప్రోత్సహించడం', 'మోసం చేయడం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'సుభాషితాలను నిత్య జీవితంలో ఆచరిస్తే:',
+          'options': ['మంచి వ్యక్తిత్వం మరియు కీర్తి లభిస్తాయి', 'నష్టం వస్తుంది', 'శత్రువులు పెరుగుతారు', 'అలసట వస్తుంది'],
+          'answer': 0,
+        },
+      ],
+      'మమకారం': [
+        {
+          'id': 1,
+          'question': '‘మమకారం’ కథ ప్రధానంగా దేనిని వివరిస్తుంది?',
+          'options': ['తాతా మనవళ్ల ఆత్మీయ బంధం మరియు పల్లెటూరి ప్రేమానురాగాలు', 'వ్యాపార లాభాలు', 'ఆధునిక పోటీ పరీక్షలు', 'నగర జీవితపు వేగం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'గ్రామీణ ప్రాంతంలో మానవ సంబంధాలు ఎలా ఉంటాయి?',
+          'options': ['కల్మషం లేని ఆప్యాయత మరియు ప్రేమానురాగాలతో', 'డబ్బుతో కూడినవి', 'స్వార్థపూరితమైనవి', 'ఎవరితో సంబంధం లేనివి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'మన పెద్దలను మనం ఎలా చూసుకోవాలి?',
+          'options': ['గౌరవంగా, ప్రేమాదరణలతో ఆదరించాలి', 'వృద్ధాశ్రమాలకు పంపాలి', 'నిర్లక్ష్యం చేయాలి', 'దూరం పెట్టాలి'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'పాత జ్ఞాపకాలు మరియు సంప్రదాయాలు మనకు ఏమి అందిస్తాయి?',
+          'options': ['జీవిత మూలాలు మరియు సాంస్కృతిక బలం', 'బరువు', 'సమస్యలు', 'విచారం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘మమకారం’ అనే పదానికి పర్యాయపదం ఏది?',
+          'options': ['అనురాగం / ప్రేమాభిమానం', 'ద్వేషం', 'కోపం', 'అహంకారం'],
+          'answer': 0,
+        },
+      ],
+      'మేలుకొలుపు': [
+        {
+          'id': 1,
+          'question': '‘మేలుకొలుపు’ పాఠం దేనిని ప్రబోధిస్తుంది?',
+          'options': ['అజ్ఞానపు నిద్ర వీడి విజ్ఞానం మరియు కర్తవ్య నిర్వహణ వైపు మేల్కొనడం', 'ఉదయం నిద్రపోవడం', 'కాలక్షేపం చేయడం', 'ఆటలాడడం మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'సూర్యోదయ వేళ ప్రకృతి ఎలా ఉంటుంది?',
+          'options': ['పక్షుల కిలకిలారావాలు, చల్లని పిల్లగాలులతో ఆహ్లాదకరంగా', 'చీకటిగా', 'భయంకరంగా', 'కాలుష్యంతో'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'విద్యార్థులు ఎప్పుడు నిద్రలేవాలి?',
+          'options': ['సూర్యోదయానికి ముందే (బ్రాహ్మీ ముహూర్తంలో)', 'మధ్యాహ్నం', 'ఆలస్యంగా', 'ఎప్పుడైనా'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'సమయాన్ని సద్వినియోగం చేసుకునే వ్యక్తి జీవితంలో:',
+          'options': ['విజయ శిఖరాలను అధిరోహిస్తాడు', 'ఓడిపోతాడు', 'పేదవాడవుతాడు', 'రోగగ్రస్తుడవుతాడు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': '‘మేలుకొలుపు’ గేయం దేనికి ప్రతీక?',
+          'options': ['నవ చైతన్యానికి', 'అలసత్వానికి', 'నిరాశకు', 'శాంతానికి మాత్రమే'],
+          'answer': 0,
+        },
+      ],
+      'ధర్మ నిర్ణయం': [
+        {
+          'id': 1,
+          'question': '‘ధర్మ నిర్ణయం’ కథలో న్యాయాన్ని పరిపాలించిన ప్రసిద్ధ చోళ మహారాజు ఎవరు?',
+          'options': ['మనునీతి చోళుడు', 'రాజరాజ చోళుడు', 'కులోత్తుంగ చోళుడు', 'కరికాల చోళుడు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'రాజభవనం ముంగిట న్యాయగంటను మోగించిన మూగ జీవి ఏది?',
+          'options': ['తన దూడను రథం కింద కోల్పోయిన ఆవు', 'గుర్రం', 'ఏనుగు', 'సింహం'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'ఆవుకు న్యాయం చేయడానికి రాజు ఎటువంటి కఠిన నిర్ణయం తీసుకున్నాడు?',
+          'options': ['తప్పు చేసిన తన సొంత కుమారుడిని కూడా రథ చక్రాల కింద శిక్షించాడు', 'ఆవును తోలివేశాడు', 'ధనం ఇచ్చాడు', 'మంత్రిని శిక్షించాడు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'ఈ కథ దేనిని రుజువు చేస్తుంది?',
+          'options': ['చట్టం మరియు ధర్మం ముందు అందరూ సమానులే', 'రాజులకు చట్టాలు వర్తించవు', 'జంతువులకు విలువ లేదు', 'న్యాయం లేదు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ధర్మం ఎల్లప్పుడూ దేనిని కాపాడుతుంది?',
+          'options': ['ధర్మాన్ని రక్షించేవారిని (ధర్మో రక్షతి రక్షితః)', 'దుర్మార్గులను', 'మోసగాళ్లను', 'ఎవరినీ కాదు'],
+          'answer': 0,
+        },
+      ],
+      'త్రిజట స్వప్నం': [
+        {
+          'id': 1,
+          'question': '‘త్రిజట స్వప్నం’ కథ ఏ పురాణ ఇతిహాసం నుండి గ్రహించబడింది?',
+          'options': ['శ్రీమద్రామాయణం (సుందరకాండ)', 'మహాభారతం', 'భాగవతం', 'శివపురాణం'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'త్రిజట ఎవరు?',
+          'options': ['రాక్షస స్త్రీ అయినప్పటికీ ధర్మబుద్ధి, దయ గల విభీషణుడి కుమార్తె', 'రావణుడి భార్య', 'శూర్పణఖ కూతురు', 'తాటక'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'త్రిజట కన్న కలలో శ్రీరాముడి విజయం ఎలా కనిపించింది?',
+          'options': ['రాముడు సీతాసమేతుడై తెల్లని ఏనుగుపై విజయవంతంగా వెళ్లడం', 'రాముడు ఓడిపోవడం', 'లంక గెలవడం', 'ఏమీ కనిపించలేదు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'రావణుడికి కలలో ఎటువంటి దుస్థితి కలిగినట్లు త్రిజట చూసింది?',
+          'options': ['గాడిదపై దక్షిణ దిశగా పడిపోవడం మరియు లంక నాశనం కావడం', 'స్వర్గానికి వెళ్లడం', 'యుద్ధం గెలవడం', 'సింహాసనంపై ఉండడం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'ఈ కల విన్న అశోకవన రాక్షసులు ఏమి చేశారు?',
+          'options': ['సీతను వేధించడం మాని భయపడి దూరంగా ఉన్నారు', 'సీతపై దాడి చేశారు', 'యుద్ధం చేశారు', 'నవ్వారు'],
+          'answer': 0,
+        },
+      ],
+      'డూడూ బసవన్న': [
+        {
+          'id': 1,
+          'question': '‘డూడూ బసవన్న’ సంక్రాంతి వేళ పల్లెల్లో తిరిగే ఏ కళాకారుల వినోదం?',
+          'options': ['గంగిరెద్దుల వారి వినోదం', 'బుర్రకథ', 'హరికథ', 'తోలుబొమ్మలు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'గంగిరెద్దును ఎలా అలంకరిస్తారు?',
+          'options': ['రంగురంగుల గుడ్డలు, గంటలు, పూలమాలలు మరియు గజ్జెలతో', 'సాధారణంగా', 'బంగారంతో', 'ఏమీ లేకుండా'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'సన్నాయి రాగానికి అనుగుణంగా గంగిరెద్దు ఏమి చేస్తుంది?',
+          'options': ['తల ఊపుతూ, మోకాళ్లపై వంగుతూ నమస్కారాలు చేస్తుంది', 'పరుగెత్తుతుంది', 'పొడుస్తుంది', 'నిద్రపోతుంది'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'గంగిరెద్దుల వారు ఇంటింటికీ వచ్చి ఏమి పాడతారు?',
+          'options': ['‘డూడూ బసవన్న, అమ్మగారికి దండం పెట్టు, అయ్యగారికి దండం పెట్టు’', 'సినిమా పాటలు', 'భయపెట్టే పాటలు', 'ఏమీ పాడరు'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'గంగిరెద్దుల విన్యాసాలు ఏ సంస్కృతికి ప్రతీక?',
+          'options': ['తెలుగు పల్లెసీమల సంక్రాంతి జానపద సంస్కృతికి', 'విదేశీ సంస్కృతికి', 'నగర జీవితానికి', 'పారిశ్రామిక సంస్కృతికి'],
+          'answer': 0,
+        },
+      ],
+      'ఎంత మంచివారమ్మా….! (ఉపవాచకం)': [
+        {
+          'id': 1,
+          'question': '‘ఎంత మంచివారమ్మా’ పాఠం సమాజంలో ఎవరి నిస్వార్థ సేవలను తెలియజేస్తుంది?',
+          'options': ['పారిశుధ్య కార్మికులు, శ్రామికులు మరియు సామాన్య శ్రమజీవులు', 'ధనవంతులు', 'నాయకులు', 'వ్యాపారులు'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'మన పరిసరాలను శుభ్రంగా ఉంచే పారిశుధ్య కార్మికులను మనం ఎలా చూడాలి?',
+          'options': ['గౌరవంతో మరియు కృతజ్ఞతా భావంతో', 'హీనంగా', 'దూరంగా', 'ఎగతాళిగా'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'శ్రమదానం మరియు సమాజ సేవ సమాజానికి ఏమి అందిస్తాయి?',
+          'options': ['ఆరోగ్యం, పరిశుభ్రత మరియు సామరస్యం', 'కాలుష్యం', 'చెత్త', 'విభేదాలు'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'గాంధీజీ స్వయంగా ఏ పనిని గౌరవించారు?',
+          'options': ['స్వచ్ఛత మరియు మరుగుదొడ్ల పరిశుభ్రతను', 'ధనార్జనను', 'విలాసాలను', 'సోమరితనాన్ని'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'సమాజంలో ప్రతి వృత్తికి ఏది అవసరం?',
+          'options': ['గౌరవం (శ్రమైక జీవన సౌందర్యం)', 'వివక్ష', 'తారతమ్యం', 'అసహ్యం'],
+          'answer': 0,
+        },
+      ],
+      'లేఖలు': [
+        {
+          'id': 1,
+          'question': 'వ్యక్తిగత లేఖలలో పెద్దలకు రాసేటప్పుడు ఉపయోగించే సంబోధన ఏది?',
+          'options': ['పూజ్యులైన నాన్నగారికి / గురువుగారికి నమస్కారాలు', 'ప్రియమైన మిత్రమా', 'హలో', 'డియర్'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'స్నేహితుడికి రాసే లేఖను ఏ సంబోధనతో ప్రారంభిస్తారు?',
+          'options': ['ప్రియమైన స్నేహితునికి', 'గౌరవనీయులైన', 'ఆర్యా', 'మహాశయా'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'లేఖ ముగింపులో కుడివైపు క్రింద ఏమి రాస్తారు?',
+          'options': ['ఇట్లు మీ విధేయుడు / మీ ప్రియమిత్రుడు అని పేరు', 'తేదీ మాత్రమే', 'చిరునామా', 'సంతకం మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'లేఖలో ఎడమవైపు క్రింద వ్రాయవలసినది ఏమిటి?',
+          'options': ['జాబు చేరవలసిన వారి పూర్తి చిరునామా (To Address)', 'కథ', 'తేదీ', 'విషయం'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'లేఖలు రాయడం ద్వారా విద్యార్థుల్లో ఏమి అభివృద్ధి చెందుతుంది?',
+          'options': ['భావవ్యక్తీకరణ మరియు రాత నైపుణ్యాలు', 'భయం', 'అలసట', 'సమయం వృథా'],
+          'answer': 0,
+        },
+      ],
+      'వ్యాసాలు': [
+        {
+          'id': 1,
+          'question': 'ఒక నిర్దిష్ట అంశంపై విపులంగా, క్రమపద్ధతిలో రాసే రచనను ఏమంటారు?',
+          'options': ['వ్యాసం', 'పద్యం', 'నాటకం', 'సామెత'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'వ్యాస రచనలో సాధారణంగా ఎన్ని ముఖ్య భాగాలు ఉంటాయి?',
+          'options': ['మూడు (ప్రవేశిక, విషయ వివరణ, ముగింపు)', 'ఒకటి', 'పది', 'రెండు మాత్రమే'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'వ్యాసంలో విషయ వివరణ ఎలా ఉండాలి?',
+          'options': ['విషయానికి తగిన ఉపశీర్షికలతో స్పష్టంగా', 'గందరగోళంగా', 'కేవలం చిత్రాలతో', 'ఒకే పేరాలో'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'వ్యాసం చదివే పాఠకులకు ఏమి లభించాలి?',
+          'options': ['సమగ్ర సమాచారం మరియు స్పష్టమైన ఆలోచన', 'గందరగోళం', 'సమయం వృథా', 'అసంతృప్తి'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'వ్యాస రచన కోసం విద్యార్థులు ఏమి చేయాలి?',
+          'options': ['పుస్తకాలు చదవడం, పరిశీలించడం మరియు సాధన చేయడం', 'బట్టీ పట్టడం', 'చదవకపోవడం', 'కాపీ కొట్టడం'],
+          'answer': 0,
+        },
+      ],
+      'పదాలు – అర్థాలు': [
+        {
+          'id': 1,
+          'question': '‘ధరణి’ అనే పదానికి సరైన అర్థం ఏమిటి?',
+          'options': ['భూమి / పృథ్వి', 'ఆకాశం', 'సముద్రం', 'గాలి'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '‘సుధ’ అనే పదానికి సమానార్థకం ఏది?',
+          'options': ['అమృతం', 'విషం', 'నీరు', 'మట్టి'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': '‘అంబరం’ అంటే ఏమిటి?',
+          'options': ['ఆకాశం / వస్త్రం', 'చెట్టు', 'పర్వతం', 'పక్షి'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': '‘విహంగం’ అనే పదానికి అర్థం ఏమిటి?',
+          'options': ['పక్షి', 'జంతువు', 'చేప', 'పాము'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'తెలుగు భాషలో పదసంపద పెంచుకోవడం వల్ల కలిగే ప్రయోజనం ఏమిటి?',
+          'options': ['భాషా ప్రావీణ్యం మరియు ఉన్నత వ్యక్తీకరణ సామర్థ్యం', 'పరీక్షల్లో తప్పులు', 'అలసట', 'నిద్ర'],
+          'answer': 0,
+        },
+      ],
+    },
+    'SCIENCE': {
+      'Components of Food': [
+        {
+          'id': 1,
+          'question': 'Which nutrient is the main source of energy for our body?',
+          'options': ['Carbohydrates and Fats', 'Proteins only', 'Water', 'Roughage'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Proteins are essential for:',
+          'options': ['Body growth and repair of damaged tissues', 'Instant energy only', 'Good taste', 'Coloring blood'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Deficiency of Vitamin C leads to which disease?',
+          'options': ['Scurvy (bleeding gums)', 'Beriberi', 'Night blindness', 'Rickets'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Night blindness is caused by the deficiency of:',
+          'options': ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Iodine solution turns starch into which color?',
+          'options': ['Blue-black', 'Red', 'Green', 'Yellow'],
+          'answer': 0,
+        },
+      ],
+      'Sorting Materials into Groups': [
+        {
+          'id': 1,
+          'question': 'Materials through which things can be seen clearly are called:',
+          'options': ['Transparent (e.g. clear glass, water)', 'Translucent', 'Opaque', 'Lustrous'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Materials that do not allow light to pass through them are:',
+          'options': ['Opaque (e.g. wood, metal, cardboard)', 'Transparent', 'Translucent', 'Lustrous'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The shine on freshly cut metal surfaces is called:',
+          'options': ['Lustre', 'Roughness', 'Transparency', 'Density'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Which of the following floats on water?',
+          'options': ['Dry leaf and cork', 'Iron nail', 'Stone', 'Gold coin'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Grouping materials together based on properties helps in:',
+          'options': ['Systematic study and convenient handling', 'Making them heavy', 'Wasting time', 'Creating mess'],
+          'answer': 0,
+        },
+      ],
+      'Separation of Substances': [
+        {
+          'id': 1,
+          'question': 'The process of separating grain seeds from stalks by beating is:',
+          'options': ['Threshing', 'Winnowing', 'Handpicking', 'Sieving'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Winnowing is used to separate lighter husk particles from heavier grain using:',
+          'options': ['Wind / Blowing air', 'Water', 'Magnets', 'Filter paper'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The process of conversion of water into its vapor is called:',
+          'options': ['Evaporation', 'Condensation', 'Sedimentation', 'Decantation'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Separating tea leaves from brewed tea using a strainer is an example of:',
+          'options': ['Filtration', 'Evaporation', 'Sedimentation', 'Threshing'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Common salt is obtained from sea water by the process of:',
+          'options': ['Evaporation under sunlight', 'Filtration', 'Magnetic separation', 'Sieving'],
+          'answer': 0,
+        },
+      ],
+      'Getting to Know Plants': [
+        {
+          'id': 1,
+          'question': 'The process by which leaves manufacture food using sunlight, water, and CO2 is:',
+          'options': ['Photosynthesis', 'Transpiration', 'Respiration', 'Germination'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Loss of water in the form of vapor through stomata of leaves is called:',
+          'options': ['Transpiration', 'Evaporation', 'Precipitation', 'Absorption'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The female reproductive part of a flower is the:',
+          'options': ['Pistil / Carpel', 'Stamen', 'Petal', 'Sepal'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The male reproductive part of a flower bearing anther and filament is the:',
+          'options': ['Stamen', 'Pistil', 'Ovary', 'Stigma'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Reticulate venation in leaves is generally associated with which root system?',
+          'options': ['Tap root system', 'Fibrous root system', 'Aerial root', 'No roots'],
+          'answer': 0,
+        },
+      ],
+      'Body Movements': [
+        {
+          'id': 1,
+          'question': 'Which joint allows movement in all directions (360 degrees)?',
+          'options': ['Ball and socket joint (shoulder and hip)', 'Hinge joint', 'Pivot joint', 'Fixed joint'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The elbow and knee joints allow movement in only one plane like a door; this is a:',
+          'options': ['Hinge joint', 'Ball and socket joint', 'Gliding joint', 'Fixed joint'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The framework of bones that protects our internal organs is the:',
+          'options': ['Skeleton', 'Muscular system', 'Circulatory system', 'Skin'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Which animal moves by alternative contraction and expansion of body segments using setae?',
+          'options': ['Earthworm', 'Snake', 'Snail', 'Cockroach'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Bones in our skull are joined by:',
+          'options': ['Fixed joints (immovable)', 'Hinge joints', 'Ball and socket joints', 'Pivot joints'],
+          'answer': 0,
+        },
+      ],
+      'The Living Organisms Characteristics and Habitats': [
+        {
+          'id': 1,
+          'question': 'The specific place where an organism lives naturally is called its:',
+          'options': ['Habitat', 'Niche', 'Territory', 'Burrow'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Features that enable an organism to survive and reproduce in its habitat are:',
+          'options': ['Adaptations', 'Habits', 'Mutations', 'Accidents'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Fish have streamlined bodies and breathe dissolved oxygen in water using:',
+          'options': ['Gills', 'Lungs', 'Skin only', 'Fins'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Plants living in dry desert regions are called:',
+          'options': ['Xerophytes (e.g. Cactus)', 'Hydrophytes', 'Mesophytes', 'Epiphytes'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'All living things respond to external changes in their surroundings; these changes are:',
+          'options': ['Stimuli', 'Reflexes', 'Excretions', 'Habits'],
+          'answer': 0,
+        },
+      ],
+      'Motion and Measurement of Distances': [
+        {
+          'id': 1,
+          'question': 'The internationally accepted standard unit (SI unit) of length is the:',
+          'options': ['Metre (m)', 'Foot', 'Inch', 'Yard'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': '1 kilometre is equal to how many metres?',
+          'options': ['1000 m', '100 m', '10,000 m', '500 m'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Motion of a child on a swing or pendulum of a clock is an example of:',
+          'options': ['Periodic motion', 'Linear motion', 'Circular motion only', 'Random motion'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The blades of a rotating ceiling fan exhibit which type of motion?',
+          'options': ['Circular / Rotational motion', 'Rectilinear motion', 'Periodic linear motion', 'Oscillatory'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Motion along a straight line path is called:',
+          'options': ['Rectilinear motion', 'Circular motion', 'Curvilinear motion', 'Random motion'],
+          'answer': 0,
+        },
+      ],
+      'Light, Shadows and Reflections': [
+        {
+          'id': 1,
+          'question': 'Objects that emit their own light are called:',
+          'options': ['Luminous objects (e.g. Sun, burning candle, bulb)', 'Non-luminous objects', 'Opaque objects', 'Transparent objects'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'A shadow is formed when:',
+          'options': ['An opaque object obstructs the path of light', 'Light passes completely through glass', 'It is pitch dark', 'Mirror reflects'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Light always travels in a:',
+          'options': ['Straight line (Rectilinear propagation)', 'Zigzag path', 'Curved circular path', 'Spiral'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'A pinhole camera produces an image that is:',
+          'options': ['Inverted and real', 'Erect and enlarged', 'Blurred always', 'Colored 3D'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'A smooth polished surface like a mirror causes:',
+          'options': ['Regular reflection of light', 'Absorption of light', 'Refraction only', 'Scattering'],
+          'answer': 0,
+        },
+      ],
+      'Electricity and Circuits': [
+        {
+          'id': 1,
+          'question': 'An electric cell converts chemical energy into:',
+          'options': ['Electrical energy', 'Light energy directly', 'Sound energy', 'Nuclear energy'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'A complete, unbroken path through which electric current flows is a:',
+          'options': ['Closed electric circuit', 'Open circuit', 'Short circuit', 'Switch'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Materials that easily allow electric current to pass through them are:',
+          'options': ['Conductors (e.g. copper, aluminum, iron)', 'Insulators', 'Plastics', 'Rubber'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Materials that do not conduct electricity are called:',
+          'options': ['Insulators (e.g. rubber, wood, plastic)', 'Conductors', 'Electrodes', 'Filaments'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The thin glowing wire inside an incandescent electric bulb is the:',
+          'options': ['Filament (made of tungsten)', 'Terminal', 'Switch', 'Glass mount'],
+          'answer': 0,
+        },
+      ],
+      'Fun with Magnets': [
+        {
+          'id': 1,
+          'question': 'A magnet has how many magnetic poles?',
+          'options': ['Two poles (North Pole and South Pole)', 'One pole', 'Three poles', 'Four poles'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Like magnetic poles (North and North) always:',
+          'options': ['Repel each other', 'Attract each other', 'Neutralize', 'Stick together'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Unlike magnetic poles (North and South) always:',
+          'options': ['Attract each other', 'Repel each other', 'Do nothing', 'Produce heat'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'A freely suspended bar magnet always aligns itself along the:',
+          'options': ['North-South direction', 'East-West direction', 'Any random direction', 'Vertical direction'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Which instrument uses a magnetic needle to find geographical directions?',
+          'options': ['Magnetic compass', 'Speedometer', 'Barometer', 'Thermometer'],
+          'answer': 0,
+        },
+      ],
+      'Air Around Us': [
+        {
+          'id': 1,
+          'question': 'The gas that constitutes approximately 78% of Earth\'s atmosphere is:',
+          'options': ['Nitrogen', 'Oxygen', 'Carbon dioxide', 'Argon'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which gas is required by animals and humans for respiration and by fuels for burning?',
+          'options': ['Oxygen (approx. 21%)', 'Nitrogen', 'Hydrogen', 'Carbon monoxide'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The envelope of air surrounding planet Earth is known as the:',
+          'options': ['Atmosphere', 'Hydrosphere', 'Lithosphere', 'Biosphere'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Moving air is called:',
+          'options': ['Wind', 'Smoke', 'Dust', 'Vapor'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Aquatic animals breathe oxygen dissolved in water using their:',
+          'options': ['Gills', 'Lungs', 'Fins', 'Scales'],
+          'answer': 0,
+        },
+      ],
+    },
+    'SOCIAL': {
+      'Our Earth in the Solar System': [
+        {
+          'id': 1,
+          'question': 'The planet known as the \'Blue Planet\' because of water is:',
+          'options': ['Earth', 'Mars', 'Venus', 'Neptune'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which celestial body is at the center of our Solar System?',
+          'options': ['The Sun', 'Jupiter', 'The Moon', 'Polaris'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The planet closest to the Sun is:',
+          'options': ['Mercury', 'Venus', 'Earth', 'Mars'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'A group of stars forming recognizable patterns in the night sky is a:',
+          'options': ['Constellation (e.g. Ursa Major / Saptarishi)', 'Galaxy', 'Asteroid', 'Meteor'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The Moon takes about how many days to complete one revolution around Earth?',
+          'options': ['27 days', '365 days', '24 hours', '30 days'],
+          'answer': 0,
+        },
+      ],
+      'Globe – Model of the Earth': [
+        {
+          'id': 1,
+          'question': 'The true three-dimensional miniature model of the Earth is a:',
+          'options': ['Globe', 'Atlas', 'Flat map', 'Satellite photograph'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The imaginary line dividing the globe into Northern and Southern Hemispheres is the:',
+          'options': ['Equator (0° Latitude)', 'Prime Meridian', 'Tropic of Cancer', 'Tropic of Capricorn'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The Tropic of Cancer is located at which latitude?',
+          'options': ['23½° North', '23½° South', '66½° North', '0°'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The Prime Meridian (0° Longitude) passes through which historic observatory?',
+          'options': ['Greenwich, London', 'New York', 'Paris', 'New Delhi'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Total number of longitudes encircling the globe is:',
+          'options': ['360°', '180°', '90°', '365°'],
+          'answer': 0,
+        },
+      ],
+      'Maps': [
+        {
+          'id': 1,
+          'question': 'A book containing a comprehensive collection of maps is called an:',
+          'options': ['Atlas', 'Encyclopedia', 'Dictionary', 'Chronicle'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Maps showing natural features like mountains, plateaus, rivers, and plains are:',
+          'options': ['Physical / Relief maps', 'Political maps', 'Thematic maps', 'Topographical maps'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Maps showing countries, states, boundaries, cities, and towns are:',
+          'options': ['Political maps', 'Physical maps', 'Thematic maps', 'Climatic maps'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The three essential components of a map are:',
+          'options': ['Distance, Direction, and Symbols', 'Color, Border, and Paper', 'Title, Cover, and Author', 'Scale, Ink, and Compass'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'On maps, water bodies are universally represented using which color?',
+          'options': ['Blue', 'Green', 'Brown', 'Yellow'],
+          'answer': 0,
+        },
+      ],
+      'Land Forms – Andhra Pradesh': [
+        {
+          'id': 1,
+          'question': 'Andhra Pradesh is blessed with a long coastline along which sea/bay?',
+          'options': ['Bay of Bengal', 'Arabian Sea', 'Indian Ocean', 'Gulf of Mannar'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The two major lifeline rivers flowing across Andhra Pradesh are:',
+          'options': ['Godavari and Krishna', 'Ganga and Yamuna', 'Narmada and Tapti', 'Indus and Sutlej'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The high hill range running through the eastern part of the state is the:',
+          'options': ['Eastern Ghats', 'Western Ghats', 'Himalayas', 'Vindhyas'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The rich delta soils formed by Krishna and Godavari are known for cultivating:',
+          'options': ['Paddy (Rice)', 'Wheat only', 'Tea only', 'Apples'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'A plateau is defined as an elevated flat land with steep slopes, also called a:',
+          'options': ['Tableland', 'Mountain peak', 'Valley', 'Dune'],
+          'answer': 0,
+        },
+      ],
+      'Early Life to Settled Life': [
+        {
+          'id': 1,
+          'question': 'Early hunter-gatherers used tools primarily made of:',
+          'options': ['Stone, wood, and bone', 'Iron', 'Plastic', 'Bronze'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The discovery that brought about the greatest revolution in human cooking and protection was:',
+          'options': ['Fire', 'Wheel', 'Pottery', 'Writing'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Prehistoric humans lived in natural shelters such as:',
+          'options': ['Caves and rock shelters (e.g. Bhimbetka)', 'Brick houses', 'Palaces', 'Apartments'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Settled agricultural life began during which archaeological age?',
+          'options': ['Neolithic Age (New Stone Age)', 'Palaeolithic Age', 'Iron Age', 'Modern Age'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The first animal domesticated by early humans was the ancestor of the:',
+          'options': ['Dog', 'Horse', 'Elephant', 'Tiger'],
+          'answer': 0,
+        },
+      ],
+      'Early Civilisations': [
+        {
+          'id': 1,
+          'question': 'The Indus Valley Civilisation (Harappan Civilisation) is renowned for its:',
+          'options': ['Planned urban grid cities and advanced underground drainage', 'Great stone castles', 'Pyramids', 'Cavalry'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The famous \'Great Bath\' was excavated at which Harappan site?',
+          'options': ['Mohenjo-daro', 'Harappa', 'Kalibangan', 'Lothal'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The ancient Harappan port city with a tidal dockyard was:',
+          'options': ['Lothal (in Gujarat)', 'Ropar', 'Banawali', 'Dholavira'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Harappan buildings and houses were constructed using:',
+          'options': ['Standardized baked / burnt bricks', 'Mud only', 'Marble', 'Steel'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Harappan merchants traded goods using specialized carved seals made of:',
+          'options': ['Steatite (soapstone)', 'Paper', 'Iron', 'Glass'],
+          'answer': 0,
+        },
+      ],
+      'Emergence of Kingdoms and Republics': [
+        {
+          'id': 1,
+          'question': 'Around 600 BCE, large powerful regional kingdoms in northern India were called:',
+          'options': ['Mahajanapadas (16 in total)', 'Janas', 'Gramas', 'Empires'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which Mahajanapada emerged as the most powerful empire in ancient India?',
+          'options': ['Magadha', 'Kosala', 'Avanti', 'Vatsa'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The capital of Magadha for many centuries was:',
+          'options': ['Pataliputra (modern Patna) / Rajagriha', 'Varanasi', 'Ujjain', 'Taxila'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Republics governed by assemblies of elders rather than hereditary kings were:',
+          'options': ['Ganas or Sanghas (e.g. Vajji)', 'Monarchies', 'Autocracies', 'Dynasties'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Rulers of Mahajanapadas collected taxes from farmers equal to:',
+          'options': ['1/6th of total agricultural produce (Bhaga)', '1/2', '3/4', 'No tax'],
+          'answer': 0,
+        },
+      ],
+      'Kingdoms and Empires': [
+        {
+          'id': 1,
+          'question': 'Who founded the great Mauryan Empire with the guidance of Chanakya (Kautilya)?',
+          'options': ['Chandragupta Maurya', 'Ashoka', 'Bindusara', 'Harsha'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Which Mauryan Emperor renounced warfare and embraced Dhamma after the Kalinga War?',
+          'options': ['Emperor Ashoka', 'Chandragupta', 'Samudragupta', 'Akbar'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Ashoka inscribed his royal edicts for the public in which script and language?',
+          'options': ['Prakrit language in Brahmi script', 'Sanskrit in Devanagari', 'English', 'Greek only'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'India\'s official National Emblem is adopted from Ashoka’s Lion Capital at:',
+          'options': ['Sarnath', 'Sanchi', 'Pataliputra', 'Taxila'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Megasthenes was a Greek ambassador in the court of:',
+          'options': ['Chandragupta Maurya', 'Ashoka', 'Kanishka', 'Alexander'],
+          'answer': 0,
+        },
+      ],
+      'Government': [
+        {
+          'id': 1,
+          'question': 'In a democracy, the ultimate supreme power is held by:',
+          'options': ['The people through free voting and elections', 'The military', 'A king', 'Wealthy businessmen'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The three tiers / levels of government in India are:',
+          'options': ['Central (National), State, and Local governments', 'Executive only', 'Judiciary only', 'Police only'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'The organ of government responsible for making laws is the:',
+          'options': ['Legislature (Parliament / Assembly)', 'Executive', 'Judiciary', 'Media'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Universal Adult Franchise means that in India:',
+          'options': ['All citizens aged 18 and above have the right to vote without discrimination', 'Only landowners vote', 'Only educated vote', 'Only men vote'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The organ of government that interprets laws and ensures justice is the:',
+          'options': ['Judiciary (Courts)', 'Police', 'Cabinet', 'Bureaucracy'],
+          'answer': 0,
+        },
+      ],
+      'Local Self-Government': [
+        {
+          'id': 1,
+          'question': 'The institution of local government at the village level is the:',
+          'options': ['Gram Panchayat', 'Municipal Corporation', 'Legislative Assembly', 'Lok Sabha'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'The general body of all adult voters registered in a village is the:',
+          'options': ['Gram Sabha', 'Panchayat Samiti', 'Zilla Parishad', 'Cabinet'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Local self-government in large metropolitan cities is managed by a:',
+          'options': ['Municipal Corporation headed by a Mayor', 'Gram Panchayat', 'Village Patwari', 'Police Station'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The head of a Municipal Corporation is called the:',
+          'options': ['Mayor', 'Sarpanch', 'Governor', 'Collector'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'Local bodies look after civic amenities like:',
+          'options': ['Drinking water, street lights, sanitation, and primary drainage', 'National defense', 'Foreign affairs', 'Railway routes'],
+          'answer': 0,
+        },
+      ],
+      'Indian Culture, Languages and Religions': [
+        {
+          'id': 1,
+          'question': 'The Constitution of India officially recognizes how many languages in the Eighth Schedule?',
+          'options': ['22 languages', '14 languages', '18 languages', '28 languages'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Classical dance forms originating in southern India include:',
+          'options': ['Kuchipudi (Andhra Pradesh) and Bharatanatyam (Tamil Nadu)', 'Kathakali only', 'Bhangra', 'Garba'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'India is a secular country, which means:',
+          'options': ['All religions are treated with equal respect and freedom by the state', 'One religion is official', 'Religions are banned', 'Only ancient rituals allowed'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'The ancient sacred epic texts of India include the:',
+          'options': ['Ramayana and Mahabharata', 'Iliad', 'Odyssey', 'Aeneid'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'The underlying philosophy of Indian composite culture is:',
+          'options': ['Vasudhaiva Kutumbakam (The World is One Family)', 'Isolation', 'Hostility', 'Superiority'],
+          'answer': 0,
+        },
+      ],
+      'Towards Equality': [
+        {
+          'id': 1,
+          'question': 'The fundamental document that guarantees equality before the law to every Indian citizen is:',
+          'options': ['The Constitution of India', 'The Penal Code', 'A royal decree', 'A newspaper'],
+          'answer': 0,
+        },
+        {
+          'id': 2,
+          'question': 'Practicing untouchability in India was legally abolished under Article ___ of the Constitution:',
+          'options': ['Article 17', 'Article 21', 'Article 14', 'Article 19'],
+          'answer': 0,
+        },
+        {
+          'id': 3,
+          'question': 'Who was the Chairman of the Drafting Committee of the Indian Constitution?',
+          'options': ['Dr. B.R. Ambedkar', 'Jawaharlal Nehru', 'Sardar Patel', 'Dr. Rajendra Prasad'],
+          'answer': 0,
+        },
+        {
+          'id': 4,
+          'question': 'Prejudice and stereotypes create:',
+          'options': ['Social discrimination and injustice', 'Harmony', 'Peace', 'Equality'],
+          'answer': 0,
+        },
+        {
+          'id': 5,
+          'question': 'A just society ensures that all individuals have:',
+          'options': ['Equal dignity, rights, and opportunities to grow', 'Special privileges for rich', 'Unchecked power', 'Silence'],
+          'answer': 0,
+        },
+      ],
+    },
+  },
 };
+
 final Map<String, List<Map<String, dynamic>>> defaultQuizBank = {
   'MATHS': [
     {

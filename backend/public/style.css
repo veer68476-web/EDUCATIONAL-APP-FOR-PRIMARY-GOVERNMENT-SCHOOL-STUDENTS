@@ -753,6 +753,149 @@ body {
   background: #2a2a2e;
 }
 
+.view-switch-pills {
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+.view-switch-pills .btn {
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.view-switch-pills .btn.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(124, 77, 255, 0.4);
+}
+
+.interactive-guide-wrapper {
+  padding: 24px;
+  max-height: 700px;
+  overflow-y: auto;
+  background: var(--bg-card);
+}
+.guide-header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+.guide-header-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guide-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.guide-chapter-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.guide-chapter-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+.chapter-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(124, 77, 255, 0.15);
+  color: #c4b5fd;
+  font-size: 11px;
+  font-weight: 700;
+}
+.chapter-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
+.chapter-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+.chapter-card-actions .btn {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 11px;
+}
+.qa-guide-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.qa-card-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px;
+}
+.qa-question-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.qa-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.qa-option-pill {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 13px;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+.qa-option-pill.correct {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  font-weight: 600;
+}
+.qa-solution-box {
+  background: rgba(124, 77, 255, 0.08);
+  border-left: 3px solid var(--primary);
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
 /* Games Section */
 .game-stats {
   display: flex;

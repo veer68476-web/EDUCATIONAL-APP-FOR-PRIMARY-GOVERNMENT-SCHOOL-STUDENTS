@@ -448,6 +448,88 @@ function selectTbSubject(sub) {
   updateTbTextbook();
 }
 
+let tbViewMode = 'pdf';
+
+function switchTbMode(mode) {
+  tbViewMode = mode;
+  const pdfWrapper = document.getElementById('tbPdfWrapper');
+  const guideWrapper = document.getElementById('tbGuideWrapper');
+  const btnPdf = document.getElementById('tbBtnPdf');
+  const btnGuide = document.getElementById('tbBtnGuide');
+
+  if (mode === 'pdf') {
+    if (pdfWrapper) pdfWrapper.style.display = 'block';
+    if (guideWrapper) guideWrapper.style.display = 'none';
+    if (btnPdf) btnPdf.classList.add('active');
+    if (btnGuide) btnGuide.classList.remove('active');
+  } else {
+    if (pdfWrapper) pdfWrapper.style.display = 'none';
+    if (guideWrapper) guideWrapper.style.display = 'block';
+    if (btnPdf) btnPdf.classList.remove('active');
+    if (btnGuide) btnGuide.classList.add('active');
+    renderTbGuide();
+  }
+}
+
+function renderTbGuide() {
+  const guideWrapper = document.getElementById('tbGuideWrapper');
+  if (!guideWrapper) return;
+
+  const lessons = (curriculumData[tbCurrentClass] && curriculumData[tbCurrentClass][tbCurrentSubject]) || [];
+  
+  let html = `
+    <div class="guide-header-box">
+      <div class="guide-header-title">
+        <i class="fa-solid fa-book"></i> ${tbCurrentClass} &bull; ${tbCurrentSubject} Curriculum & Study Guide
+      </div>
+      <span class="badge">${lessons.length} Chapters</span>
+    </div>
+    <div class="guide-chapter-grid">
+  `;
+
+  lessons.forEach((les, idx) => {
+    const escapedLes = les.replace(/'/g, "\\'");
+    html += `
+      <div class="guide-chapter-card">
+        <span class="chapter-badge">Chapter ${idx + 1}</span>
+        <h4 class="chapter-card-title">${les}</h4>
+        <div class="chapter-card-actions">
+          <button class="btn btn-sm btn-outline" onclick="goToQuestionLesson('${tbCurrentClass}', '${tbCurrentSubject}', ${idx})">
+            <i class="fa-solid fa-file-circle-question"></i> Solved Papers
+          </button>
+          <button class="btn btn-sm btn-primary" onclick="goToLearnQuiz('${tbCurrentClass}', '${tbCurrentSubject}', '${escapedLes}')">
+            <i class="fa-solid fa-circle-question"></i> Take Quiz
+          </button>
+        </div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  guideWrapper.innerHTML = html;
+}
+
+function goToQuestionLesson(cls, subj, lessonIdx) {
+  switchTab('questions');
+  selectQClass(cls);
+  selectQSubject(subj);
+  setTimeout(() => {
+    const lessonButtons = document.querySelectorAll('#qLessonSelector .pill-btn');
+    if (lessonButtons[lessonIdx]) {
+      lessonButtons[lessonIdx].click();
+    }
+  }, 100);
+}
+
+function goToLearnQuiz(cls, subj, lessonName) {
+  switchTab('learn');
+  selectClass(cls);
+  selectSubject(subj);
+  setTimeout(() => {
+    selectLesson(lessonName);
+  }, 100);
+}
+
 function updateTbTextbook() {
   const pdfUrl = (textbookMap[tbCurrentClass] && textbookMap[tbCurrentClass][tbCurrentSubject]) || '/assets/one.pdf';
   const iframe = document.getElementById('tbPdfIframe');
@@ -477,6 +559,8 @@ function updateTbTextbook() {
     };
     iframe.src = `${pdfUrl}#toolbar=1`;
   }
+
+  renderTbGuide();
 
   setTimeout(() => {
     if (spinner) spinner.style.display = 'none';
@@ -571,9 +655,99 @@ function renderQLessons() {
   });
 }
 
+let qViewMode = 'pdf';
+
+function switchQMode(mode) {
+  qViewMode = mode;
+  const pdfWrapper = document.getElementById('qPdfWrapper');
+  const guideWrapper = document.getElementById('qGuideWrapper');
+  const btnPdf = document.getElementById('qBtnPdf');
+  const btnGuide = document.getElementById('qBtnGuide');
+
+  if (mode === 'pdf') {
+    if (pdfWrapper) pdfWrapper.style.display = 'block';
+    if (guideWrapper) guideWrapper.style.display = 'none';
+    if (btnPdf) btnPdf.classList.add('active');
+    if (btnGuide) btnGuide.classList.remove('active');
+  } else {
+    if (pdfWrapper) pdfWrapper.style.display = 'none';
+    if (guideWrapper) guideWrapper.style.display = 'block';
+    if (btnPdf) btnPdf.classList.remove('active');
+    if (btnGuide) btnGuide.classList.add('active');
+    renderQGuide();
+  }
+}
+
+function renderQGuide() {
+  const guideWrapper = document.getElementById('qGuideWrapper');
+  if (!guideWrapper) return;
+
+  const lessons = (curriculumData[qCurrentClass] && curriculumData[qCurrentClass][qCurrentSubject]) || [];
+  const currentLessonName = lessons[qCurrentLessonIdx] || `Lesson ${qCurrentLessonIdx + 1}`;
+  
+  let questions = [];
+  if (nestedQuizData && nestedQuizData[qCurrentClass] && nestedQuizData[qCurrentClass][qCurrentSubject]) {
+    questions = nestedQuizData[qCurrentClass][qCurrentSubject][currentLessonName] || [];
+  }
+
+  const escapedLesson = currentLessonName.replace(/'/g, "\\'");
+
+  let html = `
+    <div class="guide-header-box">
+      <div>
+        <div class="guide-header-title">
+          <i class="fa-solid fa-clipboard-check"></i> ${qCurrentClass} &bull; ${qCurrentSubject} &bull; ${currentLessonName}
+        </div>
+        <p style="margin: 4px 0 0 0; font-size: 13px; color: var(--text-muted);">
+          Official curriculum model questions, key concepts, and verified solutions.
+        </p>
+      </div>
+      <button class="btn btn-sm btn-primary" onclick="goToLearnQuiz('${qCurrentClass}', '${qCurrentSubject}', '${escapedLesson}')">
+        <i class="fa-solid fa-play"></i> Practice Quiz
+      </button>
+    </div>
+    <div class="qa-guide-container">
+  `;
+
+  if (questions.length > 0) {
+    questions.forEach((item, idx) => {
+      const correctText = item.options[item.answer] || 'Solution Verified';
+      html += `
+        <div class="qa-card-item">
+          <h4 class="qa-question-title">
+            <span class="badge">Q${idx + 1}</span>
+            <span>${item.question}</span>
+          </h4>
+          <div class="qa-options-grid">
+            ${item.options.map((opt, optIdx) => `
+              <div class="qa-option-pill ${optIdx === item.answer ? 'correct' : ''}">
+                <strong>${String.fromCharCode(65 + optIdx)}.</strong> ${opt}
+                ${optIdx === item.answer ? ' <i class="fa-solid fa-circle-check"></i>' : ''}
+              </div>
+            `).join('')}
+          </div>
+          <div class="qa-solution-box">
+            <strong><i class="fa-solid fa-lightbulb"></i> Correct Answer:</strong> Option ${String.fromCharCode(65 + item.answer)} (${correctText})
+          </div>
+        </div>
+      `;
+    });
+  } else {
+    html += `
+      <div class="empty-state">
+        <i class="fa-solid fa-file-lines"></i>
+        <h3>Solution Guide</h3>
+        <p>Comprehensive question paper for this chapter is available in PDF view or via direct download.</p>
+      </div>
+    `;
+  }
+
+  html += `</div>`;
+  guideWrapper.innerHTML = html;
+}
+
 function updateQQuestionPaper() {
-  const classNum = qCurrentClass.replace('CLASS ', '');
-  let paperUrl = `/assets/answers/class_1/default/${classNum}1.pdf`;
+  let paperUrl = `/assets/answers/class_1/default/11.pdf`;
 
   if (qCurrentClass === 'CLASS 1') {
     if (qCurrentSubject === 'MATHS') {
@@ -584,11 +758,27 @@ function updateQQuestionPaper() {
       paperUrl = `/assets/answers/class_1/telugu/${num}.pdf`;
     } else if (qCurrentSubject === 'ENGLISH') {
       const englishFiles = ['1-1.pdf', '1-2.pdf', '2.pdf', '3-1.pdf', '3-2.pdf', '4-1.pdf', '4-2.pdf', '5-1.pdf', '5-2.pdf', '6-1.pdf', '6-2.pdf', '7-1.pdf', '7-2.pdf', '8-1.pdf', '8-2.pdf'];
-      const file = englishFiles[qCurrentLessonIdx] || englishFiles[0];
+      const file = englishFiles[qCurrentLessonIdx % englishFiles.length];
       paperUrl = `/assets/answers/class_1/english/${file}`;
     }
   } else {
-    paperUrl = `/assets/answers/class_1/default/${classNum}1.pdf`;
+    // Correctly matched by subject across all classes
+    if (qCurrentSubject === 'TELUGU') {
+      const num = (qCurrentLessonIdx % 9) + 1;
+      paperUrl = `/assets/answers/class_1/telugu/${num}.pdf`;
+    } else if (qCurrentSubject === 'MATHS') {
+      paperUrl = `/assets/answers/class_1/default/31.pdf`;
+    } else if (qCurrentSubject === 'ENGLISH') {
+      paperUrl = `/assets/answers/class_1/default/21.pdf`;
+    } else if (qCurrentSubject === 'EVS' || qCurrentSubject === 'SCIENCE') {
+      paperUrl = `/assets/answers/class_1/default/11.pdf`;
+    } else if (qCurrentSubject === 'SOCIAL') {
+      paperUrl = `/assets/answers/class_1/default/41.pdf`;
+    } else if (qCurrentSubject === 'HINDI') {
+      paperUrl = `/assets/answers/class_1/default/61.pdf`;
+    } else {
+      paperUrl = `/assets/answers/class_1/default/11.pdf`;
+    }
   }
 
   const iframe = document.getElementById('qPdfIframe');
@@ -618,6 +808,8 @@ function updateQQuestionPaper() {
     };
     iframe.src = `${paperUrl}#toolbar=1`;
   }
+
+  renderQGuide();
 
   setTimeout(() => {
     if (spinner) spinner.style.display = 'none';

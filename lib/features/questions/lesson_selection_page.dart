@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'flutter_pdf_view.dart';
 import 'answer_path.dart';
+import 'package:skillplay/features/curriculum_data.dart';
 
 class LessonSelectionPage extends StatelessWidget {
   final String selectedClass;
@@ -11,9 +12,12 @@ class LessonSelectionPage extends StatelessWidget {
     required this.selectedSubject,
     super.key,
   });
+
   @override
   Widget build(BuildContext context) {
-    final lessons = answerPaths[selectedClass]?[selectedSubject]?.keys.toList() ?? [];
+    final curriculumLessons = curriculum[selectedClass]?[selectedSubject] ?? [];
+    final answerLessons = answerPaths[selectedClass]?[selectedSubject]?.keys.toList() ?? [];
+    final lessons = curriculumLessons.isNotEmpty ? curriculumLessons : answerLessons;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -26,24 +30,20 @@ class LessonSelectionPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: GridView.count(
           crossAxisCount: 2,
-          children: lessons.map((lesson) {
+          children: lessons.asMap().entries.map((entry) {
+            final idx = entry.key;
+            final lesson = entry.value;
             return LessonButton(
               label: lesson,
               color: Colors.deepPurple.shade700,
               onTap: () {
-                final pdfPath = answerPaths[selectedClass]?[selectedSubject]?[lesson];
-                if (pdfPath != null) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => FlutterPDFView(assetPath: pdfPath),
-                    ),
-                  );
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('PDF not found for "$lesson"')),
-                  );
-                }
+                final pdfPath = getQuestionAnswerPdf(selectedClass, selectedSubject, lesson, idx);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => FlutterPDFView(assetPath: pdfPath),
+                  ),
+                );
               },
             );
           }).toList(),

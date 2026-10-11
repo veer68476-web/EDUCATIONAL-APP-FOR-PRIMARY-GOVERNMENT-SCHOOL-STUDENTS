@@ -63,6 +63,16 @@ dev_dependencies:
 flutter:
   assets:
     - assets/
+    - assets/text/class1/
+    - assets/text/class2/
+    - assets/text/class3/
+    - assets/text/class4/
+    - assets/text/class5/
+    - assets/text/class6/
+    - assets/answers/class_1/default/
+    - assets/answers/class_1/english/
+    - assets/answers/class_1/maths/
+    - assets/answers/class_1/telugu/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
