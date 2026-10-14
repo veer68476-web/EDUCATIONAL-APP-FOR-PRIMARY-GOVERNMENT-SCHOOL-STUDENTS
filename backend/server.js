@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 app.use('/assets', express.static(path.join(__dirname, '../public/assets')));
 app.use('/assets', express.static(path.join(__dirname, '../assets')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Serverless DB connection middleware
 app.use(async (req, res, next) => {
@@ -28,6 +29,8 @@ app.use(async (req, res, next) => {
 });
 
 // Cloud Fallback Store (Ensures registration & login always work smoothly on Vercel)
+const os = require('os');
+const tmpDbPath = path.join(os.tmpdir(), 'skillplay_db_cache.json');
 let fallbackUsers = [];
 let fallbackLogins = [];
 
@@ -43,6 +46,36 @@ try {
 } catch (e) {
   console.warn('Could not load fallback snapshot:', e.message);
 }
+
+function saveTmpSnapshot() {
+  try {
+    fs.writeFileSync(tmpDbPath, JSON.stringify({ users: fallbackUsers, logins: fallbackLogins }, null, 2), 'utf8');
+  } catch (e) {}
+}
+
+function loadTmpSnapshot() {
+  try {
+    if (fs.existsSync(tmpDbPath)) {
+      const data = JSON.parse(fs.readFileSync(tmpDbPath, 'utf8'));
+      if (Array.isArray(data.users)) {
+        data.users.forEach(u => {
+          if (!fallbackUsers.some(fu => fu.email.toLowerCase() === (u.email || '').toLowerCase())) {
+            fallbackUsers.push(u);
+          }
+        });
+      }
+      if (Array.isArray(data.logins)) {
+        data.logins.forEach(l => {
+          if (!fallbackLogins.some(fl => fl.email.toLowerCase() === (l.email || '').toLowerCase() && String(fl.loginTime) === String(l.loginTime))) {
+            fallbackLogins.push(l);
+          }
+        });
+      }
+    }
+  } catch (e) {}
+}
+
+loadTmpSnapshot();
 
 function generateUniqueId() {
   return Math.floor(100000 + Math.random() * 900000);
@@ -177,7 +210,20 @@ app.post('/register', async (req, res) => {
 
       await newUser.save();
       console.log(`✅ [MongoDB] New user registered: ${name} (${cleanEmail})`);
-      return res.status(200).json({ message: 'User registered successfully', userId });
+      return res.status(200).json({ 
+        message: 'User registered successfully', 
+        userId,
+        user: {
+          id: userId,
+          name: name.trim(),
+          email: cleanEmail,
+          phone: phone.trim(),
+          count: 0,
+          role: 'student',
+          isAdmin: false,
+          createdAt: new Date().toISOString()
+        }
+      });
     }
 
     // 2. Cloud Fallback (on Vercel when MONGODB_URI is not set)
@@ -203,8 +249,22 @@ app.post('/register', async (req, res) => {
     };
 
     fallbackUsers.unshift(newUser);
+    saveTmpSnapshot();
     console.log(`✅ [Cloud Fallback] New user registered: ${name} (${cleanEmail})`);
-    return res.status(200).json({ message: 'User registered successfully', userId });
+    return res.status(200).json({ 
+      message: 'User registered successfully', 
+      userId,
+      user: {
+        id: userId,
+        name: name.trim(),
+        email: cleanEmail,
+        phone: phone.trim(),
+        count: 0,
+        role: 'student',
+        isAdmin: false,
+        createdAt: new Date().toISOString()
+      }
+    });
   } catch (err) {
     console.error('❌ Register error:', err);
     res.status(500).json({ error: 'Registration failed', details: err.message });
@@ -288,6 +348,7 @@ app.post('/login', async (req, res) => {
         status: 'SUCCESS',
         device: req.headers['user-agent'] || 'Web Browser'
       });
+      saveTmpSnapshot();
       return res.status(200).json({
         message: 'Login successful',
         user: {
@@ -329,6 +390,7 @@ app.post('/login', async (req, res) => {
       status: 'SUCCESS',
       device: req.headers['user-agent'] || 'Web Browser'
     });
+    saveTmpSnapshot();
 
     console.log(`✅ [Cloud Fallback] User logged in: ${user.name} (${cleanEmail})`);
     return res.status(200).json({
@@ -446,6 +508,7 @@ app.get('/api/users', async (req, res) => {
     }
 
     // Dynamic Cloud Fallback (includes all newly registered users!)
+    loadTmpSnapshot();
     res.status(200).json({
       database: 'skillplay_db (Cloud Active)',
       collection: 'users',
@@ -471,6 +534,7 @@ app.get('/api/logins', async (req, res) => {
     }
 
     // Dynamic Cloud Fallback
+    loadTmpSnapshot();
     res.status(200).json({
       database: 'skillplay_db (Cloud Active)',
       collection: 'loginhistories',
@@ -480,6 +544,105 @@ app.get('/api/logins', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'Database error', details: err.message });
   }
+});
+
+// ✅ Sync Users from Client to Cloud Memory
+app.post('/api/sync-users', async (req, res) => {
+  const { users } = req.body;
+  if (!Array.isArray(users)) {
+    return res.status(400).json({ error: 'Users array required' });
+  }
+
+  let addedCount = 0;
+  for (const u of users) {
+    if (!u.email) continue;
+    const cleanEmail = u.email.toLowerCase().trim();
+
+    // 1. If connected to MongoDB, persist there too
+    if (mongoose.connection.readyState >= 1) {
+      try {
+        const exists = await User.findOne({ email: cleanEmail });
+        if (!exists) {
+          const hashedPassword = u.password && (u.password.startsWith('$2b$') || u.password.startsWith('$2a$'))
+            ? u.password 
+            : await bcrypt.hash(u.password || 'password123', 10);
+          await User.create({
+            id: u.id || generateUniqueId(),
+            name: u.name || cleanEmail.split('@')[0],
+            email: cleanEmail,
+            phone: u.phone || '',
+            password: hashedPassword,
+            count: u.count || 0,
+            role: u.role || (cleanEmail === 'raghuveer081014@gmail.com' ? 'admin' : 'student'),
+            isAdmin: u.isAdmin || cleanEmail === 'raghuveer081014@gmail.com',
+            createdAt: u.createdAt || new Date(),
+            lastLogin: u.lastLogin || null
+          });
+          addedCount++;
+        }
+      } catch (err) {
+        console.warn('Sync to MongoDB warning:', err.message);
+      }
+    }
+
+    // 2. Add / Update in fallbackUsers
+    const idx = fallbackUsers.findIndex(fu => fu.email === cleanEmail);
+    if (idx === -1) {
+      fallbackUsers.unshift({
+        _id: u._id || 'usr_' + (u.id || generateUniqueId()),
+        id: u.id || generateUniqueId(),
+        name: u.name || cleanEmail.split('@')[0],
+        email: cleanEmail,
+        phone: u.phone || '',
+        password: u.password || '$2b$10$ORSM0H0VZlDLxbFiAbXreeEPr9JLklV2uDXqZe1dlk2F7VjUe7diK',
+        count: u.count || 0,
+        role: u.role || (cleanEmail === 'raghuveer081014@gmail.com' ? 'admin' : 'student'),
+        isAdmin: u.isAdmin || cleanEmail === 'raghuveer081014@gmail.com',
+        createdAt: u.createdAt || new Date(),
+        updatedAt: u.updatedAt || new Date(),
+        lastLogin: u.lastLogin || null,
+        loginCount: u.loginCount || 1
+      });
+      addedCount++;
+    } else {
+      if (u.count !== undefined && u.count > (fallbackUsers[idx].count || 0)) {
+        fallbackUsers[idx].count = u.count;
+      }
+      if (u.lastLogin) {
+        fallbackUsers[idx].lastLogin = u.lastLogin;
+      }
+    }
+  }
+
+  saveTmpSnapshot();
+  res.status(200).json({ success: true, added: addedCount, total: fallbackUsers.length });
+});
+
+// ✅ Sync Logins from Client
+app.post('/api/sync-logins', async (req, res) => {
+  const { logins } = req.body;
+  if (!Array.isArray(logins)) {
+    return res.status(400).json({ error: 'Logins array required' });
+  }
+
+  for (const l of logins) {
+    if (!l.email) continue;
+    const cleanEmail = l.email.toLowerCase().trim();
+    const exists = fallbackLogins.some(fl => fl.email === cleanEmail && Math.abs(new Date(fl.loginTime) - new Date(l.loginTime)) < 3000);
+    if (!exists) {
+      fallbackLogins.unshift({
+        name: l.name || cleanEmail.split('@')[0],
+        email: cleanEmail,
+        phone: l.phone || '',
+        loginTime: l.loginTime || new Date(),
+        status: l.status || 'SUCCESS',
+        userAgent: l.userAgent || 'Web Browser'
+      });
+    }
+  }
+
+  saveTmpSnapshot();
+  res.status(200).json({ success: true, total: fallbackLogins.length });
 });
 
 // ✅ Developer Information

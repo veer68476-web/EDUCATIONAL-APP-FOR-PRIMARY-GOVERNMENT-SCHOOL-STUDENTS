@@ -295,6 +295,7 @@
       </div>
       <div class="header-actions">
         <a href="/" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Open SkillPlay Website</a>
+        <button class="btn btn-outline" onclick="exportData()"><i class="fa-solid fa-download"></i> Export JSON</button>
         <button class="btn btn-primary" onclick="loadAll()"><i class="fa-solid fa-rotate-right"></i> Refresh Live Data</button>
       </div>
     </div>
@@ -415,21 +416,92 @@
       }
     }
 
+    function getLocalUsers() {
+      try {
+        const raw = localStorage.getItem('skillplay_registered_users');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      const defaults = [
+        { id: 100001, name: "Raghu Veer", email: "raghuveer081014@gmail.com", phone: "8639118335", password: "password123", count: 50, role: "admin", isAdmin: true, createdAt: "2026-10-10T09:05:59.436Z", lastLogin: "2026-10-10T15:35:53.510Z" },
+        { id: 321802, name: "Raghu Veer", email: "veer68476@gmail.com", phone: "+919494724642", password: "password123", count: 0, role: "student", isAdmin: false, createdAt: "2026-10-10T09:10:31.119Z" },
+        { id: 375045, name: "Raghu Veer", email: "raghuveer@skillplay.com", phone: "9876543210", password: "password123", count: 40, role: "student", isAdmin: false, createdAt: "2026-10-10T09:10:31.130Z" },
+        { id: 639269, name: "Ananya Sharma", email: "ananya@skillplay.com", phone: "9123456780", password: "password123", count: 0, role: "student", isAdmin: false, createdAt: "2026-10-10T09:10:31.132Z" },
+        { id: 379372, name: "raji", email: "babu143@gmail.com", phone: "+919494724565", password: "password123", count: 0, role: "student", isAdmin: false, createdAt: "2026-10-10T09:23:31.185Z" }
+      ];
+      localStorage.setItem('skillplay_registered_users', JSON.stringify(defaults));
+      return defaults;
+    }
+
+    function getLocalLogins() {
+      try {
+        const raw = localStorage.getItem('skillplay_login_events');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return [];
+    }
+
     async function loadUsers() {
       const tbody = document.getElementById('userTableBody');
       const totalEl = document.getElementById('totalUsers');
       try {
-        const res = await fetch('/api/users');
-        const data = await res.json();
-        const users = data.users || [];
-        totalEl.textContent = users.length;
+        let serverUsers = [];
+        try {
+          const res = await fetch('/api/users');
+          if (res.ok) {
+            const data = await res.json();
+            serverUsers = data.users || [];
+          }
+        } catch (netErr) {
+          console.warn('Could not reach /api/users, relying on persistent client store:', netErr);
+        }
 
-        if (users.length === 0) {
+        const localUsers = getLocalUsers();
+        const userMap = new Map();
+
+        // 1. Seed with local persistent users
+        localUsers.forEach(u => {
+          if (u.email) userMap.set(u.email.toLowerCase().trim(), u);
+        });
+
+        // 2. Merge server users
+        serverUsers.forEach(su => {
+          if (!su.email) return;
+          const key = su.email.toLowerCase().trim();
+          if (userMap.has(key)) {
+            const existing = userMap.get(key);
+            userMap.set(key, {
+              ...existing,
+              ...su,
+              count: Math.max(existing.count || 0, su.count || 0),
+              lastLogin: su.lastLogin || existing.lastLogin,
+              createdAt: su.createdAt || existing.createdAt
+            });
+          } else {
+            userMap.set(key, su);
+          }
+        });
+
+        const mergedUsers = Array.from(userMap.values());
+
+        // Update local storage so we never lose newly discovered users
+        localStorage.setItem('skillplay_registered_users', JSON.stringify(mergedUsers));
+        totalEl.textContent = mergedUsers.length;
+
+        // Auto-sync merged users to serverless container
+        try {
+          fetch('/api/sync-users', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ users: mergedUsers })
+          }).catch(() => {});
+        } catch (_) {}
+
+        if (mergedUsers.length === 0) {
           tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; color:var(--text-muted);">No registered users yet.</td></tr>';
           return;
         }
 
-        tbody.innerHTML = users.map(u => `
+        tbody.innerHTML = mergedUsers.map(u => `
           <tr>
             <td><code>${u.id || 'N/A'}</code></td>
             <td>
@@ -455,29 +527,78 @@
       const tbody = document.getElementById('loginTableBody');
       const totalEl = document.getElementById('totalLogins');
       try {
-        const res = await fetch('/api/logins');
-        const data = await res.json();
-        const logins = data.logins || [];
-        totalEl.textContent = logins.length;
+        let serverLogins = [];
+        try {
+          const res = await fetch('/api/logins');
+          if (res.ok) {
+            const data = await res.json();
+            serverLogins = data.logins || [];
+          }
+        } catch (netErr) {
+          console.warn('Could not reach /api/logins, relying on persistent client store:', netErr);
+        }
 
-        if (logins.length === 0) {
+        const localLogins = getLocalLogins();
+        const loginMap = new Map();
+
+        // Combine local and server logins, deduplicating by email and approximate timestamp
+        [...localLogins, ...serverLogins].forEach(l => {
+          if (!l.email) return;
+          const timeKey = l.loginTime ? Math.floor(new Date(l.loginTime).getTime() / 5000) : Math.random();
+          const key = `${l.email.toLowerCase().trim()}_${timeKey}`;
+          if (!loginMap.has(key)) {
+            loginMap.set(key, l);
+          }
+        });
+
+        const mergedLogins = Array.from(loginMap.values()).sort((a, b) => {
+          return new Date(b.loginTime || 0) - new Date(a.loginTime || 0);
+        });
+
+        localStorage.setItem('skillplay_login_events', JSON.stringify(mergedLogins.slice(0, 100)));
+        totalEl.textContent = mergedLogins.length;
+
+        // Auto-sync missing logins to serverless container
+        try {
+          fetch('/api/sync-logins', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ logins: mergedLogins })
+          }).catch(() => {});
+        } catch (_) {}
+
+        if (mergedLogins.length === 0) {
           tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:20px;">No login events recorded yet. Try logging in on the website!</td></tr>';
           return;
         }
 
-        tbody.innerHTML = logins.map(l => `
+        tbody.innerHTML = mergedLogins.map(l => `
           <tr>
             <td><strong>${l.name}</strong></td>
             <td><strong style="color: #34d399;">${l.email}</strong></td>
             <td>${l.phone || 'N/A'}</td>
             <td class="date-tag">${new Date(l.loginTime).toLocaleString()}</td>
             <td><span class="success-badge"><i class="fa-solid fa-check"></i> ${l.status || 'SUCCESS'}</span></td>
-            <td style="font-size:12px; color:var(--text-muted); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${l.userAgent || 'Web Browser'}</td>
+            <td style="font-size:12px; color:var(--text-muted); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${l.userAgent || l.device || 'Web Browser'}</td>
           </tr>
         `).join('');
       } catch (err) {
         tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:#ef4444;">Error: ${err.message}</td></tr>`;
       }
+    }
+
+    function exportData() {
+      const users = getLocalUsers();
+      const logins = getLocalLogins();
+      const blob = new Blob([JSON.stringify({ users, logins }, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `skillplay_db_backup_${new Date().toISOString().slice(0,10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     }
 
     function loadAll() {
@@ -487,6 +608,16 @@
         switchView('logins');
       }
     }
+
+    // Real-time synchronization across browser tabs
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'skillplay_registered_users' || e.key === 'skillplay_login_events') {
+        loadAll();
+      }
+    });
+
+    // Auto-refresh every 5 seconds to keep live data fresh
+    setInterval(loadAll, 5000);
 
     document.addEventListener('DOMContentLoaded', loadAll);
   </script>
